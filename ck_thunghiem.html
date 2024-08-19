@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thử</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Ngăn cuộn ngang khi menu được mở */
+    }
+    .header-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      position: sticky;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #630A10;
+      color: white;
+      z-index: 1000;
+      transition: margin-left 0.5s; /* Hiệu ứng chuyển động */
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      height: 50px;
+      line-height: 40px;
+    }
+    .icons {
+      display: flex;
+      gap: 10px;
+      font-size: 20px;
+    }
+    .back i {
+      font-size: 20px;
+      color: #fff;
+    }
+    .chapter-title {
+      white-space: nowrap;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .progress-container {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 5px;
+      background-color: #f3f3f3;
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0;
+      background-color:#911F27;
+      transition: width 0.25s;
+    }
+    main {
+      margin-top: 0;
+      padding: 10px;
+      transition: margin-left 0.5s;
+    }
+    .content {
+      height: 2000px;
+      justify-content: space-between;
+      display: flex;
+    }
+    /* Ẩn phần "Tên chương" khi màn hình nhỏ */
+    @media (max-width: 600px) {
+    .chapter-title {
+      display: none;
+    }
+    }
+    /* Menu bên trái */
+    .left-menu {
+      height: 1500px; /* Chiều cao trừ đi chiều cao của header */
+      width: 250px;
+      max-height: calc(100%-40px);
+      position: fixed;
+      z-index: 1;
+      left: -250px;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 20px;
+      z-index: 1;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    .bangmucluc {
+      width: 100%;
+      left: 100%;
+      padding-top: 30px;
+      padding-left: 10px;
+    }
+    .menu {
+      width: 200px;
+      margin-top: 5px;
+      position: relative;
+    }
+    .menu-item {
+      position: relative;
+      margin-bottom: 5px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    .dropdown-item {
+      margin-left: 20px;
+    }
+    .dropdown-item a {
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-item a:hover {
+      background-color: #ddd;
+    }
+    .menu-item.open .dropdown-content {
+      display: block;
+    }
+    .dropdown-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .menu-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .left-menu a {
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #630A10;
+      display: block;
+      transition: 0.3s;
+      margin-left: 8px;
+    }
+    .left-menu i {
+      font-size: 16px;
+      color: #630A10;
+    }
+    .left-menu a:hover {
+      color: black;
+    }
+    .left-menu .close-btn {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      font-size: 36px;
+      cursor: pointer;
+      color: #630A10;
+    }
+    .menu-icon {
+      cursor: pointer;
+    }
+    .container {
+      transition: margin-left 0.5s;
+    }
+    /*Nội dung sách*/
+    .noidungsach {
+      margin: 0 20px;
+      text-align: justify;
+    }
+    /*Tính năng*/
+    .tinhnang {
+      width: 100%;
+      left: 100%;
+      padding-top: 30px;
+      padding-left: 30px;
+    }
+    .tinhnang p {
+      color: #630A10;
+      font-size: 18px;
+    }
+    /*Thay đổi cơ*/
+    #slider {
+      position: relative;
+      width: 60%; /* Độ rộng của thanh ngang */
+      height: 5px; /* Độ cao của thanh ngang */
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      margin-top: 25px;
+      margin-bottom: 40px;
+      margin-left: 20px;
+    }
+    #knob {
+      width: 20px;
+      height: 20px;
+      background-color: #aaa;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .slider-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      cursor: pointer;
+    }
+    #minusIcon {
+      position: absolute;
+      left: -20px;
+      top: 50%;
+      font-size: 15px;
+      transform: translateY(-50%);
+    }
+    #plusIcon {
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      font-size: 25px;
+      transform: translateY(-50%);
+    }
+    /*Màu nền*/
+    .colorButton {
+      border: 1px solid #630A10;
+      width: 45px;
+      height: 30px;
+      margin-bottom: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+    .tick {
+      position: absolute;
+      transform: translateY(-50%);
+      visibility: hidden;
+      width: 45px;
+      height: 30px;
+      line-height: 30px;
+      text-align: left;
+    }
+    .tick i {
+      color: green;
+      font-size: 20px; /* Màu xanh cho dấu tích */
+    }
+    .selected .tick {
+      visibility: visible;
+    }
+    .profile-content {
+      width: 200px;
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    /*Nhạc nền*/
+    .playlist {
+      width: 100%;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .playlist-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 5px;
+      border-bottom: 1px solid #444;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .playlist-item:last-child {
+      border-bottom: none;
+    }
+    .number {
+      margin-right: 10px;
+      font-size: 14px;
+    }
+    .details {
+      flex: 1;
+    }
+    .details .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .details .artist {
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+    .play-icon {
+      font-size: 16px;
+      color: #fff; /* Màu biểu tượng mặc định */
+    }
+    .playing .play-icon {
+      color: #000; /* Màu biểu tượng khi phát nhạc */
+    }
+    /*Note*/
+    .note_new {
+      width: 80%;
+    }
+    /* Container for notes */
+    #notesContainer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 220px;
+      margin-left: 20px;
+    }
+    #noteTitle {
+      width: 100%;
+      margin-left: 0;
+    }
+    #noteContent {
+      width: 100%;
+      margin-left: 0;
+    }
+    /* Style for individual note */
+    .note {
+      position: relative;
+      width: 200px;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .note-delete {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 12px;
+      color: red;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Highlight selected text
+      document.querySelector('.fa-highlighter').addEventListener('click', function () {
+        const selection = window.getSelection();
+        if (!selection.rangeCount) return;
+        const range = selection.getRangeAt(0).cloneRange();
+        const span = document.createElement('span');
+        span.style.backgroundColor = 'yellow';
+        range.surroundContents(span);
+        selection.removeAllRanges();
+        selection.addRange(range);
+      });
+
+      // Remove all highlights
+      document.querySelector('.fa-eraser').addEventListener('click', function () {
+        const highlightedElements = document.querySelectorAll('span[style="background-color: yellow;"]');
+        highlightedElements.forEach(function (el) {
+          const parent = el.parentNode;
+          while (el.firstChild) parent.insertBefore(el.firstChild, el);
+          parent.removeChild(el);
+          parent.normalize();
+        });
+      });
+
+      // Toggle left menu
+      document.querySelector('.menu-icon').addEventListener('click', function () {
+        const leftMenu = document.getElementById('left-menu');
+        const container = document.querySelector('.container');
+        if (leftMenu.style.left === '0px') {
+          leftMenu.style.left = '-250px';
+          container.style.marginLeft = '0';
+        } else {
+          leftMenu.style.left = '0';
+          container.style.marginLeft = '250px';
+        }
+      });
+
+      // Handle dropdown menu
+      const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+      dropdownButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const menuItem = button.closest('.menu-item');
+          menuItem.classList.toggle('open');
+        });
+      });
+
+      // Progress bar functionality
+      window.addEventListener('scroll', () => {
+        const progressBar = document.querySelector('.progress-bar');
+        const scrollDistance = document.documentElement.scrollTop || document.body.scrollTop;
+        const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progressPercentage = (scrollDistance / totalHeight) * 100;
+        progressBar.style.width = progressPercentage + '%';
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <div class="back">
+          <i class="fas fa-arrow-left" onclick="goBack()"></i>
+        </div>
+        <div class="chapter-title">Tên chương</div>
+        <div class="icons">
+          <i class="fas fa-highlighter"></i>
+          <i class="fas fa-eraser"></i>
+          <i class="fas fa-bars menu-icon"></i>
+        </div>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+    </header>
+    <div id="left-menu" class="left-menu">
+      <a href="javascript:void(0)" class="close-btn">&times;</a>
+      <div class="bangmucluc">
+        <div class="menu">
+          <div class="menu-item">
+            <div class="menu-label">
+              <a href="#">Mục 1</a>
+              <button class="dropdown-btn">&#9662;</button>
+            </div>
+            <div class="dropdown-content">
+              <div class="dropdown-item"><a href="#">Phụ mục 1.1</a></div>
+              <div class="dropdown-item"><a href="#">Phụ mục 1.2</a></div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-label">
+              <a href="#">Mục 2</a>
+              <button class="dropdown-btn">&#9662;</button>
+            </div>
+            <div class="dropdown-content">
+              <div class="dropdown-item"><a href="#">Phụ mục 2.1</a></div>
+              <div class="dropdown-item"><a href="#">Phụ mục 2.2</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="noidungsach">
+        <!-- Nội dung sách ở đây -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam in tincidunt sapien. Curabitur auctor, mi vel laoreet fermentum, lectus turpis feugiat sapien, sit amet mollis augue velit in odio. Sed imperdiet nisi vel sapien vestibulum cursus. Ut aliquet leo id metus mollis, at malesuada sapien pharetra. Suspendisse et malesuada elit. Cras sit amet scelerisque arcu.</p>
+        <p>Nam tristique velit metus, id molestie felis auctor id. Cras vel diam vehicula, sagittis libero vel, vehicula metus. Mauris suscipit velit odio, vel feugiat leo sollicitudin id. Suspendisse nec fringilla nulla. Proin bibendum quam in ipsum facilisis, ut feugiat augue eleifend. Duis ultrices maximus risus vel tempor. In vel sem nisi. Nulla vestibulum, erat et tristique congue, quam justo blandit felis, a sollicitudin odio nisi vel velit. Morbi congue libero id risus auctor dignissim. Integer sagittis lacus ut orci malesuada condimentum. Sed rutrum libero vel urna facilisis gravida.</p>
+        <!-- Thêm các đoạn nội dung khác tại đây -->
+      </div>
+    </main>
+  </div>
+</body>
+</html>

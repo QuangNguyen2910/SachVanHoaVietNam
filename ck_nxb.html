@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ck_style_nxb.css">
+    <link rel="stylesheet" href="fonticon/css/all.min.css">
+    <title>Thông tin nhà xuất bản</title>
+</head>
+<body>
+    <header>
+        <img src="imgs/dau_web.png">
+    </header>
+    <nav>
+        <div class="khobatchu_nav">
+            <div class="nav_search">
+                <div class="form-field">
+                    <input type="text" class="form_input" placeholder="Nhập tên sách, tác giả,....">
+                    <div class="nav_search_buttun">
+                        <p>Tìm kiếm</p>
+                    </div>
+                </div>        
+            </div>
+            <div class="nav_menu">
+                <div class="menu">
+                    <div class="topnav">
+                        <a href="index.html">Tác phẩm</a>
+                        <a href="ck_tacgia.html">Tác giả</a>
+                        <a href="ck_nxb.html" class="active">Nhà xuất bản</a>
+                    </div>                      
+                </div>
+            </div>
+            <div class="khoitimkiem_taikhoan">
+                <!-- Nút để mở khung cố định -->
+                <div class="dangnhap_icon" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa-regular fa-circle-user"></i></div>
+                <!-- Nội dung khung -->
+                <div id="id01" class="modal">
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="imgs/img_avatar2.png" alt="Avatar" class="avatar">
+                      </div>
+                      <div class="container">
+                        <label for="uname"><b>Tên tài khoản</b></label>
+                        <input type="text" placeholder="Nhập tên tài khoản..." name="uname" required>
+                        <label for="psw"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Mật khẩu..." name="psw" required>          
+                        <button type="submit" style="background-color: #630A10">Đăng nhập</button>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Lưu mật khẩu?
+                        </label>
+                      </div>
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Thoát</button>
+                        <span class="psw">Quên <a href="#">mật khẩu?</a></span>
+                      </div>
+                    </form>
+                </div>                
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="khobatchu_section">
+            <div class="gioithieunxb">
+                <div class="title_gt">
+                    <div class="ketrai"></div>
+                    <div class="title_ttlh_text">
+                        <h1>GIỚI THIỆU VỀ NHÀ XUẤT BẢN</h1>
+                    </div>
+                    <div class="kephai"></div>
+                </div><div style="clear: both;"></div>
+                <div class="nd_gt">
+                    <p>Nhà xuất bản Văn hoá Việt Nam trải qua hơn 30 năm hình thành và phát triển cùng với những biến chuyển của đất nước, nhiều thế hệ nhà văn và các cán bộ văn học công tác tại NXB đã không ngừng cống hiến tài năng, công sức để xây dựng nên một địa chỉ xuất bản uy tín trên cả nước.</p>
+                    <p>Trong dòng chảy sôi động của lịch sử văn học Việt Nam, chúng tôi luôn nỗ lực hoàn thành tốt sứ mệnh của mình đối với những mong muốn của bạn đọc trong và ngoài nước, thể hiện qua từng ấn phẩm mang thương hiệu Nhà xuất bản Văn hoá Việt Nam.</p>
+                </div>
+            </div>
+            <div class="thongtinlienhe">
+                <div class="title_ttlh">
+                    <div class="ketrai"></div>
+                    <div class="title_ttlh_text">
+                        <h1>THÔNG TIN LIÊN HỆ</h1>
+                    </div>
+                    <div class="kephai"></div>
+                </div>
+                <div class="cottrai">
+                    <p class="nd_title_ttlh">TRỤ SỞ CHÍNH</p>
+                    <p class="nd_ttlh">290 Lý Nam Đế, Hoàn Kiếm, Hà Nội</p>
+                    <p class="nd_ttlh">ĐT: 024.38455766 - 024.37470780</p>
+                    <p class="nd_ttlh">Fax: 024.37471106</p>
+                    <p class="nd_ttlh">Website: https://nxbvhvn.vn</p>
+                    <p class="nd_ttlh">Email: nxbvhvn@nxbvhvn.com.vn</p>
+                    <p class="kcach"></p>
+                    <p class="nd_title_ttlh">XUẤT BẢN ĐIỆN TỬ</p>
+                    <p class="nd_ttlh">Trên Internet: https://nxbvhvn.vn</p>
+                </div>
+                <div class="cotphai">
+                    <p class="nd_title_ttlh">BAN ĐẠI DIỆN TẠI THÀNH PHỐ HỒ CHÍ MINH</p>
+                    <p class="nd_ttlh">161-163 Trần Quốc Thảo, phường 9, quận 3</p>
+                    <p class="nd_ttlh">ĐT: 069.667452 - 028.62565588</p>
+                    <p class="nd_ttlh">Fax: 028.62565588</p>
+                    <p class="kcach"></p>
+                    <p class="nd_title_ttlh">ĐẠI DIỆN TẠI THÀNH PHỐ CẦN THƠ</p>
+                    <p class="nd_ttlh">Phi trường 31, đường Cách mạng Tháng Tám</p>
+                    <p class="nd_ttlh">ĐT: 069.629905; 0292.3814772</p>
+                    <p class="nd_ttlh">Fax: 0292.3814772</p>
+                    <p class="kcach"></p>
+                    <p class="nd_title_ttlh">ĐẠI DIỆN TẠI THÀNH PHỐ ĐÀ NẴNG</p>
+                    <p class="nd_ttlh">Số 172 đường 2/9, quận Hải Châu</p>
+                    <p class="nd_ttlh">ĐT/Fax: 0236.6250803</p>
+                </div>
+            </div>
+            <div class="lienhebangemail">
+                <div class="title_ttlh">
+                    <div class="ketrai"></div>
+                    <div class="title_ttlh_text">
+                        <h1>LIÊN HỆ BẰNG EMAIL</h1>
+                    </div>
+                    <div class="kephai"></div>
+                </div>
+                <div class="dong1">
+                    <div class="nd_text_dong1">Họ và tên</div>
+                    <input type="text" class="khung_dong1" placeholder="Họ và tên">
+                </div>
+                <div class="dong1">
+                    <div class="nd_text_dong1">Email liên hệ</div>
+                    <input type="text" class="khung_dong1" placeholder="Email liên hệ">
+                </div>
+                <div class="dong2">
+                    <div class="nd_text_dong2">Nội dung</div>
+                    <input type="text" class="khung_dong2" placeholder="Nội dung">
+                </div>
+                <div class="guibtn">Gửi</div>
+            </div>    
+        </div>
+    </section>
+    <footer>
+        <div class="khobatchu_footer">
+            <div class="khoiphai">
+                <div class="logo_cuoi_web"><img src="imgs/logo_cuoi_web.png"></div>
+                <div class="nhapemail_ud">
+                    <div class="nhapemail">
+                        <div class="form-field2">
+                            <input type="text" class="form_input2" placeholder="Nhập email của bạn để nhận thông báo.">
+                        </div>        
+                    </div>
+                    <div class="ud">
+                        <h1>Bạn có thể đọc sách qua các ứng dụng và thiết bị:</h1>
+                        <div class="ud_icon"><i class="fa-solid fa-desktop"></i> <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-android"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="khoitrai">
+                <img src="imgs/QR.png">
+            </div> <div style="clear: both;"></div>
+            <div class="banquyen">
+                <hr style="border: 1px solid #FFF;">
+                <p>Giấy phép thành lập Nhà xuất bản số 1160/GP-BTTTT ngày 01/08/2008 của Bộ Thông tin</p>
+                <p>Bản quyền ©2018 Nhà Xuất Bản Văn Hóa Việt Nam</p>
+            </div>
+        </div>
+    </footer>
+    <div onclick="scrollToTop()" class="scrollTop"><i class="fa-solid fa-chevron-up"></i></div>
+    <div onclick="scrollToBottom()" class="scroll-to-bottom"><i class="fa-solid fa-chevron-down"></i></div>
+    <script src="ck_JS_nxb.js"></script>
+</body>
+</html>

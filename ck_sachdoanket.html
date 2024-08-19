@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đoạn kết</title>
+  <link rel="stylesheet" href="ck_style_sachc1.css">
+  <link rel="stylesheet" href="fonticon/css/all.min.css">
+</head>
+<body>
+  <header>
+    <img src="imgs/dau_web.png" alt="Header Image" class="header-image">
+    <div class="header-content">
+      <div class="icons">
+        <i class="fa-solid fa-list" onclick="toggleMenu('homeMenu')"></i>
+        <i class="fa-solid fa-gear" onclick="toggleMenu('searchMenu')"></i>
+        <i class="fa-solid fa-headphones-simple" onclick="toggleMenu('profileMenu')"></i>
+        <i class="fa-solid fa-note-sticky" onclick="toggleMenu('settingMenu')"></i>
+        <i class="fa-solid fa-magnifying-glass" onclick="toggleMenu('searchKeywordMenu')"></i>
+        <i class="fa-solid fa-maximize" onclick="toggleFullScreen()" id="fullscreen-icon"></i>
+        <a href="ck_sachc3.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="ck_sachtongket.html"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="chapter-title">Đoạn kết</div>
+      <div class="back">
+        <a href="index.html"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </header>
+  <div class="left-menu" id="homeMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('homeMenu')">&times;</a>
+    <div class="bangmucluc">
+      <div class="menu">
+        <a href="ck_biatrc.html" class="menu-link">Bìa trước</a>
+        <a href="ck_xinhe.html">Chịu trách nhiệm xuất bản</a>
+        <div class="menu-item" id="menu1">
+          <div class="menu-label">
+              <a href="ck_sachc1.html" class="menu-link">Chương 1</a>
+              <button class="dropdown-btn" onclick="toggleDropdown(event, this)"><i class="fa-solid fa-chevron-down"></i></button>
+          </div>
+          <div class="dropdown-content">
+            <div class="dropdown-item"><a href="ck_sachc1.html">I</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">II</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">III</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">IV</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">V</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">VI</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">VII</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">VIII</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">IX</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">X</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">XI</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">XII</a></div>
+          </div>
+        </div>
+        <div class="menu-item" id="menu1">
+          <div class="menu-label">
+              <a href="ck_sachc2.html" class="menu-link">Chương 2</a>
+              <button class="dropdown-btn" onclick="toggleDropdown(event, this)"><i class="fa-solid fa-chevron-down"></i></button>
+          </div>
+          <div class="dropdown-content">
+            <div class="dropdown-item"><a href="ck_sachc2.html">I</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">II</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">III</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">IV</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">V</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">VI</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">VII</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">VIII</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">IX</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">X</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">XI</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">XII</a></div>
+          </div>
+        </div>
+        <div class="menu-item" id="menu1">
+          <div class="menu-label">
+              <a href="ck_sachc3.html" class="menu-link">Chương 3</a>
+              <button class="dropdown-btn" onclick="toggleDropdown(event, this)"><i class="fa-solid fa-chevron-down"></i></button>
+          </div>
+          <div class="dropdown-content">
+            <div class="dropdown-item"><a href="ck_sachc3.html">I</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">II</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">III</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">IV</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">V</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">VI</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">VII</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">VIII</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">IX</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">X</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">XI</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">XII</a></div>
+          </div>
+        </div>
+        <div class="menu-item" id="menu1">
+            <div class="menu-label">
+              <a href="ck_sachdoanket.html" class="menu-link">Đoạn kết</a>
+            </div>
+          </div>
+          <div class="menu-item" id="menu1">
+            <div class="menu-label">
+              <a href="ck_sachtongket.html" class="menu-link">Tổng kết</a>
+            </div>
+          </div>
+          <div class="menu-item" id="menu1">
+            <div class="menu-label">
+              <a href="ck_biasau.html" class="menu-link">Bìa sau</a>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="left-menu" id="searchMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('searchMenu')">&times;</a>
+    <div class="tinhnang">
+      <p>Kích thước chữ</p>
+      <div id="slider">
+        <i id="minusIcon" class="fa-solid fa-a"></i>
+        <div id="knob"></div>
+        <i id="plusIcon" class="fa-solid fa-a"></i>
+      </div>
+      <p>Kiểu chữ</p>
+      <div id="fontList">
+        <button class="fontButton" onclick="changeFont('Courier New', this)"><div class="font1">Courier New</div></button>
+        <button class="fontButton" onclick="changeFont('Arial', this)"><div class="font2">Arial</div></button>
+        <button class="fontButton" onclick="changeFont('Times New Roman', this)"><div class="font3">Times New Roman</div></button>
+      </div>      
+      <p>Màu nền</p>
+      <div id="colorPickerBackground">
+        <div class="color-button color-white" onclick="changeBackgroundColor('white', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-red" onclick="changeBackgroundColor('red', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-gray" onclick="changeBackgroundColor('gray', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-black" onclick="changeBackgroundColor('black', this)">
+            <span class="checkmark">✔</span>
+        </div>
+      </div>
+      <p>Màu chữ</p>
+      <div id="colorPickerText">
+        <div class="color-button color-white" onclick="changeTextColor('white', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-red" onclick="changeTextColor('red', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-gray" onclick="changeTextColor('gray', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-black" onclick="changeTextColor('black', this)">
+            <span class="checkmark">✔</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="left-menu" id="profileMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('profileMenu')">&times;</a>
+    <div class="profile-content">
+      <div class="playlist">
+        <div class="playlist-item" data-src="battlefield-elegy-201530.mp3">
+            <div class="number">1</div>
+            <div class="details">
+                <div class="title">Battlefield Elegy</div>
+                <div class="artist">Neura-Flow</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="loneliness_outro-202380.mp3">
+            <div class="number">2</div>
+            <div class="details">
+                <div class="title">Loneliness_Outro</div>
+                <div class="artist">Grand_Project</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="lost-dreams-inspiring-cinematic-ambient-208164.mp3">
+            <div class="number">3</div>
+            <div class="details">
+                <div class="title">Lost Dreams - Inspiring Cinematic Ambient</div>
+                <div class="artist">CalvinClavier</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="perfect-beauty-191271.mp3">
+            <div class="number">4</div>
+            <div class="details">
+                <div class="title">Perfect Beauty</div>
+                <div class="artist">Good_B_Music</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="piano-moment-9835.mp3">
+            <div class="number">5</div>
+            <div class="details">
+                <div class="title">Piano Moment</div>
+                <div class="artist">Good_B_Music</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="relaxing-145038.mp3">
+            <div class="number">6</div>
+            <div class="details">
+                <div class="title">Relaxing</div>
+                <div class="artist">Music_For_Videos</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+      </div>
+      <audio id="audio-player"></audio>
+    </div>
+  </div>
+  <div class="left-menu" id="settingMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('settingMenu')">&times;</a>
+    <div class="toggle-container">
+      <label class="switch">
+          <input type="checkbox" id="highlightToggle">
+          <span class="slider"></span>
+      </label>
+      <div class="create-note-text">Đánh dấu</div>
+    </div>
+    <div class="xoa_2light">
+      <div class="xoa_2light_icon"><i class="fa-solid fa-eraser eraser" style="font-size: 30px;color: #007bff;"></i></div>
+      <div class="xoa_2light_text" style="margin-left: 10px;line-height: 30px;">Xóa đánh dấu</div>
+    </div>
+    <div class="note_new">
+      <div class="create-note-container">
+        <div class="create-note-icon" id="createNoteBtn">
+            +
+        </div>
+        <div class="create-note-text">Tạo ghi chú</div>
+      </div>
+      <div id="notesContainer" class="ketqua"></div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Ghi chú</h2>
+          <label for="noteTitle">Tiêu đề:</label>
+          <br>
+          <input type="text" id="noteTitle">
+          <br><br>
+          <label for="noteContent">Nội dung:</label>
+          <br>
+          <textarea id="noteContent" rows="4"></textarea>
+          <br><br>
+          <button id="saveNoteBtn">Lưu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="left-menu" id="searchKeywordMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('searchKeywordMenu')">&times;</a>
+    <div class="search-section">
+        <input type="text" id="searchInput" placeholder="Nhập từ khóa..." oninput="searchKeyword()">
+        <div id="searchResults"></div>
+    </div>
+  </div>
+  <main id="mainContent">
+    <div class="content">
+      <div class="noidungsach">
+        <p>Trời đã khuya lắm rồi!</p>
+        <p>Tiệp nằm ngủ giữa hai con, thằng Hòa và con Thuận. Đang mơ màng bỗng như nghe thấy tiếng ai gọi cửa khe khẽ, Tiệp lắng tai nghe. Tiếng gọi rất quen thuộc, chỉ vừa đủ nghe, người gọi như không muốn gọi to.</p>
+        <p>Trời đang mùa đông lạnh! Tiệp tung chăn bước nhè nhẹ xuống đất sau khi đã đắp ấm cho hai con. Nàng rón rén đi ra cửa. Vẫn còn tiếng gọi. Nàng hỏi khẽ: “Ai đó?”</p>
+        <p>Có tiếng đáp lại: “Anh đây mà, Khoan đây? Mở cửa cho anh”.</p>
+        <p>Nghe rõ tiếng chồng, Tiệp mừng lắm. Nàng vội vàng mở cửa. Cửa ngỏ mở ra, Khoan bước vào ra hiệu cho Tiệp nói khẽ. Vào trong nhà, Tiệp thắp lên ngọn đèn dầu. Lúc này nàng mới để ý ngắm Khoan. Trông Khoan gầy sộp đi, nhưng gương mặt có vẻ rắn roit hơn.</p>
+        <p>Khoan bảo: “Anh về thăm em và hai con!”</p>
+        <p>Tiệp hỏi: “Sao anh về được, họ cho anh về à?”</p>
+        <p>Khoan đáp: “Họ đâu có cho anh về! Anh vượt ngục”.</p>
+        <p>Tiệp trố mắt nhìn chồng toan hỏi. Khoan gạt đi bảo: “Em đừng hỏi để nguyên anh nói. Anh bị chúng nó buộc vào tội làm cách mệnh chống triều đình, có thể bị xử tử. Trước đây anh không hiểu làm cách mệnh là gì, nhưng từ ngày anh bị giam, anh đã được gặp các cụ và nhiều anh em nói cho rõ tình trạng nước nhà hiện nay bị Pháp chiếm đóng và dân chúng rất khổ sở với sự đô hộ của chúng. Chúng lấy của giết người, hà hiếp dân ta. Lại thêm bọn chó săn của chúng tìm cách vu oan giá họa cho dân lành để lập công. Làm người con trai phải có bổn phận với đất nước, không thể ngồi mà chờ chết! Anh đã lĩnh hội được những điều các cụ và các anh em chỉ bảo. Anh phải vượt ngục để thoát khỏi bàn tay chúng mới mong mưu cầu chống lại chúng giải thoát cho nước nhà. Anh sẽ đi theo nghĩa quân. Trước khi đi anh về thăm em và hai con. Anh nhờ em trên thờ cha mẹ, dưới nuôi hai con thay anh. Anh có ngày đi mà không biết ngày về. Việc ở nhà anh trông cậy hết ở em. Em cố gây dựng dạy dỗ các con”.</p>
+        <p>Tiệp nghe chồng nói, lặng người. Nước mắt giàn giụa, nàng bảo chồng: “Em xin vâng lời anh”.</p>
+        <p>Khoan không chào bố mẹ, nhưng chàng nhờ Tiệp nói cho bố mẹ hay. Chàng không muốn các cụ buồn thêm, nhất là cụ bà lại thêm bịn rịn. Khoan ở nhà không lâu, chỉ đủ thời giờ để Tiệp xếp thêm cho ít quần áo. Có bao nhiêu tiền Tiệp đưa hết cho chồng. Khoan không đánh thức hai con dậy. Chàng chỉ mở màn nhìn chúng một cách âu yếm và lưu luyến. Rồi chàng ra đi! Chàng bảo Tiệp: “Anh phải đi ngay, kẻo có thể chúng nó đến tìm bắt anh bây giờ”.</p>
+        <p>Tiệp lại tiễn chồng ra cửa, nhìn chồng ra đi trong đêm tối, theo một cuộc đời vô định. Khoan đi khỏi, Tiệp quay vào quên cả đóng cổng , nằm vật mình xuống giường ôm mặt khóc. Và suốt đêm đó cho đến gần sáng nàng không ngủ.</p>
+        <p>Khi gần sáng, ngoài cửa có tiếng lao xao. Đó là lý Thúc dẫn lính huyện và tuần đinh tới vây nhà Khoan để tìm bắt Khoan. Họ rầm rộ kéo thẳng vào trong nhà lục soát mọi chỗ, từ nhà trên xuống nhà dưới, từ đống rơm tới nhà bếp. Không thấy Khoan, lý Thúc hỏi Tiệp: “Đêm qua anh ấy không về hả chị?”</p>
+        <p>Tiệp không trả lời, mặc người nhà đối đáp với Thúc cũng như đối đáp với bọn lính huyện. Tin Khoan vượt ngục đồn đại khắp trong làng. Tiệp đi tới đâu cũng được người ta hỏi thăm và ái ngại. Từ đêm Khoan trở về rồi lại ra đi. Tiệp buồn rầu nhưng can đảm sống bên hai con, lo tròn bổn phận phụng dưỡng bố mẹ chồng và chăm nom con nhỏ. Nhờ trời thằng Hòa, con Thuận đều ngoan ngoãn, kháu khỉnh, biết thương yêu Tiệp nên nỗi buồn của Tiệp cũng dịu đi một phần nào. Con nhà nề nếp, Tiệp sống theo khuôn khổ của lễ giáo, đành riêng chịu nỗi đau đớn một mình. Làng nước ai cũng thương hại mà ngợi khen nàng.</p>
+        <p>Dân làng Kim Đôi sau một dạo xôn xao về truyện Khoan vượt ngục, về chuyện lý Thúc tiểu nhân hại bạn, hại con thày, thì đời sống bình thường của thôn quê trở lại, ai lo việc nấy.</p>
+        <p>Cho đến một buổi sáng, có người đi chợ sớm thấy lý Thúc nằm chết gục ở gốc đa bên bờ sông, ngực bị đâm xuyên đằng trước ra đằng sau. Không ai biết lý Thúc bị ai giết. Có người bảo là Khoan đã trở về giết lý Thúc để rửa lại mối thù xưa! Có người bảo đó là những nhà cách mệnh đã hạ sát lý Thúc để giết bớt một tên cẩu tử của ngoại quốc. Có người lại bảo chính là Tiệp đã giết Thúc báo thù chồng vì có một lần buổi tối người ta bắt gặp Thúc đi ở xóm đình với một người đàn bà trông như Tiệp. Rốt cục cũng chẳng ai dám quả quyết là ai đã giết lý Thúc. Nhà chức trách đã mở cuộc điều tra gay gắt nhưng không đi đến kết quả nào.</p>
+        <p>Ngay buổi chiều hôm lý Thúc bị giết, Tiệp mang quần áo ra sông giặt như thường lệ. Trong đám quần áo thoảng như có chiếc dính máu, nhưng không rõ đó là quần áo đàn ông hay đàn bà. Tiệp vừa giặt quần áo vừa khóc. Đôi mắt nàng sưng đỏ như những lúc ai nhắc tới truyện Khoan.</p>
+        <p style="text-align: right;">Sài Gòn, Quý hạ Nhâm Dần.</p>
+        <div class="anh"><img src="imgs/anh1.jpg" alt="Ảnh minh họa"></div>        
+        <!-- Chú thích -->
+        <div id="tooltip" class="tooltip"></div>                
+      </div>
+    </div>
+  </main>
+  <div onclick="scrollToTop()" class="scrollTop"><i class="fa-solid fa-chevron-up"></i></div>
+  <div onclick="scrollToBottom()" class="scroll-to-bottom"><i class="fa-solid fa-chevron-down"></i></div>
+  <script src="ck_JS_sachc1.js"></script>
+</body>
+</html>

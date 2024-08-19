@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 3</title>
+  <link rel="stylesheet" href="ck_style_sachc1.css">
+  <link rel="stylesheet" href="fonticon/css/all.min.css">
+</head>
+<body>
+  <header>
+    <img src="imgs/dau_web.png" alt="Header Image" class="header-image">
+    <div class="header-content">
+      <div class="icons">
+        <i class="fa-solid fa-list" onclick="toggleMenu('homeMenu')"></i>
+        <i class="fa-solid fa-gear" onclick="toggleMenu('searchMenu')"></i>
+        <i class="fa-solid fa-headphones-simple" onclick="toggleMenu('profileMenu')"></i>
+        <i class="fa-solid fa-note-sticky" onclick="toggleMenu('settingMenu')"></i>
+        <i class="fa-solid fa-magnifying-glass" onclick="toggleMenu('searchKeywordMenu')"></i>
+        <i class="fa-solid fa-maximize" onclick="toggleFullScreen()" id="fullscreen-icon"></i>
+        <a href="ck_sachc2.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="ck_sachdoanket.html"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="chapter-title">Chương 3</div>
+      <div class="back">
+        <a href="index.html"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </header>
+  <div class="left-menu" id="homeMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('homeMenu')">&times;</a>
+    <div class="bangmucluc">
+      <div class="menu">
+        <a href="ck_biatrc.html" class="menu-link">Bìa trước</a>
+        <a href="ck_xinhe.html">Chịu trách nhiệm xuất bản</a>
+        <div class="menu-item" id="menu1">
+          <div class="menu-label">
+              <a href="ck_sachc1.html" class="menu-link">Chương 1</a>
+              <button class="dropdown-btn" onclick="toggleDropdown(event, this)"><i class="fa-solid fa-chevron-down"></i></button>
+          </div>
+          <div class="dropdown-content">
+            <div class="dropdown-item"><a href="ck_sachc1.html">I</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">II</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">III</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">IV</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">V</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">VI</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">VII</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">VIII</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">IX</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">X</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">XI</a></div>
+            <div class="dropdown-item"><a href="ck_sachc1.html">XII</a></div>
+          </div>
+        </div>
+        <div class="menu-item" id="menu1">
+          <div class="menu-label">
+              <a href="ck_sachc2.html" class="menu-link">Chương 2</a>
+              <button class="dropdown-btn" onclick="toggleDropdown(event, this)"><i class="fa-solid fa-chevron-down"></i></button>
+          </div>
+          <div class="dropdown-content">
+            <div class="dropdown-item"><a href="ck_sachc2.html">I</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">II</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">III</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">IV</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">V</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">VI</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">VII</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">VIII</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">IX</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">X</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">XI</a></div>
+            <div class="dropdown-item"><a href="ck_sachc2.html">XII</a></div>
+          </div>
+        </div>
+        <div class="menu-item" id="menu1">
+          <div class="menu-label">
+              <a href="ck_sachc3.html" class="menu-link">Chương 3</a>
+              <button class="dropdown-btn" onclick="toggleDropdown(event, this)"><i class="fa-solid fa-chevron-down"></i></button>
+          </div>
+          <div class="dropdown-content">
+            <div class="dropdown-item"><a href="#c3_I">I</a></div>
+            <div class="dropdown-item"><a href="#c3_II">II</a></div>
+            <div class="dropdown-item"><a href="#c3_III">III</a></div>
+            <div class="dropdown-item"><a href="#c3_IV">IV</a></div>
+            <div class="dropdown-item"><a href="#c3_V">V</a></div>
+            <div class="dropdown-item"><a href="#c3_VI">VI</a></div>
+            <div class="dropdown-item"><a href="#c3_VII">VII</a></div>
+            <div class="dropdown-item"><a href="#c3_VIII">VIII</a></div>
+            <div class="dropdown-item"><a href="#c3_IX">IX</a></div>
+            <div class="dropdown-item"><a href="#c3_X">X</a></div>
+            <div class="dropdown-item"><a href="#c3_XI">XI</a></div>
+            <div class="dropdown-item"><a href="#c3_XII">XII</a></div>
+          </div>
+        </div>
+        <div class="menu-item" id="menu1">
+            <div class="menu-label">
+              <a href="ck_sachdoanket.html" class="menu-link">Đoạn kết</a>
+            </div>
+          </div>
+          <div class="menu-item" id="menu1">
+            <div class="menu-label">
+              <a href="ck_sachtongket.html" class="menu-link">Tổng kết</a>
+            </div>
+          </div>
+          <div class="menu-item" id="menu1">
+            <div class="menu-label">
+              <a href="ck_biasau.html" class="menu-link">Bìa sau</a>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="left-menu" id="searchMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('searchMenu')">&times;</a>
+    <div class="tinhnang">
+      <p>Kích thước chữ</p>
+      <div id="slider">
+        <i id="minusIcon" class="fa-solid fa-a"></i>
+        <div id="knob"></div>
+        <i id="plusIcon" class="fa-solid fa-a"></i>
+      </div>
+      <p>Kiểu chữ</p>
+      <div id="fontList">
+        <button class="fontButton" onclick="changeFont('Courier New', this)"><div class="font1">Courier New</div></button>
+        <button class="fontButton" onclick="changeFont('Arial', this)"><div class="font2">Arial</div></button>
+        <button class="fontButton" onclick="changeFont('Times New Roman', this)"><div class="font3">Times New Roman</div></button>
+      </div>      
+      <p>Màu nền</p>
+      <div id="colorPickerBackground">
+        <div class="color-button color-white" onclick="changeBackgroundColor('white', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-red" onclick="changeBackgroundColor('red', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-gray" onclick="changeBackgroundColor('gray', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-black" onclick="changeBackgroundColor('black', this)">
+            <span class="checkmark">✔</span>
+        </div>
+      </div>
+      <p>Màu chữ</p>
+      <div id="colorPickerText">
+        <div class="color-button color-white" onclick="changeTextColor('white', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-red" onclick="changeTextColor('red', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-gray" onclick="changeTextColor('gray', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-black" onclick="changeTextColor('black', this)">
+            <span class="checkmark">✔</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="left-menu" id="profileMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('profileMenu')">&times;</a>
+    <div class="profile-content">
+      <div class="playlist">
+        <div class="playlist-item" data-src="battlefield-elegy-201530.mp3">
+            <div class="number">1</div>
+            <div class="details">
+                <div class="title">Battlefield Elegy</div>
+                <div class="artist">Neura-Flow</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="loneliness_outro-202380.mp3">
+            <div class="number">2</div>
+            <div class="details">
+                <div class="title">Loneliness_Outro</div>
+                <div class="artist">Grand_Project</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="lost-dreams-inspiring-cinematic-ambient-208164.mp3">
+            <div class="number">3</div>
+            <div class="details">
+                <div class="title">Lost Dreams - Inspiring Cinematic Ambient</div>
+                <div class="artist">CalvinClavier</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="perfect-beauty-191271.mp3">
+            <div class="number">4</div>
+            <div class="details">
+                <div class="title">Perfect Beauty</div>
+                <div class="artist">Good_B_Music</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="piano-moment-9835.mp3">
+            <div class="number">5</div>
+            <div class="details">
+                <div class="title">Piano Moment</div>
+                <div class="artist">Good_B_Music</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="relaxing-145038.mp3">
+            <div class="number">6</div>
+            <div class="details">
+                <div class="title">Relaxing</div>
+                <div class="artist">Music_For_Videos</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+      </div>
+      <audio id="audio-player"></audio>
+    </div>
+  </div>
+  <div class="left-menu" id="settingMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('settingMenu')">&times;</a>
+    <div class="toggle-container">
+      <label class="switch">
+          <input type="checkbox" id="highlightToggle">
+          <span class="slider"></span>
+      </label>
+      <div class="create-note-text">Đánh dấu</div>
+    </div>
+    <div class="xoa_2light">
+      <div class="xoa_2light_icon"><i class="fa-solid fa-eraser eraser" style="font-size: 30px;color: #007bff;"></i></div>
+      <div class="xoa_2light_text" style="margin-left: 10px;line-height: 30px;">Xóa đánh dấu</div>
+    </div>
+    <div class="note_new">
+      <div class="create-note-container">
+        <div class="create-note-icon" id="createNoteBtn">
+            +
+        </div>
+        <div class="create-note-text">Tạo ghi chú</div>
+      </div>
+      <div id="notesContainer" class="ketqua"></div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Ghi chú</h2>
+          <label for="noteTitle">Tiêu đề:</label>
+          <br>
+          <input type="text" id="noteTitle">
+          <br><br>
+          <label for="noteContent">Nội dung:</label>
+          <br>
+          <textarea id="noteContent" rows="4"></textarea>
+          <br><br>
+          <button id="saveNoteBtn">Lưu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="left-menu" id="searchKeywordMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('searchKeywordMenu')">&times;</a>
+    <div class="search-section">
+        <input type="text" id="searchInput" placeholder="Nhập từ khóa..." oninput="searchKeyword()">
+        <div id="searchResults"></div>
+    </div>
+  </div>
+  <main id="mainContent">
+    <div class="content">
+      <div class="noidungsach">
+        <h2 id="c3_I">I</h2>
+        <p>Tiệp giật mình thức dậy, nhìn ra ngoài thấy trời còn tối lắm. Xung quanh toàn tiếng gà gáy báo hiệu canh năm. Ở ngoài cổng xóm có tiếng lào xào của mấy người đi làm đồng sớm nói chuyện.</p>
+        <p>Khoan bảo vợ: “Dậy làm chi sớm vậy em? Trời còn tối mà!”</p>
+        <p>Tiệp đáp: “Anh nằm ngủ đi! Em phải dậy chứ, muộn rồi còn sớm gì nữa. Gà gáy đã lâu, và em đã nghe tiếng những ông bà đi làm đồng nói chuyện lào xào ngoài đầu ngõ rồi”.</p>
+        <p>Rồi Tiệp bước ra khỏi giường, đưa tay vấn lại vấn đầu, gạt những sợi tóc xõa xuống mặt lên hai bên tai. Cũng như mọi hôm nàng đi thẳng xuống bếp, thổi đống dấm chấu lấy lửa dóm bếp thổi cơm. Còn Khoan lại kéo chăn nằm ngủ tiếp.</p>
+        <p>Trời mùa đông về sáng lạnh lắm. Gió bấc rít từng cơn thổi qua ngọn tre như muốn rải rác cái lạnh cho khắp mọi nơi. Không có mưa dầm, nhưng sương đêm dày đặc, khiến ở ngoài trời hơi cách xa một chút là không trông thấy gì. Tiệp cũng thấy lạnh lắm, nhưng nàng mặc chiếc áo bông cộc nên cũng đỡ rét được phần nào. Múc nước vo gạo, nàng thấy cóng tay và buốt tới tận xương. Nàng hơi suýt soa, vo vội giá gạo rồi trở vào trong bếp cho ấm. Sương đêm hắt vào mặt, luồn vào cổ áo, làm tăng thêm cái rét. Tiệp hắt hơi luôn hai ba cái, nước mắt nước mũi dàn ra, rồi nàng húng hắng ho. Vo xong giá gạo, đi trở vào trong bếp, bên ngọn lửa hồng nàng lại thấy ấm người ngay. Đổ gạo vào nồi rồi, nàng giơ hai tay hơ lên trước ngọn lửa bếp. Ngọn lửa hồng tươi nổ reo lách tách làm khô hai bàn tay ướt của Tiệp.</p>
+        <p>Đã hơn một tháng nay, kể từ tuần tứ cửu ông đồ xong, Tiệp về sống ở nhà Khoan, và chỉ thỉnh thoảng mới về lại nhà mình. Trước khi Tiệp về, nàng đã được bà đồ căn dặn đủ mọi điều về cách làm dâu. Trên kính trọng bố mẹ chồng, chồng, dưới đối với các em chồng phải có độ lượng khoan dung. Nhà Khoan tuy nghèo, nhưng là nhà gia giáo, nề nếp, vậy nên con dâu càng phải ăn ở cho phải đạo, nhất là Tiệp lại là con một ông đồ. Giấy rách phải giữ lấy lề, con nhà nề nếp phải giữ vững nếp xưa lối cũ của gia đình. Bà đồ dạy Tiệp mọi cách ăn ở với đủ mọi người và công việc làm ăn. Bà bảo Tiệp: “Nhà chồng con không giàu của, nhưng giàu đạo đức. Về bên ấy có lẽ con sẽ vất vả phải làm lụng nhiều hơn, nhưng con cũng sẽ được sự đối đãi đứng đắn của nhà chồng. Con phải tỏ ra biết kính trên nhường dưới”. Mọi lời mẹ dạy, Tiệp một dạ ghi nhớ. Nàng hiểu, lấy chồng nghèo tất nhiên vất vả, nhưng bù lại sự vất vả đã có tình yêu chân thật của Khoan. Vả chăng, cha nàng đã từ chối một đám nhà giàu, để gả nàng cho Khoan, tất nhiên cha nàng không lầm. Và chính nàng, nàng cũng chuộng cái cảnh nghèo của Khoan hơn là sự giàu có của Thúc. Nàng vui vẻ với việc thức khuya dậy sớm, làm lụng nhọc nhằn, luôn luôn nàng vui vẻ và không bao giờ nàng tỏ ra sợ hãi công việc nặng nhọc. Đúng như lời mẹ nàng đã nói trước, về nhà Khoan nàng phải vất vả nhiều hơn, nhưng đối với nàng, tất cả mọi sự cực nhọc đều không có nghĩa lý gì khi nàng được gần Khoan. Khoan rất thương yêu nàng, săn sóc nàng từng chút và thường an ủi nàng khi thấy nàng vất vả với công việc nhà. Được chồng yêu quý, cha mẹ chồng đối với Tiệp cũng tỏ lòng thương mến, nhất là mẹ Khoan. Bà biết Tiệp khi ở nhà sung sướng, tuy có việc làm cũng không đến nỗi cực nhọc, nay về nhà chồng phải gánh vác đủ mọi việc nên bà cụ rất cảm thông với con dâu. Nhiều khi thấy Tiệp làm quá sức, bà bảo Tiệp nghỉ ngơi để công việc cho các em chồng, hoặc có khi chính bà làm đỡ Tiệp rất nhiều.</p>
+        <p>Kể ra thì Tiệp vất vả thật, đầu hôm sớm mai không mấy lúc nghỉ ngơi. Lúc đầu nàng cảm thấy hơi mệt, nhưng sau một thời gian ngắn nàng cũng quen không lấy làm ngại công việc nữa. Từ lúc sáng tinh sương, trời mưa cũng như trời lạnh trời rét buốt cũng như khi trời ấm áp, Tiệp phải dậy sớm để thổi cơm cho người nhà ăn ra đồng. Lại còn công việc đồng áng, phát bờ, làm cỏ, bón phân nhất nhất mọi việc nàng đều vui vẻ làm không nề hà một việc gì. Ở đồng về, nàng lại làm việc nhà, nào quét tước nhà cửa, nấu cám lợn, cho gà vịt lợn ăn và tối tối thỉnh thoảng lại xay lúa giã gạo. Nàng làm việc gọn gàng sạch sẽ, đâu vào đấy. Mẹ chồng rất thương và luôn miệng khen. Bà thường bắt các em gái Khoan phải giúp đỡ Tiệp, nhưng các em gái Khoan còn nhỏ, có giúp đỡ nàng cũng chẳng được bao nhiêu. Tuy vậy, sự giúp đỡ của các em chồng dù không nhiều cũng giúp Tiệp thêm tinh thần làm việc. Nhiều khi mấy chị em cùng xay lúa giã gạo, chuyện trò với nhau đầm ấm lắm. Tiệp kể cho các em chồng nghe thời mình còn con gái, và đôi khi mấy chị em lại kể cho nhau nghe những câu truyện cổ tích rất hay và rất có ý nghĩa. Làm việc nhiều, lắm lúc mệt, Tiệp lại bảo các em chồng hát lên vài câu rồi mấy chị em lại cùng nhau cười khúc khích. Mọi sự mệt nhọc đều tiêu tan không còn nữa. Có những buổi tối, Tiệp đang làm việc với các em ở nhà dưới thì thấy Khoan ở nhà trên đi xuống. Thấy Khoan tới các cô em xúm lại nói đùa trêu Tiệp vui vẻ lắm. Có cô nói: “Chị ấy vừa nhắc tới anh thì anh xuống. Anh vào đây giã gạo với chị ấy cho vui, chúng em nhường”.</p>
+        <p>Cô khác nói: “Anh với chị như keo sơn! Sắp nửa đêm đi ngủ rồi, anh còn phải xuống đây, sợ chị ấy trốn mất hay sao?”</p>
+        <p>Khoan cười, Tiệp cũng cười và Tiệp nói: “Các cô chỉ được cái giỏi nói đùa”.</p>
+        <p>Rồi Tiệp bảo Khoan: “Các cô ấy hay trêu em lắm. Anh phải đánh đòn các cô ấy đi”.</p>
+        <p>Cả mấy chị em phá ra cười, cả Khoan nữa. Hỏi han công việc của vợ và các em xong Khoan lại lên trên nhà đọc sách. Sẵn sách của ông đồ để lại, Khoan tha hồ học thêm cho rộng kiến thức, Khoan cũng định khoa thi sắp tới chàng sẽ lều chõng lên đường, để may nhờ tổ ấm biết đâu lại được lúc “võng anh đi trước, võng nàng đi sau”. Cũng có hôm, Tiệp đang lúi húi làm việc một mình dưới bếpúc khuya, các cô em chồng đã đi ngủ cả, nàng bỏ việc chạy lên trên nhà nhìn chồng đọc sách. Thấy vợ, Khoan ngừng đọc âu yếm hỏi vợ: “Em xong hết mọi việc rồi à? Em đi ngủ kẻo mệt”.</p>
+        <p>Tiệp nũng nịu đáp: “Chưa, em lên với anh một chút thôi, đã đi ngủ sao được. Em phải sàng xong cối gạo để mai lấy cám cho lợn ăn”. Nàng nhìn vào sách chồng đang đọc, đọc theo chồng một vài đoạn rồi đi xuống bếp tiếp tục công việc của mình.</p>
+        <p>Nàng bảo chồng: “Anh cố học đi nhé, em lại xuống bếp đây”.</p>
+        <p>Khoan thương hại bảo vợ: “Em vất vả quá! Thôi nhà nghèo em chịu khó nhé!”</p>
+        <p>Tiệp nguýt chồng nói: “Anh làm như em vẫn than van về nhà nghèo hay sao? Bây giờ chúng ta nghèo tiền nghèo bạc, nhưng ta giàu cái khác, giàu phúc đức, giàu văn chương, đủ lắm rồi, mai sau chúng ta cũng giàu tiền, giàu bạc nên lo gì”. Tiệp đi khỏi, Khoan lại cúi xuống đọc sách, tiếng chàng sang sảng trong đêm khuya tịch mịch.</p>        
+        <div class="anh"><img src="imgs/anh6.jpeg" alt="Ảnh minh họa"></div>
+        <div class="xg_dong"></div>
+        <h2 id="c3_II">II</h2>
+        <p>Nồi cơm đã chín, nồi canh cũng đã nấu xong. Tiệp đặt thêm nước để lấy nước lát nữa bố chồng pha trà và rửa mặt. Trời tang tảng sáng. Tiếng gà gáy quanh xóm đã lưa thưa rồi ngừng hết. Ánh bình minh lóe trên ngọn cây óng ánh như dát vàng muôn lá. Mấy con chim sào sạc bay ra khỏi tổ, cùng líu tíu hót như chào đón ánh dương đã đem lại sự ấm áp. Với bình minh, trời bớt lạnh, tuy làn sương đêm còn che phủ trên ngọn cây nhánh cỏ. Những hạt sương còn đọng trên cọng lá, đài hoa lóng lánh như muôn ngàn hạt ngọc. Gió vẫn thổi qua ngọn tre và những bụi sương phơ phất bay tạt vào trong hiên nhà, khiến cho Tiệp thấy như lạnh hơn. Tiệp dọn cơm cho người làm ăn để họ đi làm đồng. Cứ kể hôm nay họ đi làm hơi muộn nhưng trời lạnh, theo lời bà mẹ chồng, Tiệp không đánh thức họ dậy quá sớm. Tham công tiếc việc cũng chẳng hơn được bao nhiêu. Họ ăn cơm xong trời vừa sáng, vác cày cuốc ra đồng là vừa.</p>
+        <p>Cũng như mọi sáng, Tiệp lên nhà trên lấy ấm chén ra rửa để bố chồng dậy pha trà. Đã có nước nóng. Tiệp pha thêm vào nước lạnh cho tan giá và rửa ấm chén cho được kỹ càng hơn. Bọn người nhà đã ăn cơm xong. Nàng dẹp bát đĩa lại. Trên nhà bố chồng nàng cũng đã dậy. Ông cụ rửa mặt, rồi trở vào ghế ngựa vén một bên màn lên, ngồi xổm ho sù sụ , khoác chiếc chăn bông cho đỡ lạnh. Quen lệ, Tiệp đặt khay nước trước mặt bố chồng.</p>
+        <p>Ông cụ hỏi nàng: “Có lạnh không con? Chồng con đâu? Bảo nó đi mà uống nước”.</p>
+        <p>Không chờ Tiệp trả lời, ông cụ rung đùi ngâm:</p>
+        <p style="text-align: center;">“Bình minh sổ trản trà</p>
+        <p style="text-align: center;">Mỗi nhật Cứ như thử</p>
+        <p style="text-align: center;">Lương y bất đáo gia”</p>
+        <p>Tiệp thưa: “Thưa thày con cũng thấy hơi lạnh. Con xin gọi nhà con ạ”.</p>
+        <p>Khoan cũng đã dậy từ lâu. Tiệp ngó vào trong buồng nhìn chồng cười: “Anh dậy rồi hả? Thầy bảo anh sang uống nước. Nhưng anh hãy chờ đấy để em lấy thau nước nóng lên anh rửa mặt nhé”.</p>
+        <p>Nàng lại chạy xuống bếp bưng thau nước nóng lên. Đứng trước giá thau, hơi nóng tỏa bốc, Khoan thấy ấm áp lạ lùng. Chàng âu yếm nhìn vợ và nói: “Em vất vả quá! Có rét và có mệt không?”</p>
+        <p>Tiệp cười đáp: “Rét thì có rét nhưng mệt thì không. Em không thấy vất vả gì khi hầu hạ thày và anh”.</p>
+        <p>Tiệp nói thật! Được hầu hạ bố mẹ Khoan và Khoan, nàng lấy làm sung sướng. Bố mẹ chồng có thương nàng mới cho nàng hầu hạ. Còn hầu hạ Khoan là một điều xưa kia nàng hằng ước mong, ngày nay mới được như nguyện thì sao còn vất vả. Khoan cười vui vẻ. Tiệp thật hiền từ nề nếp. Từ ngày về làm dâu, Tiệp được thày đẻ Khoan quý mến lắm. Cách cư xử của Tiệp, hai cụ rất hài lòng và không tiếc lời khen ngợi. Cụ ông bảo cụ bà: “Nó con nhà gia giáo, lẽ tất nhiên ngôn ngữ cử chỉ đều có khuôn phép, đâu phải như con nhà bình thường”.</p>
+        <p>Khoan rửa mặt, nước nóng làm da thịt Khoan thấy dễ chịu. Những mạch máu với tiết trời rét như muốn chạy chậm lại vì được nước nóng làm cho lưu chuyển điều hòa hơn. Khoan vắt khăn mặt kỹ, lau mặt đôi ba lượt, từ cổ trở lên, tự thấy nhẹ nhàng trong người. Xong, chàng vươn vai ngẩng đầu lên. Bây giờ chàng mới để ý đến Tiệp vẫn đang ngắm mình trong mọi động tác.</p>
+        <p>Tiệp mỉm cười và hỏi: “Anh thấy trong người khoan khoái lắm sao? Anh vươn vai đến ngộ”.</p>
+        <p>Khoan cũng cười đáp: “Rửa mặt bằng nước của em đun anh phải thấy trong người khoan khoái. Trông anh ngộ thật chứ? Anh trông em cũng ngộ lắm”.</p>
+        <p>Tiệp nguýt dài Khoan một chiếc. Nàng giặt lại chiếc khăn chồng vừa dùng, vắt lên giá thau rồi bưng chậu nước bẩn đi. Nàng bảo chồng: “Anh sang uống nước với thày”.</p>
+        <p>Khoan sửa lại áo chỉnh tề sang phòng cha uống nước. Mẹ chàng cũng đã ngồi đó và đang cùng cha chàng nhấm nháp chén trà chuyên. Thấy Khoan, cụ ông bảo: “Sang uống hớp nước cho tỉnh táo người, con!”</p>
+        <p>Rồi ông cụ tự rót một chén nước đưa cho Khoan, Khoan trân trọng xin cha và đỡ chén nước. Đó là một cử chỉ âu yếm của cụ ông. Thường cụ chỉ rót nước mời cụ bà và thỉnh thoảng hôm nào trong người cụ dễ chịu bằng lòng cụ mới rót nước cho Khoan. Vừa uống nước cụ bà vừa khen: “Trà nhà Khoan nó mua khéo, và ông pha cũng khéo nữa. Trà thơm nước cũng thơm”.</p>
+        <p>Cụ ông bảo: “Xưa kia nó vẫn mua trà để pha nước ông đồ dùng!”</p>
+        <p>Rồi cụ hỏi Khoan: “Nó đâu rồi, bảo nó lên đây, thầy cho nó chén nước uống ấm bụng”.</p>
+        <p>Khoan thưa: “Nhà con đang bận chuyện ở dưới bếp”.</p>
+        <p>Cụ ông hướng về phía nhà bếp gọi: “Nhà cả ơi! Lên đây thày bảo!” Sau một tiếng dạ, Tiệp chạy lên.</p>
+        <p>Cụ ông nói: “Con lại đây uống hớp nước nóng cho ấm bụng. Dậy sớm từ sáng chắc lạnh!”</p>
+        <p>Tiệp dạ dạ luôn mấy tiếng. Cụ ông lại thân rót chén nước nhỏ đưa cho Tiệp. Vừa đưa chén nước cho Tiệp, ông đồ vừa nói: “Trà con mua khéo lắm! Nhỏ cánh, xanh nước!”Cụ ông lấy siêu nước pha thêm vào ấm trà. Tiệp hai tay nâng chén nước, thong thả vừa nhấm nháp, vừa ngước mắt nhìn chồng mỉm cười. Khoan cũng nhìn Tiệp. Bốn mắt gặp nhau. Đôi lòng đầy một nỗi hân hoan sung sướng. Uống xong chén nước, Tiệp rón rén tới đặt chén trên khay rồi nàng xin phép cha mẹ chồng xuống bếp để lo sửa soạn dọn cơm sáng. Người làm đã ăn cơm để đi làm đồng. Bây giờ mới tới lượt người nhà. Tiệp cũng phải chờ Cụ ông uống nước xong, và phải chờ Khoan trở dậy cũng như các em nhỏ của Khoan mới dọn cơm. Mấy cô em gái lớn cũng đã dậy sớm và cũng đã người nào lo công việc nấy. Người nào phải đi làm đồng đã ăn cơm trước cùng với người làm, còn không thì chờ người nhà cùng ăn. Mâm cơm dọn xong, chầu nước buổi sáng của cụ ông cũng vừa mãn. Tiệp mời mọi người đi xơi cơm: cha mẹ chồng, chồng, và đôi khi cả em chồng nữa.</p>
+        <p>Sáng sáng, Khoan ăn cơm xong mới đi dạy học, buổi học kéo dài từ sáng tới trưa! Cụ ông cũng cơm nước xong mới đi dạo quanh ra vườn hoặc nằm xem sách, còn cụ bà có hôm đi chợ hoặc có hôm cũng đi ra đồng giúp đỡ người làm. Nhà Khoan ruộng chẳng có bao nhiêu nên người làm cũng chẳng có mấy, người nhà phải bỏ công vào nhiều. Chính vì vậy mà Tiệp càng phải vất vả. Nàng cáng đáng mọi công việc nhà và cũng có khi cả công việc ngoài đồng nữa. Vất vả nhưng nàng vẫn vui vì nàng được bố mẹ chồng thương mến, và sống bên chồng nàng thấy hoàn toàn hạnh phúc.</p>
+        <div class="anh"><img src="imgs/anh10.jpg" alt="Ảnh minh họa"></div>
+        <div class="xg_dong"></div>
+        <h2 id="c3_III">III</h2>
+        <p>Khoan đã đi dạy học. Cũng có hôm Tiệp đi chợ hoặc có dịp đi đâu lại rẽ qua về nhà mình, và trong những lúc đó, thế nào Tiệp cũng ghé qua nhà học để ngó chồng dạy học và đôi khi tròng ghẹo xoa đầu một vài trò nhỏ. Nàng biết mình phận đàn bà có công việc của mình nên không bao giờ lân la lâu, chỉ tạt qua vào nhà học lại ra ngay và cũng ít khi nàng trao đổi một đôi câu với chồng tại nơi đây. Nàng chỉ nhìn Khoan mỉm cười và Khoan cũng cười nhìn lại! Thế là đủ, thế là lòng nàng thỏa mãn!</p>
+        <p>Các học trò nhỏ xem ra có vẻ mến nàng. Chúng thường nói với nhau: “Cô đồ dễ thương quá!” Và chúng cũng thường khen nhan sắc nàng: “Trông cô đẹp quá nhỉ!” Những lời đó thường lọt vào tai Khoan. Khoan vẫn về nhà kể lại cho Tiệp nghe. Tiệp sung sướng ủng đỏ đôi má, bảo chồng: “Có anh bịa ra thì có! Đứa nào nói thế đâu!”</p>
+        <p>Sáng hôm đó, sau khi Khoan đi dạy học, nàng sửa soạn mọi việc nhà xong, nàng phải đi chợ để mua rau về nấu cám lợn. Nàng lại tạt ngang qua nhà mình và cũng không quên ghé vào nhà học của Khoan vài phút. Lũ trẻ thấy nàng tới mừng rỡ. Chúng chào thật to. Nàng lại tới xoa đầu vuốt má chúng. Vừa đứng bên lũ trẻ, nàng vừa liếc nhìn Khoan đang chấm bài. Nàng cũng lại ra đi sau khi mỉm cười với chồng.Ra đến đầu làng nàng gặp Thảo. Hai người chào hỏi nhau rồi cùng đứng nói chuyện. Trông Thảo ăn mặc sang trọng và có vẻ nhàn nhã, không như nàng phục sức theo lối làm ăn và luôn luôn có vẻ bận bịu. Thảo bảo Tiệp: “Trông chị độ này như hình vất vả lắm thì phải”.</p>
+        <p>Tiệp cười nói: “Chị cứ nhìn em thì rõ. Thật ra em cũng không vất vả đâu! Mình làm việc cho mình và cho chồng thì sao lại gọi là vất vả được. Còn chị, chắc không bận như em”.</p>
+        <p>Thảo không đáp. Nàng nghĩ tới lời Tiệp nói. Làm việc cho mình sao lại gọi là vất vả. Chắc là Tiệp phải sung sướng, Khoan tuy nghèo nhưng là người đứng đắn và có đạo đức, biết thương vợ. Như vậy Tiệp đâu có khổ!</p>
+        <p>Thảo ngắm nhìn Tiệp. Nước da Tiệp tuy có sạm đen đi vì làm lụng nhiều, nhưng trông nàng xinh ra, xinh hơn hồi con gái. Tiệp thấy Thảo nhìn mình một cách quá kỹ lưỡng, tự nhiên nàng thấy ngượng. Nàng nói một câu bâng quơ: “Trời lạnh quá chị nhỉ?”</p>
+        <p>Trời lạnh thật! Thảo mặc đủ áo bông áo kép cũng vẫn thấy lạnh. Tiệp cũng mặc áo ấm, nhưng so với quần áo của Thảo thì kém nhiều. Rồi Tiệp lại bảo Thảo: “Chiếc áo bông của chị đẹp quá nhỉ! Chắc phải đắt tiền lắm!”.</p>
+        <p>Chiếc áo bông của Thảo là một chiếc áo bông ngắn, trong lót lụa xanh, ngoài bằng cẩm nhung đen. Áo bông mặc chùm ngoài áo dài để giữ hơi ấm. Thảo chìa vạt áo cho Tiệp xem và nói: “Em cũng không biết đắt rẻ thế nào! Cẩm nhung này, thày em gửi mua ở Hà Nội. Nhà em may áo dài còn thừa, may cho em chiếc áo bông này”.</p>
+        <p>Cảnh nhà Thảo thật là phong lưu sung túc. Chắc chắn nàng không phải chân lấm tay bùn lam lũ như Tiệp. So sánh cảnh mình với Thảo, Tiệp thấy về vật chất Thảo hơn hẳn nàng. Hai người đang đứng, bỗng nhiên Tiệp vội vã từ giã Thảo: “Thôi chào chị em phải đi chợ mua rau lợn kẻo muộn”.</p>
+        <p>Sự thật Tiệp không sợ muộn, nhưng Tiệp thấy hơi thèn thẹn trong lòng vì tự nhiên nàng lại so sánh như vậy! Nếu nàng muốn sự sung sướng vật chất của Thảo thì trước đây có khó gì! Nàng đã yêu Khoan và đã từ chối Thúc, nàng phải lấy làm mãn nguyện được sống bên Khoan. Tự dựng đi so sánh vậy, nàng thấy mình có lỗi với Khoan vô cùng. Thảo không để cho Tiệp đi, giữ lại nói: “Đi đâu mà chị vội vàng thế! Lâu lắm rồi mới gặp chị, hẵng đứng đây nói chuyện một lát”.</p>
+        <p>Trời vẫn lạnh. Trên ngọn cây gió bấc rít từng hồi. Nền trời u ám, không một tia nắng. Đường làng cũng vắng người. Ở đầu làng lũ trẻ chăn trâu nhặt từng lá khô cành gẫy vun thành một đống đốt để cùng nhau xúm quanh sưởi ấm. Khói bốc lên màu lam tỏa cao trên không trung. Trên những cành cây trơ lá, không một tiếng chim kêu, không một con bướm lượn. Cảnh lạnh trời đông thật là buồn. Bị Thảo níu lại, Tiệp đành đứng thêm một chút để đáp lại những câu vớ vẩn của bạn. Một lúc sau. Tiệp lại từ giã bạn để đi chợ, thì vừa lúc đó, Thúc cũng ở đâu đi tới. Thấy Tiệp. Thúc gật đầu chào rồi hỏi: “Hai chị em nói chuyện gì mà thân mật thế?”</p>
+        <p>Thúc lại bảo Thảo: “Sao em không mời chị Khoan lại nhà chơi”.</p>
+        <p>Sau đó Thúc mời luôn Tiệp: “Hôm nào mời chị lại chơi. Từ ngày thày mất đi, ít khi gặp anh chị”.</p>
+        <p>Tiệp đáp: “Nhà em bận dạy học, còn em thì việc nhà nhiều lắm”.</p>
+        <p>Đột nhiên Thúc hỏi: “Đằng nhà anh Khoan chắc không được như ở nhà chị. Có lẽ túng lắm phải không chị?”.</p>
+        <p>Tiệp chưa kịp đáp, Thúc đã nói thêm: “Nếu lúc nào chị có cần gì, mời chị lại chơi, tôi sẵn sàng giúp đỡ chị”.</p>
+        <p>Tiệp vội gạt đi: “Cám ơn anh! Vợ chồng tôi tuy vậy cũng đủ tiêu và thày đẻ chúng tôi tuy không giàu nhưng cũng có ít nhiều ruộng đất. Anh chị có lòng tốt, tôi xin ghi và nếu cần chúng tôi sẽ nhờ anh chị”.</p>
+        <p>Thúc nhìn Tiệp trân trân: Tiệp xinh đẹp thật. Thật đúng câu “Môi son má ửng hồng, mày ngài mắt phượng”. Nàng nói trông cái miệng sao mà tươi thế. Đôi hàm răng đều như hạt lựu và đen láy như hạt na già. Trời lạnh khiến đôi gò má nàng đã ửng hồng càng thêm đỏ. Chiếc khăn mỏ quạ tăng vẻ thùy mị của khuôn mặt trái xoan. Đã thế, tiếng nói của nàng lại dịu dàng ấm áp, nụ cười mủm mỉm của nàng mới càng duyên dáng làm sao!</p>
+        <p>Thấy đứng lâu với vợ chồng Thúc không tiện, nhất là thấy Thúc cứ nhìn mình quá kỹ lưỡng, Tiệp từ giã hai người đi chợ. Thúc vẫn nhìn theo, quên mình đang đứng trước mặt vợ. Dáng đi của Tiệp trông cũng đẹp. Những bước đi yểu điệu uyển chuyển tăng vẻ thanh thoát của thân hình. Cử chỉ nàng mềm mại nhẹ nhàng. Thảo thấy chồng nhìn theo Tiệp trong bụng hơi ghen ghen. Nàng bảo chàng: “Thôi về chớ anh! Sao anh nhìn chị Khoan kỹ thế!”</p>
+        <p>Lời của Thảo đã kéo Thúc trở lại thực tế. Thúc cười chữa thẹn với vợ: “Trông chị ấy hình như đẹp ra, cũng như em dạo này cũng đẹp ra!”</p>
+        <p>Hai vợ chồng Thúc dắt ra nhau về. Tuy đi bên cạnh vợ, nhưng Thúc vẫn nhìn theo bóng dáng của Tiệp Trước đây Thúc tưởng Tiệp lấy chồng nghèo sẽ bị sự lam lũ xấu đi, chàng không ngờ, nay Tiệp lại đẹp hơn trước gấp bội. Người đẹp như vậy tại sao lại không phải của chàng? Thật là bực bội, nhưng con một ông chánh tổng quyền thế nhất làng nào có thể chịu lép vế ai!</p>
+        <div class="anh"><img src="imgs/anh5.jpg" alt="Ảnh minh họa"></div>
+        <div class="xg_dong"></div>
+        <h2 id="c3_IV">IV</h2>
+        <p>Tiệp cho lợn ăn ở đàng sau nhà. Thấy tiếng chó sủa ở mé sân, thì ra nhà lại có khách. Tiệp lẩm bẩm: “Khách nào mà đến chơi sớm thế”.</p>
+        <p>Phải, còn sớm lắm. Nhà Tiệp mới ăn cơm sáng xong. Khoan vừa đi dạy học, và mẹ chồng nàng cũng vừa ra đồng. Tiếng chó sủa dồn dập chứng tỏ trong nhà chưa có ai ra đuổi chó. Không hiểu bố chồng nàng đã đi đâu? Sau bữa cơm, nàng dọn dẹp bát đũa xong là vùi đầu ngay vào công việc khác. Cũng như mọi ngày, nàng đã thấy bố chồng lên nhà trên nằm xem sách, và đứa em chồng nhỏ chơi quanh ở sân nhà nên nàng mới yên trí dọn dẹp ở phía sau nhà. Chó cứ sủa mãi! Lấy làm lạ, nàng vội rửa tay rồi chạy ra đằng trước xem khách là ai. Khách chẳng phải là ai lạ, chính là Thúc. Thấy Thúc, Tiệp lấy làm khó chịu, nhưng nàng cũng phải mắng chó mời khách vào. Nàng thoáng cau mặt nhưng có lẽ Thúc không nhận thấy. Vào đến trong nhà, nàng bảo Thúc: “Mời anh ngồi chơi, tôi đang bận chút việc ở đằng sau. Để tôi mời thầy tôi về”.</p>
+        <p>Thúc nói: “Đi qua đây, tôi ghé vào thăm chị. Thôi chị đừng đi mời cụ nữa”.</p>
+        <p>Rồi Thúc hỏi thăm việc nhà của Tiệp: “Chị bận rộn quá? Sao chị không mượn thêm người làm”.</p>
+        <p>Tiệp cười đáp: “Anh tính xem, nhà tôi nghèo, cả nhà làm lụng đủ việc còn chẳng đủ ăn, tiền đâu mượn người làm”.Thúc vin ngay vào câu đó, sỗ sã bảo Tiệp: “Tôi đã bảo chị có cần tiền tôi sẽ giúp. Tôi cho vay không lấy lãi đâu. Chị tội gì cực nhọc vậy”.</p>
+        <p>Lần này không biết lần thứ mấy Thúc dạm cho Tiệp vay tiền nhưng cũng như mấy lần trước, Tiệp lại gạt đi: “Xin cảm tạ lòng tốt của anh. Vất vả còn hơn mắc nợ, dù nợ không lãi”.</p>
+        <p>Thấy một mình tiếp Thúc không tiện, Tiệp vội vàng chạy đi bỏ mặc Thúc ngồi. Nàng bảo Thúc: “Anh ngồi chơi nhé, tôi đi mời thày tôi về!” Dứt lời nàng đi thẳng. Thúc không kịp giữ lại.</p>
+        <p>Tiệp thấy Thúc đến chơi nhà mình thì rất e ngại. Nàng không muốn gặp Thúc, nàng không muốn tiếp chuyện với Thúc nhất là khi không có một người thứ ba ở đó. Nàng hiểu tà tâm của Thúc, những dáng điệu, những cử chỉ, những cái nhìn, những câu nói của Thúc đều biểu lộ sự tà tâm đó, tuy chưa đến mức sỗ sàng. Nhưng nếu nàng không cẩn thận, từ sự tà tâm đến chỗ sỗ sàng cũng chẳng bao xa.</p>
+        <p>Nàng chạy đi tìm bố chồng. Thật là lạ, ông cụ vừa ở nhà đã đi đâu nhanh vậy. Cả thằng bé em Khoan nữa, nó cũng đi đâu mất. Tiệp chạy xuống nhà ngang, sang nhà hàng xóm tìm cũng không thấy ông cụ. Nàng đâu có hiểu ông cụ vừa ra đứng ngoài cửa thì Thúc tới. Thúc nói dối ông cụ là có ai muốn hỏi ông cụ ở ngoài đình. Thật thà, ông cụ đi ngay. Còn thằng bé con thì Thúc xúi mấy đứa trẻ rủ nó đi chơi.</p>
+        <p>Trong nhà chỉ còn có mình Tiệp, Thúc biết vậy vì Thúc vẫn để ý dò xét. Thúc chỉ muốn gặp một mìnhTiệp. Từ hôm gặp Tiệp đứng nói chuyện với Thảo ở đầu làng Thúc càng có ham muốn với Tiệp. Chàng nhận thấy Tiệp đẹp lạ lùng. Bên cạnh nàng, vợ chàng trông không còn gì nhan sắc nữa, thật một trời một vực. Xưa nay, Thúc không đến chơi nhà Khoan, nhưng từ bữa đó Thúc luôn kiếm cớ đến thăm Khoan, nhưng cốt chỉ để gặp mặt Tiệp. Một lần Thúc đến, Tiệp vẫn lánh mặt, nhưng nhiều khi lánh không kịp nàng lại phải miễn cưỡng chào hỏi. Mọi lần Thúc đến vào lúc Khoan có nhà, nhưng hôm nay Thúc đã định tâm gặp Tiệp trong khi Khoan đi dạy học. Chàng muốn ngỏ lại nỗi lòng của mình với Tiệp, nhưng chàng chưa kịp thực hành ý định Tiệp đã chạy vụt đi. Cũng như mọi lần trước, chàng muốn lung lạc Tiệp bằng đồng tiền. Chàng nghĩ ở trong cảnh túng bấn, chắc Tiệp phải cần tiền? Biết đâu trước đây Tiệp từ chối, nhưng với sự ân cần của chàng Tiệp lại chẳng nhận lời để chàng giúp đỡ.</p>
+        <p>Tiệp hiểu rõ ý Thúc; tuy nghèo thật cũng không bao giờ Tiệp vay tiền của Thúc, nhất là sự vay tiền đó lại không được Khoan đồng ý. Có nhiều lần cần tiền, nàng ngỏ ý muốn về nhà xin bà đồ đều bị Khoan gạt đi: “Em chớ nên phiền mẹ đẻ. Túng thiếu thì chúng mình chịu, có lý đâu bắt mẹ em phải lo hộ chúng mình”.</p>
+        <p>Rồi Khoan cười: “Có nghèo chúng ta mới yêu nhau đằm thắm. Nghèo tiền đâu có đáng sợ”.</p>
+        <p>Tiệp cũng cười phụ họa chồng rồi bốn mắt nhìn nhau đầy âu yếm. Có lần Tiệp đã nói cho Khoan biết việc Thúc muốn cho vợ chồng nàng vay tiền, và chính Thúc cũng có lần đã nói chuyện đó trước mặt Khoan.</p>
+        <p>Khoan đã cười trả lời bạn: “Anh thật tốt, nhưng chúng tôi đâu dám phiền anh”.</p>
+        <p>Sau nhiều lần Thúc lại thăm Khoan, Khoan hơi ngờ về thái độ của Thúc, nhưng chàng không tỏ ý gì. Chàng nhận thấy vợ chàng vẫn luôn tìm cách tránh mặt Thúc, và đã có lần nói xa xa với chàng: “Anh Thúc dạo này nhàn rỗi hay sao, em thấy lại đây chơi luôn. Anh ấy, từ ngày lấy vợ, cử chỉ không được đứng đắn như xưa”.</p>
+        <p>Khoan không đáp. Chàng hiểu ý vợ. Có lẽ Thúc đã có nói gì với Tiệp, Tiệp mới phải phàn nàn. Khoan cũng không muốn giao thiệp với Thúc. Vài lần đầu Thúc đến thăm Khoan, Khoan có đáp lễ đến thăm lại, nhưng về sau Khoan thấy Thúc hay đến thăm mình nhiều, Khoan tuy không dám tỏ ý lạnh nhạt, nhưng cũng tiếp đãi kém nhiệt tình hơn và xin lỗi Thúc không có thì giờ để thỉnh thoảng lại chơi đáp lễ Thúc được. Thúc có cần gì sự đáp lễ của Khoan. Thúc chỉ muốn được gặp Tiệp, muốn thấy mặt Tiệp để trao đổi một vài câu và nếu có thể được chàng sẽ tỏ rõ cho Tiệp biết sự nhớ nhung của mình. Tiệp là con người đứng đắn và thông minh. Qua một vài lần Thúc tới nhà nàng hiểu ngay cái dã tâm của Thúc. Nàng cẩn thận đề phòng, nên Thúc không có dịp nào để thổ lộ hết tâm can trước mặt Tiệp.Hôm nay, Thúc đã đánh lừa bố chồng Tiệp và thằng bé em Khoan, để một mình Tiệp ở nhà buộc phải tiếp mình, nhưng Tiệp cũng đã mau lẹ bỏ đi, mặc cho Thúc ngồi trơ trọi trong nhà khách. Tiệp đi khỏi, Thúc bực dọc lắm. Thế là sảo ý của của chàng vẫn chưa được trình bày như ý chàng muốn. Tiệp đi khỏi không lâu thì ông cụ bố chồng về. Thúc phải miễn cưỡng ngồi lại nói dăm ba câu chuyện bâng quơ trước khi cáo lui. Tiệp càng khôn ngoan, Thúc càng phục Tiệp và càng mong chiếm được lòng nàng. Thua keo này, bày keo khác, nhẹ nhàng không xong, chàng sẽ dùng đến những bước mạnh bạo. Miếng mồi ngon, có đâu chàng chịu bỏ! Ra về Thúc thở dài, chàng so sánh Thảo với Tiệp, lòng ham muốn của chàng càng tăng.</p>
+        <p>Gọi được bố chồng về, Tiệp chạy thẳng ra sau nhà không để cho Thúc trông thấy mình. Nàng ghê sợ Thúc. Nàng biết rồi đây, Thúc sẽ dùng nhiều mánh khóe để cố ý gần nàng. Giấy rách phải giữ lấy lề, dù sống trong hoàn cảnh nào, nàng cũng phải giữ lấy cái nếp của gia đình.</p>        
+        <div class="xg_dong"></div>
+        <h2 id="c3_V">V</h2>
+        <p>Thời gian lững lờ trôi! Mùa rét qua, tết đến rồi xuân đi.</p>
+        <p>Vợ chồng Khoan cùng nhau sống yên bình trong sự thương yêu, mặc sự nghèo túng cũng như mặc Thúc thỉnh thoảng lại tới thăm vợ chồng mình. Khoan vẫn đi dạy lớp học của ông đồ để lại. Số học trò trong làng vẫn tới học đông đúc như xưa, và các trẻ con mới lớn cũng được bố mẹ gửi tới Khoan như xưa kia họ vẫn gửi bố vợ chàng. Những dịp ngày tư ngày tết, bố mẹ học trò cũng đóng góp gạo tiền biếu. Vợ chồng Khoan nhờ vậy cũng đỡ túng thiếu. Tiệp má càng hồng, môi càng thắm, mắt càng trong và nụ cười càng duyên dáng đáng yêu. Đời nàng thật là tươi đẹp, và mọi công việc nặng nhọc đối với nàng thật không có nghĩa lý gì nữa.</p>
+        <p>Thúc vẫn tìm cách và kiếm cớ để gặp Tiệp, nhưng trước thái độ không đứng đắn của Thúc, bao giờ Tiệp cũng lẩn tránh kịp thời khiến cho Thúc càng thấy ở Tiệp nhiều vẻ đẹp về tinh thần cũng như về nhan sắc. Tiệp sợ Thúc một ngày kia đi tới chỗ quá trớn nên đã bảo chồng: “Anh Thúc kém đứng đắn, chúng ta nên tránh”.</p>
+        <p>Khoan biết lắm, biết rõ cả tâm trạng của Thúc, nhưng vì thế lực gia đình Thúc ở trong làng, Khoan không muốn có sự đụng chạm với Thúc, không muốn làm phật ý Thúc khi Thúc vẫn chưa bước qua ranh giới, chàng bảo Tiệp: “Thì mình vẫn tránh anh ấy, nhưng chẳng lẽ anh ấy lại chơi nhà, mình lại đuổi sao. Biết anh ấy như vậy, mỗi khi anh ấy tới, em cứ lánh mặt đi”. Rồi câu chuyện qua, cuộc sống bình thường vẫn điềm nhiên tiếp diễn. Khoan vẫn thương yêu vợ. Tiệp vẫn kính mến chồng. Cả hai vợ chồng đều hằng ngày mong đợi một tin mừng kết quả của cuộc lương duyên.</p>
+        <p>Đến một hôm, Tiệp thấy trong người khác, hay buồn nôn và thèm chua. Công việc nàng uể oải không muốn làm và nàng thấy mệt nhọc. Nghe Tiệp nói rõ sự khác trong người, lại nhìn thấy dáng điệu Tiệp có vẻ ngượng nghịu, bà mẹ Khoan cười bảo với chồng: “Nhà Khoan nó có tin mừng. Cầu Trời Phật phù hộ cho nó luôn khỏe mạnh”.</p>
+        <p>Tiệp có tin mừng thật. Tin mừng nàng mang một niềm vui tràn ngập tới hết mọi người trong nhà từ bố mẹ chồng tới chồng, và cả bà đồ cũng lấy làm sung sướng. Khoan để ý săn sóc tới vợ luôn. Chàng bảo Tiệp nên nghỉ ngơi không nên làm gì quá sức, và chính mẹ Khoan cũng bảo Tiệp đừng cố gắng trong mọi công việc làm. Thời kỳ ốm nghén cũng lâu lâu. Tiệp nôn ọe, người bần thần, lúc váng đầu, lúc mỏi mệt. Người Tiệp có vẻ xanh xao, nhưng trông nàng vẫn không kém vẻ xinh đẹp. Được tin nàng có nghén, Thúc lại dắt Thảo đến thăm và bảo Thảo mua quà tặng Tiệp, Tiệp không tiện từ chối, đành phải nhận, nhưng nàng vẫn cảm thấy ngài ngại mỗi khi Thúc đến nhà nàng hoặc mỗi khi nàng chợt nghĩ tới hậu ý của Thúc.</p>
+        <p>Chỉ nhà Khoan là sung sướng! Mẹ chàng sắp có cháu bồng, và cha chàng sẽ lên ông nội! Đó là điều hai ông bà hằng mong ước. Ngày ngày nhìn bụng vợ một to hơn Khoan thấy trách nhiệm của mình cũng sẽ nặng thêm, nhưng chàng cũng thấy vui vui khi nghĩ tới rồi đây trong nhà sẽ có vang tiếng trẻ khóc. Chàng bảo vợ: “Em thích sinh con trai hay con gái”.</p>
+        <p>Tiệp nũng nịu đáp lại chồng: “Anh thích sao thì em thích vậy. Còn riêng em, em sao cũng được cả. Trai hay gái cũng là con mình. Em chỉ cần làm sao cho nó kháu khỉnh để thày đẻ mừng là em vui”.</p>
+        <p>Những mẩu truyện nho nhỏ giữa hai vợ chồng Khoan luôn luôn nhắc nhở đến đứa trẻ sắp ra đời. Cả mọi người đợi chờ đứa bé với bao nhiêu hy vọng, bao nhiêu sự sắp đặt sẵn sàng cho đứa nhỏ. Có lúc Khoan đang đọc sách, Tiệp đến cạnh chìa bụng ra khoe với chồng: “Nó đã lớn rồi. Nó đang động đậy ở trong bụng em, anh có trông thấy không?”</p>
+        <p>Khoan buông sách, nhìn theo tay vợ chỉ vào bụng, thấy chỗ đó động đậy. Chàng ngước mắt nhìn vợ cười và nói: “Ừ, nó động đậy thật, chắc chân nó đạp đấy. Em có thấy mệt không?”</p>
+        <p>“Bây giờ quen đi không mệt nữa, lúc mới đầu sao em thấy trong người khó chịu thế.”</p>
+        <p>Bụng Tiệp ngày càng lớn hơn. Nàng bắt đầu lo tới tã và áo sơ sinh cho đứa bé. Bao nhiêu quần áo cũ của nàng cũng như của Khoan, nàng đem cắt rồi khâu lại thành những chiếc tã sơ sinh. Nàng lại cắt mấy chiếc áo dài của Khoan để may áo cho đứa bé.</p>
+        <p>Nàng bảo Khoan: “Lấy áo của anh cắt áo sơ sinh để con có hơi hướng của bố sẽ mau cứng cáp”.</p>
+        <p>Và chính ông thân sinh của Khoan cùng đưa mấy chiếc áo của mình cho Tiệp và bảo: “Con cắt ra làm tã và làm áo cho cháu nó được khước!”</p>
+        <p>Chẳng bao lâu đã tới ngày khai hoa mãn nguyệt. Khoan hồi hộp chờ đợi. Chàng vẫn không thể bỏ buổi học của các em, nhưng chàng rất chờ đợi tin mừng. Thấy Tiệp kêu đau bụng, mẹ Khoan biết ngay nàng tới giờ sinh nên cho mời bà mụ tới. Tiệp đã sinh con trai. Trông thằng nhỏ giống Khoan như đúc. Cái trán cũng rộng, đôi mắt cũng sáng ngời.</p>
+        <p>Tiếng khóc oe oe của đứa bé từ trong buồng đưa ra, cảnh như thêm vui vẻ. Bà mẹ chồng lăng xăng chạy vào, chạy ra, đi lên nhà trên lại đi xuống nhà ngang. Bà khoe với ông: “Nó đẻ con trai ông ạ! Nhà mình ăn hiền ở lành, nó được mẹ tròn con vuông, tôi cũng mừng”.</p>
+        <p>Nghe vợ nói, ông đưa tay lên vuốt râu, rồi thủng thỉnh bảo: “Con trai thì tốt quá!”</p>
+        <p>Ông truyền cho người nhà phải sửa đồ lễ để ông vào yết gia tiên về việc dòng họ mới nảy thêm một chồi lộc mới. Khoan dạy học nhưng nóng lòng chờ đợi tin mừng. Có người tới báo cho Khoan biết Tiệp sinh con trai. Khoan vui mừng quá. Chàng bỏ lớp học để chạy về nhà. Chàng vừa về tới cửa bà mẹ đã khoe: “Nhà mày sinh con trai! Thằng bé nom kháu khỉnh lắm. Mẹ con nó khỏe mạnh cả”.</p>
+        <p>Khoan về nhà, nhưng cũng như mọi người đàn ông hồi đó, Khoan kiêng việc vào phòng gái đẻ, chàng sợ ô uế. Các em Khoan cũng ríu rít khoe anh. Cảnh nhà thật vui. Một vài bà cô biết tin cũng đã chạy tới thăm và lo giúp đỡ vợ Khoan săn sóc đứa nhỏ. Tiếng khóc oa oa của đứa bé nghe mới vui tai làm sao! Cảnh nhà có trẻ nhỏ thật đúng là tươi vườn có hoa.</p>
+        <div class="xg_dong"></div>
+        <h2 id="c3_VI">VI</h2>
+        <p>Sau một thời gian kiêng cữ, Tiệp đã khoẻ mạnh trở lại. Nàng lại bắt đầu săn sóc mọi công việc trong nhà, tuy bà mẹ chồng cũng giúp đỡ nàng nhiều để nàng khỏi thức khuya dậy sớm. Con nàng đã được đặt tên, đưa vào hàng xóm, vào làng. Mỗi việc đều theo đúng tục lệ hương đảng và đều do cụ ông Khoan lo liệu.</p>
+        <p>Cụ đặt tên cho thằng bé là Hoà để tên nó đi đôi với chữ Khoan tên của bố, cụ lại đã mang trầu cau tới ông Trưởng thôn để xin ghi tên cháu vào hàng xóm và mang lễ vật tới lễ tại đình làng để ghi tên nó vào danh sách hàng xã. Là con đầu cháu sớm, đứa bé được mọi người trong nhà nâng niu. Ông nội bà nội luôn luôn âu yếm cháu, quý hơn mọi bảo vật. Đi đâu về bà cụ cũng bế cháu một chút trước khi làm công việc khác. Ông cụ cũng luôn hỏi han săn sóc nó. Nói chi tới Khoan và Tiệp. Đi dạy học về là Khoan hỏi tới con, bế nó và hôn hít nângniu, còn Tiệp, lẽ tất nhiên phải yêu quý con vì tình mẫu tử. Bận gì thì bận, giờ bú của con không bao giờ nàng quên. Nàng được cho con bú là vui, là sung sướng. Ngắm nghía con, nàng tự thấy kiêu hãnh. Nó giống cha nó như đúc. Thương con nàng lại thêm kính nể chồng. Khoan đối với hàng hết mực chiều chuộng.</p>
+        <p>Với tình yêu của chồng, với đứa con kháu khỉnh, với sự săn sóc của gia đình nhà chồng, nàng tự thấy bằng lòng mặc dù về phương diện tiền tài hơi túng bấn. Sinh nở xong, nàng như đổi lớp da mới. Trông nàng đẹp hơn gấp bội trước. Da nàng mịn như trứng gà bóc, mắt nàng sáng như ánh sao hôm, miệng nàng tươi hơn hoa hàm tiếu, tóc nàng óng chuốt như nhung, nàng cười nói thật là dịu dàng duyên dáng. Thật đúng câu ca dao: “Gái một con trông mòn con mắt.” Ai cũng phải công nhận rằng nàng đẹp ra. Những người lâu lâu không gặp nàng đều ngạc nhiên về nhan sắc lộng lẫy của nàng. Và cả đến những người hằng ngày vẫn gặp gỡ cũng phải chú ý tới vẻ đẹp ngày càng tăng của nàng.</p>
+        <p>Khoan cũng thấy vợ đẹp hơn trước. Thêm vào cái nhan sắc kiều diễm nàng như càng dịu dàng, từ dáng đi uyển chuyển, cử chỉ khoan thai đến lời ăn tiếng nói nhẹ nhàng đầm ấm. Thấy mọi người khen ngợi mình đẹp, Tiệp e lệ thẹn thùng, càng tăng nét mỹ miều của nàng. Có lẽ chính Tiệp cũng thấy mình đẹp ra. Nhiều lúc Tiệp biết Khoan ngắm nhìn mình, lòng nàng rộn ràng niềm vui, rồi khi ngước mắt lên đôi mắt nàng lại gặp đôi mắt Khoan, cả hai người cùng mỉm cười say đắm.</p>
+        <p>Tiệp sợ nhất gặp Thúc. Thái độ của Thúc ngày càng làm cho nàng không ưa. Đôi khi Thúc tỏ ra hơi sỗ sàng. Tiệp gặp Thảo đã nói ý xa xôi để Thảo giữ chồng. Không biết Thảo có dám nói gì với Thúc chăng, nhưng xem thì Thúc không để tâm lời vợ. Có lần để đáp lại một vài câu hỏi vu vơ của Thúc, Tiệp đã bảo: “Anh về hỏi chị Thảo ở nhà. Chị Thảo hiểu biết hơn tôi”.</p>
+        <p>Thúc coi Tiệp như miếng mồi ngon, càng hành xử như con chim dữ. Đời nào chàng chịu bỏ qua chuyện nàng, chàng kiếm mọi cách để gặp gỡ Tiệp nhất là từ sau khi sinh nở Tiệp càng trở nên quyến rũ hơn đối với Thúc. Ở đời có nhiều điều người ta muốn tránh mà không tránh được, cũng như có nhiều câu nói người ta không muốn mà vẫn phải nói. Tiên đoán trước một ngày Thúc sẽ trở nên lả lơi hơn với nàng, như khi nàng còn con gái Thúc đã chọc ghẹo nàng ở bờ sông, Tiệp hết sức lẩn tránh Thúc. Nhưng người cùng trong làng, sự lẩn tránh thành rất khó khăn.</p>
+        <p>Rồi việc gì cũng phải tới. Hôm đó, vào một buổi trưa. Như thường lệ, Tiệp cho con bú, đặt đứa bé ngủ trong giường, tã lót quần cẩn thận rồi nàng đi thăm đồng, mang cơm nước cho người làm. Nàng nhờ mẹ chồng coi chừng con: “Đẻ để ý đến cháu hộ con nhé. Con mang cơm ra đồng một lát con về ngay”.</p>
+        <p>Mẹ chồng nàng cũng bận, nhưng bà cụ cũng như mọi ngày vừa làm việc vừa để ý tới đứa bé, khi nào nó khóc, bà cụ chạy vào vỗ về nó vài cái, nó nín bà cụ lại bỏ ra làm việc của mình. Ra đến đồng, bọn người nhà cũng vừa nghỉ ngơi dưới gốc cây đa lớn. Trời nắng, hơi nóng từ cánh đồng bốc lên. Bốn bề yên lặng, một vài bọn thợ đồng ngồi uể oải dưới một vài gốc cây. Có bọn đang ăn, có bọn còn chờ cơm người nhà mang tới, và có bọn ăn xong rồi nằm nghỉ dưới bóng cây, hoặc một vài người đang hút chiếc điếu cày reo lóc sóc, và thở làn khói trắng bốc ra. Tiệp đưa cơm cho mấy người nhà ăn, chờ họ ăn xong lại mang bát đũa về. Nàng lân la trò chuyện với một vài người thợ đang nghỉ ngơi quanh đấy. Nhóm thợ rất quý Tiệp. Tính nàng vui vẻ nhẹ nhàng và nhất là không bao giờ lên mặt kênh kiệu với anh chị em chân lấm tay bùn. Ai cũng khen nàng có đức.</p>
+        <p>Họ bảo nhau: “Chị Khoan đã xinh đẹp lại nhã nhặn. Thật đáng mến. Lấy chồng nghèo vất vả vậy mà chị ấy lại đẹp ra. Thật là được cả người lẫn nết. Chẳng bù với mấy cô ả khác đã xấu lại hợm hĩnh kiêu căng”.</p>
+        <p>-Thấy Tiệp ra tới đồng, hôm nào bọn họ cũng thi nhau chào hỏi:Kìa chị Khoan đã ra.</p>
+        <p>-Chào chị, trông chị càng ngày càng đẹp!</p>
+        <p>-Chị mặc chiếc yếm nâu thắm trông nổi quá!</p>
+        <p>Tiệp sung sướng nhận những lời khen và vui vẻ đáp lại những lời chào. Nàng nói vừa nhẹ nhàng vừa duyên dáng, cái miệng trông đến xinh, ai cũng ưa. Người nhà Tiệp đã ăn cơm xong. Tiệp thu dọn bát đĩa chào mọi người ra về. Tiệp đi khỏi, những người làm đồng tấm tắc khen phẩm hạnh và nhan sắc nàng:</p>
+        <p>-Anh Khoan thật tốt số, được vợ đẹp lại hiền.</p>
+        <p>-Chị ấy lấy anh Khoan nghèo mà lại chê cậu Thúc con ông Chánh Tổng đấy.</p>
+        <p>-Nhà ấy thật là giàu cự phú lại lắm uy quyền.</p>
+        <p>-Vợ chồng cần yêu thương nhau chứ cần gì giàu có với uy quyền.</p>
+        <p>Tiệp xong việc ở đồng vừa bước lên con đường làng bỗng nàng ngập ngừng nửa muốn đi, nửa muốn quay lại. Thúc ở đằng trước đang tiến gần tới chỗ nàng. Không tránh được Tiệp đành rảo bước đi, vừa đi vừa cúi mặt xuống như không thấy Thúc. Mặc nàng muốn lẩn tránh. Thúc đã chào nàng: “Kìa chị Khoan đi thăm đồng về đấy à?”</p>
+        <p>Tiệp vừa đáp vội vàng một tiếng “Vâng” vừa cẳng bước đi. Đời nào Thúc chịu bỏ lỡ cơ hội gặp gỡ nàng, Thúc gọi: “Chị Khoan! Chị Khoan!”</p>
+        <p>Tiệp không đáp lại, cứ rảo bước mau hơn. Nàng thấy Thúc mà ghê sợ. Có lý gì mà mình đã có vợ, người ta đã có chồng lại cứ theo đuổi người ta hoài. Tiệp vẫn bước đi như chạy và Thúc vẫn gọi theo.</p>        
+        <div class="xg_dong"></div>
+        <h2 id="c3_VII">VII</h2>
+        <p>Thúc gọi giật lại, nhưng Tiệp vẫn rảo bước đi nhanh hơn như không nghe thấy tiếng gọi. Thấy gọi Tiệp không chịu đứng lại, Thúc chạy theo mau hơn, nên chẳng mấy phút đã đuổi kịp Tiệp và đứng chắn ngang lối đi.Chàng nhăn nhở cười một cách khả ố, bảo Tiệp: “Xem chị có chạy khỏi tay tôi không? Chị đi đâu mà vội vàng hấp tấp thế? Chị khinh người quá, tôi gọi chị chẳng thèm nghe”.</p>
+        <p>Tiệp đưa tay gạt Thúc để tránh lối đi và nói: “Xin lỗi anh, tôi phải vội về cho cháu bú, kẻo đến bữa của cháu, nó đói nó khóc”.</p>
+        <p>Nhưng Thúc không để cho Tiệp đi, nắm tay nàng lại. Tiệp muốn vùng vẫy thì chàng bảo: “Thì hãy đứng đây một lát, tôi hỏi cái này”.</p>
+        <p>Tiệp giật tay ra, nhưng bị Thúc giữ chặt, nên nàng phải nói: “Ô hay! Anh này lạ chưa! Anh nắm tay tôi thế này là nghĩa thế nào? Anh nên nhớ tôi là gái có chồng, anh là trai có vợ, anh không có quyền tròng ghẹo tôi. Anh nắm tay tôi, ngộ nhỡ vợ anh bắt gặp có phải phiền cho tôi không”.</p>
+        <p>Thúc đáp: “Vợ tôi thì mặc vợ tôi, phiền gì mà phiền!”</p>
+        <p>“Lại còn chồng tôi nữa! Anh nên đứng đắn một chút. Anh nhìn xem ở dưới đồng bao nhiêu người, anh không sợ người ta cười sao.” Tiệp đáp.</p>
+        <p>Trước những lời nói nghiêm nghị của Tiệp, Thúc vẫn nhăn nhở cười và bảo: “Chồng chị có chi đáng ngại! Cái anh đồ gàn nghèo kiết ấy mà chị sợ hay sao. Còn những người ở dưới đồng hơi đâu tôi để ý tới người ta”.</p>
+        <p>Tiệp đã nổi nóng. Nàng giật mạnh tay Thúc ra. Nàng chỉ vào mặt Thúc bảo: “Xin anh đừng có thái độ bỉ ổi ấy. Chồng tôi là bạn học của anh, anh lại cợt nhả với tôi, tôi không hiểu liêm sỉ của anh để đâu. Anh có vợ, tôi có chồng có con, anh phải để cho tôi yên. Anh cứ theo đuổi tôi làm gì”.</p>
+        <p>Mặc những lời nói như tát nước vào mặt Thúc, Thúc vẫn giữ nguyên thái độ trước: “Chị không hiểu rõ lòng dạ tôi sao? Chị phải biết rằng từ khi chị chưa lấy chồng, tôi vẫn luôn luôn yêu quý chị, muốn chị cùng tôi chung lập gia đình. Lòng tôi đối với chị rất thành thật, tôi không hiểu tại sao chị lại chê tôi, một người có thể làm cho chị được sung sướng suốt đời. Chê tôi, tôi tưởng chị lấy được ai tốt đẹp? Chị đi lấy một anh nghèo xác nghèo xơ, sống bữa hôm lo bữa mai. Tôi thương yêu chị lắm…”</p>
+        <p>“Anh đừng có giở cái giọng ấy ra! Anh tưởng anh lấy tiền tài quyến rũ tôi nổi hay sao? Nhân cách của anh đáng khinh lắm. Tìm cách tròng ghẹo vợ bạn, tôi không ngờ nhân phẩm anh lại kém đến mức ấy.”</p>
+        <p>Đáng lẽ những lời nói ấy phải làm cho Thúc cáu kỉnh mới phải, nhưng Thúc vẫn bình tĩnh. Chàng bảo Tiệp: “Chị không nên nói thế. Nhân phẩm tôi có làm sao cũng là vì chị, chị không hiểu mối yêu tha thiết của tôi đối với chị, tôi muốn gần chị. Chị nên rõ lòng tôi”.</p>
+        <p>Tiệp không nghe lời Thúc nói nữa. Nàng cố tiến lên, nhưng Thúc vẫn cứ cản đường. Bực mình Tiệp phát gắt: “Anh tránh cho tôi đi. Con tôi đợi tôi ở nhà. Anh định làm cái chuyện gì mà cản đường tôi?”</p>
+        <p>“Tôi chẳng định làm gì cả. Tôi chỉ muốn chị hiểu lòng tôi”. Tiệp không nói nữa, vùng vằng bước lên. Thúc vẫn cản đường.</p>
+        <p>Vừa lúc ấy ở dưới đồng có vài người đi tới và ở trong làng cũng có mấy người đi ra. Sợ những người này hiểu lầm mình, phao lên những điều không tốt phiền lòng Khoan, Tiệp phải phân bua với mọi người: “Các ông bà xem, anh Thúc có vô lý không? Tôi là gái có chồng có con, anh ấy là trai có vợ. Vậy mà anh cứ đón đường tròng ghẹo tôi”.</p>
+        <p>Rồi nàng quay lại nói với Thúc trước mặt mọi người: “Tôi xin anh giữ liêm sỉ một chút. Tôi là vợ bạn anh, anh không nên giở trò khốn nạn ra với tôi. Anh để cho tôi đi, anh cứ cản đường tôi là làm sao?”</p>
+        <p>Mấy người làng không ai nói gì. Người ta sợ oai thế ông Chánh Tổng. Người ta chỉ nhìn Thúc rồi lại nhìn Tiệp. Xưa nay người ta vẫn hiểu Thúc có ý tà tâm đối với Tiệp. Mà Tiệp là một người đứng đắn, nên Thúc chưa thể làm điều càn rỡ. Chuyện Thúc hỏi cưới Tiệp không được, cả làng ai còn lạ. Người ta chê Thúc nhưng chẳng ai nói ra. Có người dừng bước một bước một lại rồi đi ngay, cũng có người đi thẳng không nói năng gì. Chính nhờ có mấy người làng đó mà Thúc không dám cản đường Tiệp nữa, nhưng Thúc đã nổi giận. Tiệp đã nhục mạ chàng trước mặt những người khác. Chàng phát thẹn. Để chữa thẹn, Thúc mắng lại Tiệp: “Mày bảo ai khốn nạn không có liêm sỉ. Thấy mày là bạn học cũ, lại là con thày học, tao muốn mày đứng lại nói chuyện, mày lại sỉ nhục tao. Liệu hồn mày, và liệu hồn cả thằng chồng mày nữa. Rồi tao sẽ cho chồng mày đi tù”.</p>
+        <p>Tiệp rảo bước, mặc những lời đe dọa của Thúc. Nàng biết Thúc quá thẹn nên nổi khùng, không đáng chấp. Rồi nàng sẽ nói cho Thảo hay việc này. Chứng kiến những lời qua tiếng lại của đôi bên, mấy người làng mỉm cười. Họ nhìn theo Tiệp, và khi nàng đã khuất dạng xa xa, họ sẽ thì thầm với nhau.</p>
+        <p>-Chị đồ Khoan trông ngon mắt thế chẳng trách cậu Thúc thèm thuồng. Nhưng mình đã có vợ rồi không nên ghẹo gái có chồng.</p>
+        <p>-Cậu Thúc cậy thế cha là ông Chánh Tổng cho nên mới dám bậy bạ!</p>
+        <p>Chẳng biết Thúc có nghe thấy những bàn ra tán vào của mấy người làng không, nhưng chàng cau có tức bực lắm. Có lẽ sợ mọi người chê bai, chàng nói phách mấy câu: “Rồi sẽ biết tay thằng này! Tưởng đã mỹ miều lắm. Người ta bảo đứng lại nói chuyện chứ làm gì?” Những người làng đã đi khỏi hết, hoặc họ đã xuống đồng, hoặc họ đã vào trong làng. Trên đường vắng chỉ còn trơ lại một mình Thúc. Chàng đành lủi thủi ra về, vừa đi vừa nghĩ đến truyện xảy ra mà bực tức.</p>
+        <p>Nỗi nhục này chàng thấy cần phải rửa, không thể để cho vợ chồng Khoan coi thường mình được. Mù quáng vì căm giận, Thúc không thấy rằng chính chàng đã coi thường chàng, chứ vợ chồng Khoan đâu có làm gì. Chàng nghĩ lại từ khi chàng bị Tiệp từ hôn mà cay đắng! À, ra thế này thì chàng thua Khoan, sao chàng lại chịu thua Khoan! Chàng đi vào trong làng vẻ mặt hằm hằm. Vừa đi, trong đầu óc chàng vừa tính đến sự trả thù Khoan đã tranh Tiệp của chàng và cũng là để trả thù Tiệp đã khinh rẻ chàng. Chẳng mấy lúc chàng đã về tới nhà. Chàng đi thẳng vào trong phòng nằm vật trên giường. Thấy chồng đi đâu về, vẻ mặt không được vui, Thảo chạy vào săn đón. Thúc lạnh lùng trước sự hỏi han của vợ. Chàng còn đang căm giận vợ chồng Khoan.</p>
+        <p>Còn về phần Tiệp, nàng cũng rất bực mình với Thúc. Nàng vội vã về cho con bú. Nhưng nàng không sao quên được những cử chỉ và ngôn ngữ của Thúc. Trước đây nàng cũng đã biết dã tâm của Thúc, nhưng thực nàng không ngờ Thúc lại dám chặn đường nàng. Vừa về đến ngõ nàng đã nghe tiếng thằng Hòa oe oe khóc. Nàng cất vội đồ mang cơm lên, rửa qua mặt mũi chân tay, rồi vào với con. Nàng vừa cho con bú, vừa nói nựng: “Con mẹ đói quá nhỉ? Thôi mẹ thương!”</p>        
+        <div class="xg_dong"></div>
+        <h2 id="c3_VIII">VIII</h2>
+        <p>Chỉ trong ngày hôm sau, cả thôn, rồi cả làng đều biết chuyện Thúc đón đường tròng ghẹo Tiệp và bị Tiệp cự tuyệt một cách đích đáng. Người ta biết cả lời đe dọa của Thúc đối với vợ chồng Tiệp. Ngay trưa hôm đó, Tiệp đã thuật lại cho Khoan biết thái độ vô giáo dục của Thúc, những lời nàng sỉ vả Thúc cũng như những lời dọa nạt của Thúc. Khoan an ủi vợ: “Thôi em cũng đừng để tâm đến việc đã xảy ra làm gì. Việc đó đâu phải tự em. Từ này mình sẽ không giao thiệp với hạng người ấy nữa. Còn lời đe dọa, có gì đáng kể. Hắn tưởng có bố giàu, muốn làm gì ai cũng được sao”.</p>
+        <p>Tiệp nói: “Nhưng dù sao, những lời đe dọa của hắn em vẫn sợ lắm. Quân tiểu nhân, hắn bị xấu hổ trước mọi người, hắn có thể đem bụng thù hằn vợ chồng mình”.</p>
+        <p>Khoan lại gạt đi. Tuy vậy, Khoan cũng hơi có ý e ngại vì chàng hiểu, với những con người tâm địa kém lại sẵn tiền họ có thể lén hãm hại mình. Khoan hết sức đề phòng. Chàng tránh mọi sự giao du với Thúc, nhưng nếu bất đắc dĩ, với những sự tình cờ chàng gặp Thúc thì chàng làm như không hề biết tới truyện đã xảy ra.</p>
+        <p>Về phần Thúc, tuy Khoan không tỏ thái độ gì, nhưng chàng vẫn căm giận Khoan lắm. Chính vì Khoan nên chàng không lấy được Tiệp. Đã thế ngày nay Tiệp lại sỉ nhục chàng trước mặt người khác để đến nỗi khắp làng ai cũng biết chuyện. Khi Thảo biết tin, nàng vội vàng về hỏi chồng: “Có thật anh bỡn cợt chị Khoan để chị ấy mắng cho không?”</p>
+        <p>Thúc gạt đi: “Ồ! Truyện trẻ con ấy, có gì đáng kể mà em phải hỏi lại”.</p>
+        <p>Thảo hơi tức. Nàng nói sẵng: “Anh tưởng là chuyện trẻ con, nhưng còn tôi. Thật anh không coi tôi ra gì cả. Anh khinh tôi quá”.</p>
+        <p>Thúc lại gạt đi: “Em lôi thôi lắm! Chuyện đã xong rồi, nhắc đến làm gì. Một câu nói bỡn cợt thì có gì”.Máu ghen của Thảo nổi lên: “Sao lại không có gì! Anh có vợ rồi sao còn đi bỡn cợt gái có chồng, vợ của bạn anh, để bây giờ làng nước chê cười?”</p>
+        <p>Rồi Thảo bù lu bù loa khóc. Thảo lại bảo chồng: “Tôi sẽ thưa chuyện này với thày xem thày nói sao!”</p>
+        <p>Thúc bắt đầu khó chịu: “Này, đừng có gây rắc rối! Khóc lóc cái gì! Khổ lắm hay sao!”</p>
+        <p>“Không khổ thì sướng à? Chồng con gì không thương vợ lại chọc ghẹo người khác để bị sỉ nhục.”</p>
+        <p>“Sỉ nhục à? Rồi vợ chồng nó sẽ biết tay tôi.”</p>
+        <p>Thảo vẫn khóc. Thúc trước dòng nước mắt của vợ lại bỏ đi nơi khác. Thảo gọi theo chồng và khóc to hơn, nhưng Thúc làm thinh như không nghe tiếng. Tiếng khóc của Thảo kinh động tới ông Chánh Tổng. Ông hỏi Thảo: “Làm gì mà gào thét lên vậy? Lại ghen tuông phải không?”</p>
+        <p>Thảo mếu máo thưa với bố chồng: “Nhà con khinh con quá! Ai lại có vợ con rồi lại đi chọc ghẹo gái có chồng thì có nhục cho con không”.</p>
+        <p>Ông Chánh Tổng bảo: “Ghen tuông làm gì! Đàn ông ai chẳng chơi bời”.</p>
+        <p>Thảo vẫn khóc nói: “Chơi bời con không nói làm gì? Đằng này nhà con lại đi bỡn cợt với chị Khoan, vợ của bạn mình để đến nỗi chị ấy sỉ nhục làng nước đều biết”.</p>
+        <p>Ông Chánh Tổng khuyên Thảo nên nguôi giận, ông sẽ bảo lại Thúc. Tuy khuyên dâu vậy, nhưng ông Chánh Tổng cũng rõ bụng Thúc lắm. Đâu ai hiểu con bằng cha mẹ. Ông biết Thúc say mê Tiệp từ lâu. Và cho đến ngay câu chuyện Tiệp cự tuyệt Thúc và Thúc đe dọa vợ chồng Tiệp, ông đều rõ, vì khắp trong làng chỗ nào người ta cũng nói tới, và lẽ tất nhiên phải đến tai ông mặc dù trong lúc người ta đang nói chuyện thấy bóng ông là người ta nói tránh sang chuyện khác. Ông thấy con ông cũng hơi quá, nhưng vốn xưa nay chiều con, ông không muốn mắng Thúc sợ con buồn, nào ngờ bây giờ lại đến Thảo ghen!</p>
+        <p>Ngay chiều hôm đó, ông Chánh Tổng gọi Thúc bảo: “Thế nào có chuyện gì mà con để vợ con nó phải khóc thế. Lại chơi bời trai gái phải không?”</p>
+        <p>Lẽ tất nhiên Thúc chối: “Thưa thầy có truyện gì đâu. Nhà con đàn bà hay chuyện bé xé ra to, khóc lóc ầm ĩ lên, sự thật có gì đâu”.</p>
+        <p>Ông Chánh Tổng nói: “Thày đã rõ hết truyện của con. Thày không muốn con như vậy. Mình là con nhà danh giá, làm việc gì cho đàng hoàng. Đối với vợ, con cần phải giữ gìn đừng để nó làm ầm ĩ. Mọi việc là ở nơi mình. Đàn ông ai lại chẳng chơi bời, nhưng chơi bời mà không mất danh giá, chơi bời mà vẫn đàn anh mới được”.</p>
+        <p>Thúc cúi đầu không nói gì. Ông Chánh Tổng nói tiếp: “Thày lại nghe nói con đe dọa vợ chồng nhà Khoan?”</p>
+        <p>Thúc lặng im. Ông Chánh Tổng nói: “Con nên nhớ con là con của cha. Làm việc gì phải cân nhắc và nói điều gì phải suy nghĩ. Con là học trò của ông đồ Ngư, nghĩa là bố vợ của nhà Khoan, muốn làm gì con cũng nên nhớ tới công thày một chút, chớ làm những việc xấu xa đến nỗi mọi người chê cười được. Vả lại mình là đàn ông, không bao giờ đe dọa ai điều gì mà mình không làm nổi. Người đàn ông đã nói ra là phải làm, dù việc làm đó là một việc làm thiếu nhân nghĩa. Còn đe dọa vợ chồng nhà Khoan, liệu con có làm gì nổi vợ chồng nó không?”</p>
+        <p>Từ nãy Thúc vẫn lặng yên, nay bị cha hỏi dồn dập, lòng tự ái như bị kích thích, chàng liền trả lời: “Con đã nói thù phải làm được! Thầy tưởng con hèn mạt sao?”</p>
+        <p>Ông Chánh Tổng cười mỉa, nói: “Ờ, con không hèn mạt! Nhưng thày nhắc lại lần nữa để con biết là thày không muốn vì con mà uy tín của thày bị giảm trước dân làng, thày không muốn vì con mà người khác có thể cười vào mặt thày được”. Ông chỉ nói thế rồi đi.</p>
+        <p>Bị cha mắng, Thúc bực lắm. Chàng vừa giận vợ, lại vừa nghĩ càng căm giận vợ chồng Khoan. Nhất định chàng không chịu cái nước khổ sở như thế nầy. Ở nhà bị cha mắng, vợ kỳ kèo, đến khi đi ra ngoài lại bị người nọ kẻ kia dị nghị. Người ta nói chuyện cùng nhau, nhưng cố ý để cho Thúc nghe thấy: “Cái đồ kém liêm sỉ, cậy quyền cha, ghẹo con thày học, con thày học lại là vợ bạn mình. Con người đâu có tâm địa như vậy. Chỉ có giống súc vật mới thế”.</p>
+        <p>“Trông mặt mũi thế mà là đồ vô nhân nghĩa. Nó trả ơn thày học nó như thế đấy.”</p>
+        <p>Thúc tức lắm. Thiên hạ đúng rỗi mồm! Việc của chàng làm gì đến họ mà họ nói ra vào. Càng bị nhiều người chê bai, Thúc càng căm giận vợ chồng Khoan. Chàng coi như chính vợ chồng Khoan là thủ phạm, chính vợ chồng Khoan đã làm cho mọi người đàm tiếu chàng. Vợ chồng Khoan luôn luôn tránh mặt Thúc và cũng không hề nói gì thêm vào câu truyện đã xảy ra. Không những thế, có ai nhắc tới, cả Khoan lẫn Tiệp đều gạt đi. Không phải là Khoan sợ Thúc! Câu chuyện chẳng hay ho gì nhắc lại thêm khó chịu. Vợ chồng Khoan chỉ muốn yên thân.</p>
+        <p>Người làng bảo vợ chồng Khoan giỏi nhịn, họ cho rằng như vậy là phải. Ai muốn nói sao thì nói, vợ chồng Khoan vẫn lặng thinh.</p>        
+        <div class="xg_dong"></div>
+        <h2 id="c3_IX">IX</h2>
+        <p>Dân làng Kim Đôi xôn xao về việc bầu cử chân lý trưởng để thay thế ông lý cũ đã mãn nhiệm kỳ. Làng Kim Đôi là một làng lớn, nhất là xã tam thôn, dân cư đông đúc, làm đàn anh tại xã này rất có uy quyền, nhất là lại làm lý trưởng thì càng được dân chúng kính trọng và sợ hãi. Ông Chánh Tổng đã già, muốn sau này, khi ông nghỉ, không làm việc dân việc tổng nữa, Thúc sẽ thay thế ông để giữ lấy vai vế trong thôn xã. Năm ấy Thúc hai mươi hai tuổi. Theo tục lệ hương thôn cũng như theo luật lệ muốn làm lý trưởng ít nhất phải trên hai mươi mốt tuổi, cũng như muốn ứng cử Chánh Phó Tổng phải hai mươi lăm tuổi trở lên. Thúc đã đủ điều kiện niên kỷ để ứng cử chân lý trưởng trong làng. Chính Thúc cũng muốn có chút công danh để khỏi bị dân làng coi thường. Học hành chàng đành chịu kém, nhưng về đường danh vọng trong làng, chàng không muốn thua ai. Ông bà Chánh Tổng đã gây cho chàng cái tư tưởng làm đàn anh trong xã. Đã từ lâu, Thúc vẫn nghĩ tới một ngày kia chàng sẽ nắm giữ một chức vụ gì, có như thế chàng mới mong trả được cái thù Tiệp nhục mạ chàng.Có lần trong xã khuyết chân thư ký hộ tịch, Thúc đã có ý muốn ứng cử chân đó, nhưng ông Chánh Tổng bảo chàng: “Đã làm việc dân việc xã, phải làm những chức vụ ra làm, bằng không hay tạm giữ chân bạch đinh chờ cơ hội. Làm chân thư ký hộ tịch làm làm gì, ít ra cũng phải là một chân Phó lý, Trương tuần, nếu không phải từ chân lý trưởng trở lên”. Thế là Thúc lại tuân lời cha chờ cơ hội, và cũng âm thầm mang mối hận đối với vợ chồng Khoan. Thúc đã nghĩ đến nhiều cách để hại Khoan và Tiệp nhưng chưa có dịp nào thuận tiện.</p>
+        <p>Thời gian lững lờ trôi. Ngày qua tháng lại tuy chậm mà mau. Ông đồ Ngư đã đoạn tang, và ngoảnh đi ngoảnh lại, Tiệp có một, rồi có hai con. Trông nàng vẫn duyên dáng khả ái như ngày còn con gái vì dáng điệu đi đứng của nàng ai cũng phải khen. Chính Thúc đã ngậm đắng nuốt cay vì nàng, và khi gặp nàng vẫn thấy ở nàng một sự quyến rũ khêu gợi lạ lùng. Gặp Tiệp bây giờ Thúc không dám chào hỏi săn đón như xưa, chàng chỉ lẳng lặng nhìn theo. Còn về phần Tiệp bao giờ nàng cũng cố tránh mặt Thúc, nàng không muốn nhắc lại truyện không tốt đẹp trước, nhất là không muốn truyện đó xảy ra lần thứ hai. Sự nghiêm trang đứng đắn của Tiệp càng làm cho Thúc căm giận Khoan, và Thúc càng có ý muốn hại Khoan vì ghen với hạnh phúc của Khoan cũng như vì muốn một ngày kia biết đâu với mọi sự thay đổi Tiệp đối với chàng chẳng phải chỉ đổi thái độ.</p>
+        <p>Ngày lại ngày, tháng lại tháng, thấm thoắt mấy năm qua. Chân lý trưởng trong xã khuyết. Đây là cơ hội để Thúc trở thành đàn anh trong làng. Nhất là chân lý chi trưởng, trong thôn xã, chân lý trưởng có ai dám coi thường. Thúc ngỏ ý muốn ứng cử chân lý trưởng còn trống này với cha. Ông Chánh Tổng nói: “Đây là một dịp để con trở thành đàn anh trong làng. Thày muốn lắm, nhưng chỉ e con không đủ tư cách để đảm nhiệm chức vụ đó thôi. Làm đàn anh phải bỏ hết mọi cử chỉ tạp nham và phải tỏ ra mình là người lớn, phải có những hành động trái với ý muốn của mình. Thày lấy một thí dụ: Thày biết con thương yêu vợ thằng Khoan, nhưng con phải hết sức tránh mọi hành động có thể để người làng đàm tiếu. Sự yêu đương con phải để trong lòng, rồi tìm dịp làm cho vợ thằng Khoan không thể từ chối được con nữa. Và cho thằng Khoan có biết, cũng đành im họng! Làm đàn anh phải như vậy, không thể xử thế như con trước đây &nbsp;được! Con chọc ghẹo vợ người giữa ban ngày, con lại đe dọa vợ chồng nó một cách thật là vu vơ! Như thế không được! Làm đàn anh đã không nói thì thôi, đã nói thì phải làm, tìm mọi cách làm cho bằng được, không bao giờ đe dọa vu vơ cả”.</p>
+        <p>Nghe cha nói về cách làm đàn anh, Thúc phục cha lắm. Chàng một mực nghe lời cha. Khi cha dứt lời, chàng thưa: “Trước đây con trẻ người non dạ nên làm phiền lòng thày, nhưng nay con đâu còn như trước. Con đã từng trải hơn nhiều. Phải chăng nếu con có làm lý trưởng, con phải theo những điều thày căn dặn. Con nguyện sẽ dẹp hết mọi điều tẹp nhẹp về ngôn ngữ cũng như về hành động. Con sẽ tỏ ra xứng đáng một bậc đàn anh trong làng trong xã”.</p>
+        <p>Ông Chánh Tổng gật gù như có vẻ bằng lòng. Ông cũng hiểu đây là dịp may để cho con ông có chút công danh. Mà kỳ này có ra tranh lý trưởng sự tranh cử cũng không gay go lắm. Ông lý mãn làm việc đã không được lòng quan nên kỳ này quan đã bảo thẳng ông đừng ứng cử nữa. Còn Phó lý thì không có tiền đâu mà ra tranh chấp với Thúc nổi. Ông Chánh Tổng bảo Thúc: “Ờ! Nếu con có chí thày sẽ kêu với quan trên. Con liệu thu xếp mọi giấy tờ hồ sơ ứng cử đi. Thày rất muốn con nối được nghiệp thày”.</p>
+        <p>Thúc mừng lắm! Thúc chưa quên mối hận đối với Tiệp nhất là đối với Khoan. Ra làm lý trưởng, Thúc sẽ có cơ hội trả được thù riêng, và Thúc còn mong một ngày kia chiếm đoạt được Tiệp, mặc dù Tiệp đã hai con. Tuy sống bên cạnh Thảo, nhưng Thúc luôn luôn ao ước Tiệp. Mấy năm qua cuộc chung sống bên cạnh Thảo không làm cho Thúc quên Tiệp. Trông Thảo cũng đẹp ra, nhưng nhìn nàng vẫn không bằng vợ Khoan. Thúc vẫn mang cái mộng một ngày kia sẽ làm hại được Khoan, và lúc đó lo gì Tiệp không phải chịu chàng. Thúc muốn làm lý trưởng để trở nên đàn anh trong làng, điều đó đã hẳn, nhưng cũng là để dễ trả mối thù bị Tiệp sỉ nhục trước mặt mấy người làng. Ông Chánh Tổng đã đồng ý để Thúc ra ứng cử chân lý trưởng khuyết.</p>
+        <p>Thúc lo lập hồ sơ, và trong khi đó, ông Chánh Tổng lo vận động với huyện, với dinh Tổng đốc để việc ứng cử của Thúc có kết quả. Lẽ tất nhiên là phải tốn tiền rồi. Làm đàn anh Chẳng thủng xanh Cũng thủng nồi, phương ngôn đã nói, sai sao được. Muốn con làm lý trưởng lại không chịu tốn kém đời nào con làm lý trưởng nổi. Vận động với quan trên xong, lại còn vận động với dân làng. Có phải đâu chỉ có một mình Thúc ứng cử. Phó lý xã Kim Đôi cũng muốn chân nhất lý chi trưởng, và lại còn ông lý cựu cũng xin tái cử. Ngoài ra lại vài ba người làng khác cũng thọc đơn để kiếm chác chút bổng còm. Họ bảo nhau: “Nhà ông Chánh Tổng thiếu gì tiền! Anh em mình cứ việc nộp đơn ứng cử, thế nào cha con ông chẳng tới điều đình, và thế nào chẳng có chút tiền lẻ”.</p>
+        <p>Sau rất nhiều thể thức, lên quan, ra tỉnh, lại về làng, tới ngày bầu cử. Thúc đã được trúng cử. Ông bà Chánh Tổng tuy tốn kém, nhưng con được chút công danh ông bà cũng mừng. Bữa tiệc khao lý trưởng của Thúc thật linh đình long trọng, mời cả hàng xã trong Tổng. Thúc hãnh diện với dân xã, và Thúc nghĩ ngay tới mối hận vẫn chịu lâu nay với vợ chồng Khoan.</p>        
+        <div class="xg_dong"></div>
+        <h2 id="c3_X">X</h2>
+        <p>Thúc tỏ ra là một hương chức rất mẫn cán, làm việc quan việc dân rất đàng hoàng. Đêm ngày Thúc lo sao để được lòng quan trên. Chàng chịu khó lắm, từ việc tuần phòng trong làng đến việc thu sưu thuế của dân. Thúc năng lên quan luôn, lân la gần bọn thơ lại trong huyện, rồi tìm cách biếu xén từ tên lính hầu quan đến mấy anh nho trong bàn giấy. Thúc tìm cách mua chuộc hết mọi người, không tiếc tiền biếu xén vào những dịp ngày tư ngày tết. Quan huyện có ý mến Thúc và tin Thúc. Hơn nữa, ông Chánh Tổng còn đó, mọi sự giao thiệp của ông từ trước tới giờ đều có lợi cho Thúc. Thấm thoát, Thúc làm việc quan đã được gần một năm. Ngày càng được lòng quan trên và uy tín của Thúc ở trong làng càng tăng. Dân xã thường bảo nhau: “Thật là nòi nào giống nấy. Ông Chánh Tổng là kẻ cả trong tổng thì con ông nay cũng là kẻ cả trong làng”.</p>
+        <p>Từ ngày nhận việc dân việc xã, lý Thúc rất bận rộn, và cũng bắt đầu từ ngày đó, ông lý trẻ của làng Kim Đôi đã tỏ ra hách dịch chẳng kém gì mấy ông lý lão luyện khác, và đã có nhiều trường hợp sự hách dịch của lý Thúc còn hơn cả cha. Con hơn cha là nhà có phúc, dù lý Thúc mới chỉ hơn cha ở điểm hách dịch. Nửa bước ra đi, lý Thúc đều có tuần đinh đi theo hầu, và có nhiều buổi chiều, khi công việc hơi rảnh rang, lý Thúc lại sắm yên cương, đội nón dứa chóp bạc đi quanh làng từ xóm nọ đến xóm kia, từ thôn này sang thôn khác. Dân làng thấy lý Thúc cưỡi ngựa đi qua đều đứng nếp sang một bên và kính chào lễ phép. Những đứa trẻ gặp lý Thúc lạy hỏi rất to. Lý Thúc thấy mình to lớn. Ngồi trên ngựa thấy người làng đứng nép bên đường, ông lý hả dạ, và khi có người lạy chào ông lý trẻ càng sung sướng hơn. Con ngựa đi bước một, trông lý Thúc thật oai vệ và sang trọng. Ngựa thì yên cương tề chỉnh, người thì quần áo bảnh bao, nón dứa chóp bạc, áo the quần lụa, giầy Gia định.</p>
+        <p>Nhiều cô gái chưa chồng nhìn thấy ông Lý, ước ao sau này chồng mình cũng sẽ đường hoàng làm đàn anh trong dân xã như Thúc. Bà lý Thúc, cô Thảo ngày trước, cũng được kiêu hãnh vì chồng. Từ ngày chồng làm Lý Trưởng, đi đâu Thảo cũng được người ta trọng vọng, một lời kêu bà Lý, hai lời kêu bà Lý. Trong làng có tiệc, có đám bao giờ cũng có trầu, cau tới mời ông bà Lý. Lẽ tất nhiên người ta cũng phải mời vợ chồng ông Chánh Tổng. Thảo cũng thấy sung sướng có chồng làm nên và trời cũng chiều người, lấy chồng mấy năm không sinh nỡ, thì cùng với việc Thúc đắc cử lý trưởng xong, Thảo cũng thấy tin mừng. Có tin mừng, Thảo mừng lắm. Đã bao lâu nay, nàng chờ đợi một đứa con, nay đứa con đó sắp tới với nàng. Đứa con như một sợi giây thiêng liêng buộc giữ Thúc gần nàng.</p>
+        <p>Trước đây, mỗi khi đi chơi bời, bị vợ kỳ kèo, Thúc đều lấy cớ con cái chậm, buồn bã phải đi tiêu sầu. Ngày nay với đứa con, Thảo có thể dễ nói Thúc hơn mỗi khi Thúc quên nhãng bổn phận làm chồng. Thảo mừng lắm, Thúc cũng mừng, nhưng mừng nhất có lẽ là ông bà Chánh Tổng. Cưới nàng dâu về, ông bà chờ đợi cháu bồng, vậy mà ngày ấy qua ngày khác, thấm thoát đã mấy năm vợ Thúc cứ đực ra không sinh đẻ gì. Bà Chánh Tổng buồn, đã có ý muốn cưới thêm vợ bé cho Thúc. Ý định của bà tuy chưa nói với con và dâu, nhưng bà đã bàn với chồng. Ông Chánh Tổng không bày tỏ ý kiến. Ông chỉ bảo hãy cho Thúc có chút công danh sē hay.</p>
+        <p>Thúc đã có công danh, vợ Thúc cũng lại có tin mừng, ông bà Chánh Tổng vui sướng lắm. Đủ danh giá, tiền bạc và rồi đây hòe quế sẽ đầy sân, cây non nẩy lộc, hạnh phúc nào sánh bằng! Có tin mừng Thảo cũng đẹp thêm. Làng nước có người bàn tán: “Bà lý Thúc thật vạn sự may mắn. Chồng làm đàn anh, vợ có tin mừng, trông càng béo đẹp ra”.</p>
+        <p>Những người trước đây chê Thúc về truyện chàng tỏ ra bất chánh với Tiệp, vừa là vợ của bạn lại vừa là con của thày học, bây giờ không ai còn dám nhắc tới việc cũ đó. Gặp vợ chồng lý Thúc đi đâu người ta len lét sợ và khép nép chào. Ai dại gì chống với người thịnh. Lý Thúc càng hách dịch dân làng càng nể sợ. Ông Chánh Tổng thấy con biết ra oai với dân xã thì bằng lòng lắm. Như thế mới biết làm đàn anh. Ông thường bảo bà Chánh Tổng: “Tôi không ngờ thằng lý Thúc nhà ta thế mà hay! Làm việc quan được và dân làng lại sợ hải nể vì. Trước tôi cứ tưởng nó còn dại dột”.</p>
+        <p>Bà Chánh Tổng đáp lại: “Chuyện! Ông cứ nghĩ thế chứ, con nhà tông chẳng giống lông cũng giống cánh. Ông làm Chánh Tổng oai vệ như vậy, sao con ông lại không làm được lý trưởng. Rồi sau này nó lại không hơn cả ông nữa!”</p>
+        <p>Ông Chánh Tổng vuốt râu cười hề hề khoái chí. Hổ phụ đâu sinh khuyển tử được. Con ông biết làm việc quan, con ông biết làm đàn anh, thế mới thực là con ông. Tre già, măng mọc là vậy. Sau này, mãn khóa Chánh Tổng, được chút phẩm hàm, ông sẽ nghỉ việc quan để thanh nhàn dưỡng tuổi già. Lý Thúc sẽ nối nghiệp ông. Có lần ông nói truyện ấy với bà Chánh, bà Chánh chê ông bảo: “Chưa già đã nghĩ chuyện già. Thì ông hãy cứ giữ việc quan, để còn bênh vực cho con chứ. Ông tưởng ông về nghỉ với chút phẩm hàm, con ông vẫn được người ta nể như ngày nay. Ông còn làm Chánh Tổng, thiên hạ họ sẽ lo sợ bóng sợ vía ông nhiều”.</p>
+        <p>Ông Chánh Tổng vuốt mấy sợi râu, châm điếu thuốc lào hút, thở khói lên cao, ông hà một hơi dài. Sau đó ông đáp: “Bà mày nói cũng có lý, nhưng bà mày cứ yên trí. Ai chớ thằng lý Thúc, đố ai bắt nạt được nổi nó. Nó tha bắt nạt người khác thì chớ, chứ đời nào nó chịu ai. Bà xem nó làm việc dân có hơn Lý cựu không. Và bây giờ nó đang được quan trên nể mến, và nó cũng đã bắt đầu thu lại được dần dần cái tiền tôi và bà bỏ ra tiêu cho nó ứng cử”.</p>
+        <p>Bà Chánh thấy ông Chánh nói cũng đúng. Hạng người như lý Thúc lại sẵn thế cha, không những là đàn anh trong làng, còn là vai vế trong hàng Tổng. Từ ngày làm việc quan đến nay, lý Thúc thay đổi khác hẳn trước. Bao nhiêu những điều tẹp nhẹp, lý Thúc đều làm bộ không để ý tới, tuy trong thâm tâm, lý Thúc không bỏ qua một điều tẹp nhẹp nào, từ việc rất nhỏ trở đi. Người làng ai cũng sợ lý Thúc. Ai hơi có lỗi là lý Thúc cho gọi ra đình hạch tội, và đối với những kẻ thiếu thuế hoặc “phạm pháp nhà nước”, lý Thúc làm ghê gớm lắm. Hắn cho tuần đinh tới tận nhà bắt trói, ghì khuỷu tay dẫn ra trói cột vào tam quan đình, không nể gì người làng người nước cho tới khi đóng được thuế hoặc giải lên quan. Lý Thúc sơi tiền cũng khôn khéo. Hắn làm ra mặt không đòi hỏi ai, nhưng đừng ai hòng được việc, dù đấy chỉ việc thị thực trên giấy khai sinh, nếu không có tiền cho thầy lý và nếu ai chỉ trích lý Thúc thì coi chừng. Lý Thúc chỉ cười hề hề, nhưng hắn trả thù lúc nào không biết. Từ ngày làm lý trưởng, Thúc không hề đả động tới việc Tiệp đã làm nhục hắn, nhưng không phải hắn đã quên. Mỗi hận đó bao giờ hắn quên cho nổi, nhất là hình ảnh và nhan sắc của Tiệp hắn vẫn chôn sâu trong tâm khảm với một sự ước ao thèm muốn phải cố nén cho lắng xuống.Khoan vẫn chỉ là một anh đồ kiết, gõ đầu mấy đứa trẻ trong làng. Học trò cũng vẫn đông, và sự túng bấn cũng vẫn vậy. Bà đồ Ngư cũng có đôi khi trợ cấp cho Tiệp, nhưng cả hai vợ chồng đều rất khảng khái, ít khi nhận sự giúp đỡ của mẹ. Người làng đem so sánh Khoan với Thúc. Có người bảo Tiệp là dại, nhưng có người không cho Tiệp là dại, bảo Tiệp là thủy chung. Tiệp vẫn sốnghạnh phúc bên cạnh Khoan và hai con, mặc Thúc kiêu hãnh với sự sang trọng của mình. Gặp Thúc đâu, Tiệp vẫn tìm đường tránh mặt như trước.</p>        
+        <div class="xg_dong"></div>
+        <h2 id="c3_XI">XI</h2>
+        <p>Thúc tỏ ra là một hương chức rất mẫn cán, làm việc quan việc dân rất đàng hoàng. Đêm ngày Thúc lo sao để được lòng quan trên. Chàng chịu khó lắm, từ việc tuần phòng trong làng đến việc thu sưu thuế của dân. Thúc năng lên quan luôn, lân la gần bọn thơ lại trong huyện, rồi tìm cách biếu xén từ tên lính hầu quan đến mấy anh nho trong bàn giấy. Thúc tìm cách mua chuộc hết mọi người, không tiếc tiền biếu xén vào những dịp ngày tư ngày tết. Quan huyện có ý mến Thúc và tin Thúc. Hơn nữa, ông Chánh Tổng còn đó, mọi sự giao thiệp của ông từ trước tới giờ đều có lợi cho Thúc. Thấm thoát, Thúc làm việc quan đã được gần một năm. Ngày càng được lòng quan trên và uy tín của Thúc ở trong làng càng tăng. Dân xã thường bảo nhau: “Thật là nòi nào giống nấy. Ông Chánh Tổng là kẻ cả trong tổng thì con ông nay cũng là kẻ cả trong làng”.</p>
+        <p>Từ ngày nhận việc dân việc xã, lý Thúc rất bận rộn, và cũng bắt đầu từ ngày đó, ông lý trẻ của làng Kim Đôi đã tỏ ra hách dịch chẳng kém gì mấy ông lý lão luyện khác, và đã có nhiều trường hợp sự hách dịch của lý Thúc còn hơn cả cha. Con hơn cha là nhà có phúc, dù lý Thúc mới chỉ hơn cha ở điểm hách dịch. Nửa bước ra đi, lý Thúc đều có tuần đinh đi theo hầu, và có nhiều buổi chiều, khi công việc hơi rảnh rang, lý Thúc lại sắm yên cương, đội nón dứa chóp bạc đi quanh làng từ xóm nọ đến xóm kia, từ thôn này sang thôn khác. Dân làng thấy lý Thúc cưỡi ngựa đi qua đều đứng nếp sang một bên và kính chào lễ phép. Những đứa trẻ gặp lý Thúc lạy hỏi rất to. Lý Thúc thấy mình to lớn. Ngồi trên ngựa thấy người làng đứng nép bên đường, ông lý hả dạ, và khi có người lạy chào ông lý trẻ càng sung sướng hơn. Con ngựa đi bước một, trông lý Thúc thật oai vệ và sang trọng. Ngựa thì yên cương tề chỉnh, người thì quần áo bảnh bao, nón dứa chóp bạc, áo the quần lụa, giầy Gia định.</p>
+        <p>Nhiều cô gái chưa chồng nhìn thấy ông Lý, ước ao sau này chồng mình cũng sẽ đường hoàng làm đàn anh trong dân xã như Thúc. Bà lý Thúc, cô Thảo ngày trước, cũng được kiêu hãnh vì chồng. Từ ngày chồng làm Lý Trưởng, đi đâu Thảo cũng được người ta trọng vọng, một lời kêu bà Lý, hai lời kêu bà Lý. Trong làng có tiệc, có đám bao giờ cũng có trầu, cau tới mời ông bà Lý. Lẽ tất nhiên người ta cũng phải mời vợ chồng ông Chánh Tổng. Thảo cũng thấy sung sướng có chồng làm nên và trời cũng chiều người, lấy chồng mấy năm không sinh nỡ, thì cùng với việc Thúc đắc cử lý trưởng xong, Thảo cũng thấy tin mừng. Có tin mừng, Thảo mừng lắm. Đã bao lâu nay, nàng chờ đợi một đứa con, nay đứa con đó sắp tới với nàng. Đứa con như một sợi giây thiêng liêng buộc giữ Thúc gần nàng.</p>
+        <p>Trước đây, mỗi khi đi chơi bời, bị vợ kỳ kèo, Thúc đều lấy cớ con cái chậm, buồn bã phải đi tiêu sầu. Ngày nay với đứa con, Thảo có thể dễ nói Thúc hơn mỗi khi Thúc quên nhãng bổn phận làm chồng. Thảo mừng lắm, Thúc cũng mừng, nhưng mừng nhất có lẽ là ông bà Chánh Tổng. Cưới nàng dâu về, ông bà chờ đợi cháu bồng, vậy mà ngày ấy qua ngày khác, thấm thoát đã mấy năm vợ Thúc cứ đực ra không sinh đẻ gì. Bà Chánh Tổng buồn, đã có ý muốn cưới thêm vợ bé cho Thúc. Ý định của bà tuy chưa nói với con và dâu, nhưng bà đã bàn với chồng. Ông Chánh Tổng không bày tỏ ý kiến. Ông chỉ bảo hãy cho Thúc có chút công danh sē hay.</p>
+        <p>Thúc đã có công danh, vợ Thúc cũng lại có tin mừng, ông bà Chánh Tổng vui sướng lắm. Đủ danh giá, tiền bạc và rồi đây hòe quế sẽ đầy sân, cây non nẩy lộc, hạnh phúc nào sánh bằng! Có tin mừng Thảo cũng đẹp thêm. Làng nước có người bàn tán: “Bà lý Thúc thật vạn sự may mắn. Chồng làm đàn anh, vợ có tin mừng, trông càng béo đẹp ra”.</p>
+        <p>Những người trước đây chê Thúc về truyện chàng tỏ ra bất chánh với Tiệp, vừa là vợ của bạn lại vừa là con của thày học, bây giờ không ai còn dám nhắc tới việc cũ đó. Gặp vợ chồng lý Thúc đi đâu người ta len lét sợ và khép nép chào. Ai dại gì chống với người thịnh. Lý Thúc càng hách dịch dân làng càng nể sợ. Ông Chánh Tổng thấy con biết ra oai với dân xã thì bằng lòng lắm. Như thế mới biết làm đàn anh. Ông thường bảo bà Chánh Tổng: “Tôi không ngờ thằng lý Thúc nhà ta thế mà hay! Làm việc quan được và dân làng lại sợ hải nể vì. Trước tôi cứ tưởng nó còn dại dột”.</p>
+        <p>Bà Chánh Tổng đáp lại: “Chuyện! Ông cứ nghĩ thế chứ, con nhà tông chẳng giống lông cũng giống cánh. Ông làm Chánh Tổng oai vệ như vậy, sao con ông lại không làm được lý trưởng. Rồi sau này nó lại không hơn cả ông nữa!”</p>
+        <p>Ông Chánh Tổng vuốt râu cười hề hề khoái chí. Hổ phụ đâu sinh khuyển tử được. Con ông biết làm việc quan, con ông biết làm đàn anh, thế mới thực là con ông. Tre già, măng mọc là vậy. Sau này, mãn khóa Chánh Tổng, được chút phẩm hàm, ông sẽ nghỉ việc quan để thanh nhàn dưỡng tuổi già. Lý Thúc sẽ nối nghiệp ông. Có lần ông nói truyện ấy với bà Chánh, bà Chánh chê ông bảo: “Chưa già đã nghĩ chuyện già. Thì ông hãy cứ giữ việc quan, để còn bênh vực cho con chứ. Ông tưởng ông về nghỉ với chút phẩm hàm, con ông vẫn được người ta nể như ngày nay. Ông còn làm Chánh Tổng, thiên hạ họ sẽ lo sợ bóng sợ vía ông nhiều”.</p>
+        <p>Ông Chánh Tổng vuốt mấy sợi râu, châm điếu thuốc lào hút, thở khói lên cao, ông hà một hơi dài. Sau đó ông đáp: “Bà mày nói cũng có lý, nhưng bà mày cứ yên trí. Ai chớ thằng lý Thúc, đố ai bắt nạt được nổi nó. Nó tha bắt nạt người khác thì chớ, chứ đời nào nó chịu ai. Bà xem nó làm việc dân có hơn Lý cựu không. Và bây giờ nó đang được quan trên nể mến, và nó cũng đã bắt đầu thu lại được dần dần cái tiền tôi và bà bỏ ra tiêu cho nó ứng cử”.</p>
+        <p>Bà Chánh thấy ông Chánh nói cũng đúng. Hạng người như lý Thúc lại sẵn thế cha, không những là đàn anh trong làng, còn là vai vế trong hàng Tổng. Từ ngày làm việc quan đến nay, lý Thúc thay đổi khác hẳn trước. Bao nhiêu những điều tẹp nhẹp, lý Thúc đều làm bộ không để ý tới, tuy trong thâm tâm, lý Thúc không bỏ qua một điều tẹp nhẹp nào, từ việc rất nhỏ trở đi. Người làng ai cũng sợ lý Thúc. Ai hơi có lỗi là lý Thúc cho gọi ra đình hạch tội, và đối với những kẻ thiếu thuế hoặc “phạm pháp nhà nước”, lý Thúc làm ghê gớm lắm. Hắn cho tuần đinh tới tận nhà bắt trói, ghì khuỷu tay dẫn ra trói cột vào tam quan đình, không nể gì người làng người nước cho tới khi đóng được thuế hoặc giải lên quan. Lý Thúc sơi tiền cũng khôn khéo. Hắn làm ra mặt không đòi hỏi ai, nhưng đừng ai hòng được việc, dù đấy chỉ việc thị thực trên giấy khai sinh, nếu không có tiền cho thầy lý và nếu ai chỉ trích lý Thúc thì coi chừng. Lý Thúc chỉ cười hề hề, nhưng hắn trả thù lúc nào không biết. Từ ngày làm lý trưởng, Thúc không hề đả động tới việc Tiệp đã làm nhục hắn, nhưng không phải hắn đã quên. Mỗi hận đó bao giờ hắn quên cho nổi, nhất là hình ảnh và nhan sắc của Tiệp hắn vẫn chôn sâu trong tâm khảm với một sự ước ao thèm muốn phải cố nén cho lắng xuống.Khoan vẫn chỉ là một anh đồ kiết, gõ đầu mấy đứa trẻ trong làng. Học trò cũng vẫn đông, và sự túng bấn cũng vẫn vậy. Bà đồ Ngư cũng có đôi khi trợ cấp cho Tiệp, nhưng cả hai vợ chồng đều rất khảng khái, ít khi nhận sự giúp đỡ của mẹ. Người làng đem so sánh Khoan với Thúc. Có người bảo Tiệp là dại, nhưng có người không cho Tiệp là dại, bảo Tiệp là thủy chung. Tiệp vẫn sốnghạnh phúc bên cạnh Khoan và hai con, mặc Thúc kiêu hãnh với sự sang trọng của mình. Gặp Thúc đâu, Tiệp vẫn tìm đường tránh mặt như trước.</p>
+        <div class="xg_dong"></div>
+        <h2 id="c3_XII">XII</h2>
+        <p>Việc anh đồ Khoan bị bắt giải lên huyện làm cả làng Kim Đôi sửng sốt. Không hiểu tại sao anh đồ lại bị bắt. Xưa nay anh là người hiền lành chỉ biết dạy học đem đạo thánh hiền truyền bá cho đàn em, anh chưa hề làm điều gì phạm pháp bao giờ. Thuế má anh vẫn đóng đủ, phu phen tạp dịch anh vẫn lo tròn phận sự. Vậy mà anh bị bắt! Theo lời nhiều người nói, anh bị bắt vì tình nghi làm cách mệnh chống lại triều đình và người Pháp. Nói là danh nghĩa triều đình, nhưng lại là người Pháp. Dù chống triều đình hay chống Pháp thì điều đó dân làng cũng thấy rằng anh đồ Khoan bị oan. Anh hiền lành ít giao du, không hiểu kẻ nào đang tâm vu cáo làm hại anh.</p>
+        <p>Cũng có người nói: “Biết đâu được ma ăn cỗ, những người càng hiền lành bao nhiêu, lại càng làm những việc ghê gớm bấy nhiêu. Anh đồ Khoan tuy hiền lành nhưng là người có học, có thể anh thấy uất ức vì người Pháp bắt nạt triều đình và bóc lột dân nước Nam ta”.</p>
+        <p>Người khác, có lẽ biết chuyện hơn, nói: “Anh đồ Khoan thì cách mệnh gì? Chẳng qua là ông lý Thúc báo thù đó. Ông lý Thúc vẫn căm anh đồ về chuyện không lấy được cô Tiệp lại bị cô sỉ nhục mấy chuyến nên tìm cách báo thù”.</p>
+        <p>Người làng cũng chỉ biết bàn với nhau như vậy rồi thôi. Không ai làm cách gì giúp đỡ được anh đồ Khoan, và họ cũng chỉ lén lút bàn tán, ai cũng sợ uy quyền ông Chánh Tổng và lý Thúc. Đã hai ba hôm nay Tiệp phải long đong tất tả, đi cậy người này nhờ người kia hỏi thăm tin tức chồng. Thật là tai bay vạ gió! Chồng nàng chỉ biết làm ăn lương thiện, sao người ta lại bắt chồng nàng ?</p>
+        <p>Trông Tiệp gầy hẳn đi. Hai quầng mắt nói lên biết bao nhiêu sự lo âu. Mải lo cho chồng, nàng đành bỏ con để mẹ chồng trông nom. Nàng lên tỉnh, lên huyện rồi lại về làng, cậy chỗ này nhờ chỗ khác, nhưng mọi sự lo lắng của nàng đều như vô hiệu và chỉ tốn kém. Nàng xưa nay đã không dư dả gì lại túng quẫn thêm!Bố mẹ Khoan phải cho người tới tìm ông Khóa Hữu, nhờ ông Khóa lo liệu giùm. Ông Khóa Hữu phải nói với một người bạn học cũ, cũng là chỗ quen thuộc của ông đồ Ngư trước, và cũng do đó Tiệp mới được phép vào thăm Khoan ở nhà giam huyện Võ Giàng. Trông Khoan gầy guộc đi, Tiệp oà lên khóc, nhưng Khoan khuyên vợ: “Nín đi em! Vào đây thăm anh mà khóc còn nói được chuyện gì”.</p>
+        <p>Tiệp lau nước mắt nhìn chồng. Khoan thấy vợ gầy còm cũng thương hại. Chàng bảo: “Em đừng quá lo nghĩ. Đây là vận hạn của anh. Em phải bình tâm để còn kiếm ăn, trước là thờ thày mẹ, sau là nuôi con thay anh trong lúc anh gặp vận hạn!”</p>
+        <p>Tiệp không biết nói gì, chỉ nhìn chồng. Nàng trao cho chồng quà bánh mang tới. Cầm quà bánh, Khoan lại nói: “Em đừng lo về anh quá! Anh bị thằng lý Thúc nó vu oan làm cách mệnh, anh tin rằng rồi đây nỗi oan của anh sẽ được minh xét”.</p>
+        <p>Hai người chưa nói chuyện được bao lâu, lính canh đã vào giục Tiệp đi ra, Tiệp phải biếu tên lính ít tiền, mới được nói chuyện lâu hơn cùng chồng. Khoan chưa bị tra xét gì, chỉ bị ̣ tạm giam. Khoan bảo Tiệp về nhờ Vinh tìm những chỗ học trò cũ của ông đồ Ngư hiện đã thành đạt để nhờ can thiệp. Ngay khi thăm chồng về, Tiệp thân hành tới tận chỗ Vinh làm việc thuật lại những điều chồng dặn và yêu cầu Vinh tìm đến những học trò cũ của ông đồ để nhờ cậy.</p>
+        <p>Vinh bảo: “Việc này thế nào anh cũng phải lo chú ấy, cô cứ yên tâm. Chỉ giận thằng lý Thúc sao mà nó táng tận lương tâm đến thế, bỗng dưng vu oan giá họa cho người nhất là khi người đó lại là con rể của thầy học nó”.Tiệp nói lại cho Vinh nghe những truyện trước đây Thúc chọc ghẹo nàng và đã có lần bị nàng cự tuyệt trước mặt vài người làng. Vinh chỉ lắc đầu. Sau bữa gặp Vinh. Tiệp lại trở về làng, vì nàng cũng còn bổn phận với hai con. Riêng về phần Vinh, chàng cũng hết lòng đi lo cho em rể.</p>
+        <p>Về làng, Tiệp tìm gặp Thảo để hỏi về việc lý Thúc vu oan cho Khoan, Thảo trả lời nàng không hiểu gì về những việc làm của chồng, để nàng hỏi lại. Từ trước Tiệp vẫn cố ý tránh mặt Thúc, kể cả từ ngày chồng nàng bị bắt. Nhưng giờ đây nàng không thể không gặp mặt Thúc được. Nàng cần gặp Thúc để hỏi cho rõ, xem Thúc nói năng ra sao. Lý Thúc thấy Tiệp đến nhà mình tủm tỉm cười. Nào thử xem, Tiệp có tránh được mặt chàng mãi không. Tiệp vào nhà lý Thúc. Lý Thúc mỉa mai hỏi: “Kìa chị đồ! Sao hôm nay chị lại tới nhà tôi mọi khi chị vẫn tránh mặt tôi mà!”</p>
+        <p>Tiện nghiêm trang đáp: “Anh nói đúng, tôi vẫn tránh mặt anh vì tôi không muốn có những chuyện phiền không phải cho tôi mà cho anh”.</p>
+        <p>Lời nói ngay thẳng của Tiệp làm cho Thúc hơi lúng túng. Con người ta ai cũng vậy, trước một người mình vẫn hằng thầm yêu trộm nhớ, khi gặp gỡ dù kẻ tàn ác cũng có những phút giây lúng túng. Đó chính là trường hợp của Thúc đối với Tiệp. Thúc mời Tiệp ngồi, rồi nói: “Tôi nói vậy thì nói chứ đối với chị tôi không giận, tuy đôi phen chị có hơi tàn nhẫn với tôi”.</p>
+        <p>Rồi Thúc ngồi xuống tràng kỷ ở trước mặt. Người nhà Thúc lên pha trà, rót nước, mời trầu Tiệp. Tiệp vào thẳng câu chuyện: “Hôm qua tôi đến thăm nhà tôi ở huyện, nhà tôi có nói nhà tôi bị bắt chính vì anh. Anh đã vu oan cho nhà tôi làm cách mệnh”.</p>
+        <p>Thúc cướp lời Tiệp: “Chị đừng có nói thế oan tôi. Tôi đâu có vu oan cho anh ấy. Lệnh trên bảo tôi phải tróc nã những người tình nghi. Chính anh Khoan cũng có tên trong danh sách những người bị tình nghi nên phải bắt. Tôi có dự gì vào chuyện bắt bớ này đâu”.</p>
+        <p>Tiệp nói: “Anh làm lý trưởng ở làng, anh còn lạ gì nữa. Nhà tôi với anh lại sống chung thôn, có điều gì tình nghi hay không anh phải biết chứ, tại sao anh lại nhắm mắt để cho nhà tôi bị bắt”.</p>
+        <p>Giọng nói của Tiệp dắn dỏi. Thúc thấy hơi khó trả lời. Chàng bảo: “Chị làm gì mà cứ buộc tội tôi vậy. Anh ấy hiện bị bắt nhưng khéo kêu xin, nỗi oan của anh ấy có thể được xét, và anh ấy sẽ có thể được tha”.</p>
+        <p>Tiệp nói thêm: “Tôi muốn nhờ anh để giải tỏ nỗi oan cho nhà tôi. Tôi lấy tình bạn học nói với anh. Hơn nữa nhà tôi với anh cũng có nghĩa đồng môn cần phải cứu giúp nhau”.</p>
+        <p>Thúc không nói gì. Chàng ngắm nhìn Tiệp. Tuy vì lo lắng Tiệp có gầy đi, nhưng trông nàng vẫn đầy vẻ quyến rũ. Thúc tự thấy một sự thèm muốn. Nghĩ ngợi một lúc. Thúc bảo Tiệp: “Anh Khoan oan tội, tôi biết, nhưng cứu anh Khoan để tôi mang lụy hay sao. Chân lý trưởng của tôi sẽ bị lung lay nếu tôi bị dính vào việc này, và có khi tôi cũng có thể bị bắt”.</p>
+        <p>Nghe Thúc nói, Tiệp thẫn thờ chán nản. Nàng hỏi: “Vậy, anh không giúp gì được cho nhà tôi?”</p>
+        <p>Thúc nói: “Tôi muốn giúp lắm nhưng khó khăn quá. Dù sao tôi cũng phải nghĩ đến tôi trước khi nghĩ đến bạn”.</p>
+        <p>Thấy Thúc nói vậy. Tiệp đứng lên cáo từ: “Thôi cảm ơn anh! Anh không giúp được nhà tôi thì thôi vậy. Để tôi tìm nhờ chỗ khác”.</p>
+        <p>Thúc giữ Tiệp lại: “Chị ngồi chơi đã, rồi ta cũng bàn cách để cứu anh ấy”.</p>
+        <p>Tiệp lại ngồi xuống. Thúc lại nhìn Tiệp từ đầu đến chân. Đôi con mắt như muốn thu hút hết hình ảnh của Tiệp: “Tôi có thể cứu anh Khoan thoát khỏi sự tội tù, nhưng cần phải có chị”.</p>
+        <p>Tiệp nói: “Lúc nào tôi cũng nghe lời anh chỉ bảo”.</p>
+        <p>Thúc tiếp: “Việc này ở chị. Chị muốn cứu anh ấy, tôi bảo gì chị phải nghe tôi. Chị nghe tôi, tốn kém bao nhiêu tôi xin chịu hết để chạy bằng được cho anh Khoan về”.</p>
+        <p>Tiệp hỏi: “Nghe anh nghĩa là thế nào?”</p>
+        <p>“Chị nghĩ cho kỹ lại sẽ hiểu. Nghe tôi nghĩa là theo ý muốn của tôi.” Mặt Tiệp sa sầm. Nàng không nói gì hơn, đứng lên cáo từ Thúc. Thúc nói theo: “Chị nên nghĩ cho kỹ. Tôi lúc nào cũng sẵn sàng giúp chị nếu chị muốn”.</p>
+        <p>Tiệp đầu váng tai ù. Nàng không muốn nghe Thúc nói, nàng thấy chúng toàn những lời ô uế.</p>        
+        <!-- Chú thích -->
+        <div id="tooltip" class="tooltip"></div>                
+      </div>
+    </div>
+  </main>
+  <div onclick="scrollToTop()" class="scrollTop"><i class="fa-solid fa-chevron-up"></i></div>
+  <div onclick="scrollToBottom()" class="scroll-to-bottom"><i class="fa-solid fa-chevron-down"></i></div>
+  <script src="ck_JS_sachc1.js"></script>
+</body>
+</html>

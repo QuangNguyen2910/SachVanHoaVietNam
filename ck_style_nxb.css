@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: DFVN-NewEddy;
+    src: url(font/DFVN-NewEddy.ttf);
+}
+@font-face {
+    font-family: DFVN-Ladybird;
+    src: url(font/DFVN\ Ladybird\ Light.ttf);
+}
+header {
+    width: 1535px;
+}
+header img {
+    width: 1535px;
+}
+
+nav {
+    width: 1535px;
+    height: 70px;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s, box-shadow 1s;
+}
+.khobatchu_nav {
+    width: 1300px;
+    height: 60px;
+    margin-left: 100px;
+}
+.form-field {
+    padding-top: 10px;
+    z-index: 5;
+}
+.form_input {
+    padding-left: 30px;
+    border: 2px solid #630A10;
+    width: 300px;
+    height: 35px;
+    transition: 0.25s ease ;
+    float: left;
+}
+.nav_search_buttun {
+    height: 38px;
+    float: left;
+    width: 80px;
+    background-color: #630A10;
+    color: #FFF
+}
+.nav_search_buttun:hover {
+    background-color: #73292e;
+}
+.nav_search_buttun p {
+    padding-top: 8px;
+    padding-left: 6px;
+}
+.nav_menu {
+    float: left;
+    width: 460px;
+    height: 40px;
+    margin-left: 300px;
+}
+.topnav {
+    overflow: hidden;
+    margin-left: 50px;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px 16px 15px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+} 
+.topnav a:hover {
+    border-bottom: 3px solid red;
+}  
+.topnav a.active {
+    border-bottom: 3px solid red;
+}
+.khoitimkiem_taikhoan {
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 0;
+}
+.dangnhap_icon {
+    font-size: 30px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+}
+.dangnhap_icon:hover {
+    color: red;
+}
+/* Full-width input fields */
+.container input[type=text], .container input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color:#630A10;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }  
+
+section {
+    width: 1535px;
+    height: 1000px;
+    margin-top: 20px;
+}
+.khobatchu_section {
+    width: 1300px;
+    height: 800px;
+    margin-left: 100px;
+}
+.thongtinlienhe {
+    width: 1300px;
+    height: 400px;
+}
+.title_ttlh {
+    height: 30px;
+    width: 500px;
+    margin-left: 430px;
+    margin-top: 20px;
+}
+.title_gt {
+    height: 30px;
+    width: 700px;
+    margin-left: 430px;
+    margin-top: 20px;
+}
+.nd_gt {
+    margin-top: 10px;
+    line-height: 1.5;
+    text-indent: 1cm;
+}
+.nd_gt p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.ketrai {
+    width: 70px;
+    height: 30px;
+    border-bottom: 1px solid #630A10;
+    margin-right: 10px;
+    float: left;
+}
+.title_ttlh_text {
+    height: 30px;
+    font-size: 20px;
+    padding-top: 2px;
+    float: left;
+    color: #630A10;
+}
+.kephai {
+    width: 70px;
+    height: 30px;
+    margin-left: 10px;
+    border-bottom: 1px solid #630A10;
+    float: left;
+}
+.cottrai {
+    width: 500px;
+    background-color:#FFF ;
+    margin-top: 20px;
+    margin-right: 50px;
+    float: left;
+    padding-left: 50px;
+}
+.cotphai {
+    width: 600px;
+    background-color:#FFF ;
+    margin-top: 20px;
+    float: left;
+    padding-left: 50px;
+}
+.nd_title_ttlh {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.5;
+}
+.nd_ttlh {
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5;
+}
+.kcach {
+    height: 20px;
+}
+.dong1 {
+    margin-top: 10px;
+    width: 1300px;
+    height: 62px;
+}
+.nd_text_dong1 {
+    font-weight: bold;
+    font-size: 18px;
+    height: 16px;
+}
+.khung_dong1{
+    background-color:#EDEDED;
+    margin-top: 7px;
+    width: 1300px;
+    height: 35px;
+    padding-left: 10px;
+}
+.dong2 {
+    margin-top: 10px;
+    width: 1300px;
+    height: 120px;
+}
+.nd_text_dong2 {
+    font-weight: bold;
+    font-size: 18px;
+    height: 16px;
+}
+.khung_dong2 {
+    background-color:#EDEDED;
+    margin-top: 7px;
+    width: 1300px;
+    height: 100px;
+    padding-left: 10px;
+}
+.guibtn {
+    background-color: #630A10;
+    border: 3px solid #630A10;
+    float: right;
+    width: 74px;
+    height: 30px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    color:#FFF;
+}
+.guibtn:hover {
+    background-color: #FFF;
+    color: #630A10;
+}
+footer {
+    width: 1535px;
+    height: 300px;
+    background-image: url("imgs/cuoi_web.png");
+}
+.khobatchu_footer {
+    width: 1300px;
+    height: 300px;
+    margin-left: 100px;
+}
+.khoiphai {
+    width: 1000px;
+    height: 250px;
+    float: left;
+}
+.logo_cuoi_web img {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.nhapemail_ud {
+    width: 1000px;
+    height: 100px;
+    margin-top: 30px;
+}
+.nhapemail {
+    width: 450px;
+    height: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    float: left;
+}
+.form-field2 {
+    padding-top: 25px;
+    z-index: 5;
+}
+.form_input2 {
+    padding-left: 30px;
+    border: 2px solid #630A10;
+    width: 350px;
+    height: 50px;
+    transition: 0.25s ease ;
+    float: left;
+}
+.ud {
+    width: 350px;
+    height: 100px;
+    float: left;
+    color: #FFF;
+}
+.ud h1 {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+.ud_icon {
+    margin-left: 100px;
+    margin-top: 15px;
+}
+.ud i {
+    font-size: 40px;
+    padding-right: 20px;
+}
+.ud i:hover {
+    color: red;
+}
+.khoitrai {
+    width: 300px;
+    height: 250px;
+    float: left;
+}
+.khoitrai img {
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.banquyen {
+    width: 1300px;
+    height: 50px;
+    text-align: center;
+}
+.banquyen p {
+    margin-top: 3px;
+    color: #FFF;
+    font-size: 14px;
+}
+/*Về đầu trang*/
+.scrollTop {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 12px;
+    background-color: #FFF;
+    color:#630A10;
+    border-radius: 1px solid #FFF;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+}
+.scrollTop:hover {
+    background-color:#630A10;
+    color: #FFF;
+}
+
+/*Về cuối trang*/
+.scroll-to-bottom {
+    position: fixed;
+    bottom: 28px;
+    right: 20px;
+    z-index: 1000;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 12px;
+    background-color: #FFF;
+    color:#630A10;
+    border-radius: 1px solid #FFF;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    width: 30px;
+    height: 30px;
+
+}
+.scroll-to-bottom:hover {
+    background-color:#630A10;
+    color: #FFF;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ck_style_tacgia.css">
+    <link rel="stylesheet" href="fonticon/css/all.min.css">
+    <title>Thông tin tác giả</title>
+</head>
+<body>
+    <header>
+        <img src="imgs/dau_web.png">
+    </header>
+    <nav>
+        <div class="khobatchu_nav">
+            <div class="nav_search">
+                <div class="form-field">
+                    <input type="text" class="form_input" placeholder="Nhập tên sách, tác giả,....">
+                    <div class="nav_search_buttun">
+                        <p>Tìm kiếm</p>
+                    </div>
+                </div>        
+            </div>
+            <div class="nav_menu">
+                <div class="menu">
+                    <div class="topnav">
+                        <a href="index.html">Tác phẩm</a>
+                        <a class="active" href="ck_tacgia.html">Tác giả</a>
+                        <a href="ck_nxb.html">Nhà xuất bản</a>
+                    </div>                      
+                </div>
+            </div>
+            <div class="khoitimkiem_taikhoan">
+                <!-- Nút để mở khung cố định -->
+                <div class="dangnhap_icon" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa-regular fa-circle-user"></i></div>
+                <!-- Nội dung khung -->
+                <div id="id01" class="modal">
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="imgs/img_avatar2.png" alt="Avatar" class="avatar">
+                      </div>
+                      <div class="container">
+                        <label for="uname"><b>Tên tài khoản</b></label>
+                        <input type="text" placeholder="Nhập tên tài khoản..." name="uname" required>
+                        <label for="psw"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Mật khẩu..." name="psw" required>          
+                        <button type="submit" style="background-color: #630A10">Đăng nhập</button>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Lưu mật khẩu?
+                        </label>
+                      </div>
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Thoát</button>
+                        <span class="psw">Quên mật khẩu?</span>
+                      </div>
+                    </form>
+                </div>                
+            </div>
+        </div>
+    </nav>
+    <section class="writer-profiles">
+        <div class="khobatchu_section">
+            <div class="writer-profile">
+                <div class="cover-photo">
+                    <img src="imgs/cover_nv_ToanAnh.jpg" alt="Nhà văn Toan Ánh">
+                    <div class="avatar">
+                        <a href="index.html"><img src="imgs/nv_ToanAnh.jpg" alt="Nhà văn Toan Ánh"></a>
+                    </div>
+                </div>
+                <h2>Nhà văn Toan Ánh</h2>
+                <div class="thongtintacgia">
+                    <div id="paragraph">
+                        <div class="thongtintgia">   
+                            <button class="tablink" onclick="openPage('Home', this, '#FCF0C8')">Cuộc đời</button>
+                            <button class="tablink" onclick="openPage('News', this, '#FCF0C8')" id="defaultOpen">Sự nghiệp</button>
+                            <button class="tablink" onclick="openPage('Contact', this, '#FCF0C8')">Tác phẩm</button>
+                            <button class="tablink" onclick="openPage('About', this, '#FCF0C8')">Nhận xét</button>
+                            <div id="Home" class="tabcontent">
+                                <h3>Cuộc đời</h3>
+                                <p>Toan Ánh tên thật là Nguyễn Văn Toán (1916<span class="tooltip-word" onmouseover="hienThiChuThich(event, 'Trần Văn Ngô và ctv. Who is Who in Vietnam. Sài Gòn: Vietnam Press, 1974. Trang 22. Theo báo Tuổi trẻ là năm 1915. Lưu trữ 2009-05-19 tại Wayback Machine. Báo Thanh niên ghi Toan Ánh sinh năm 1914.')" onmouseout="anChuThich(this)">[1]</span> - 14 tháng 5 năm 2009), là nhà văn, nhà nghiên cứu văn hóa Việt Nam.</p>                            
+                                <p>Nhà văn Toan Ánh sinh tại Thị Cầu, Bắc Ninh, một vùng quan họ nổi tiếng với những lễ hội, đình đám. Mẹ ông làm nghề hàng xáo, ngày bà đi bán, tối về vừa xay gạo vừa dạy chữ Hán cho ông. Sau, ông theo học với thầy Chu Kinh Phượng, là một thầy đồ nổi tiếng khắp vùng Kinh Bắc.</p>
+                                <p>Vợ ông là một hoa khôi khi 17 tuổi vùng Vĩnh Yên, Vĩnh Phú. Họ sống với nhau 20 năm, có 11 người con. Tháng 12 năm 1969, vợ ông bị đột tử khi mới 46 tuổi. An táng cho vợ xong, ông đóng cửa nửa tháng để viết hồi ký Nhớ thương rất cảm động.</p>
+                                <p>Từ đó, ở tuổi 55, ông một mình nuôi con cho đến ngày nhắm mắt ở tuổi 96.</p>
+                                <p>Nhà văn Toan Ánh đã trút hơi thở cuối cùng lúc 23g50 ngày 14 ngày 5 năm 2009, sau hơn mười ngày nằm bệnh tại Bệnh viện Nhân dân Gia Định. Linh cữu nhà văn Toan Ánh, sau khi quàn ở nhà riêng tại 20/302C Phan Huy Ích, P.12, Q.Gò Vấp, Thành phố Hồ Chí Minh, đã được đưa đi hỏa táng tại nghĩa trang Bình Hưng Hòa.</p>
+                            </div>
+                            <div id="News" class="tabcontent">
+                                <h3>Sự nghiệp</h3>
+                                <p>Khi trưởng thành, nhờ ông làm nhiều công việc khác nhau, như thuế vụ, thanh tra, dạy học...và hay thay đổi nơi ở, nên ông biết được nhiều vùng của đất nước. Đến đâu ông cũng chú tâm tìm hiểu tập quán, hội hè, ca dao... và ghi chép một cách rất cẩn thận.</p> 
+                                <p>Ông nắm chức giám đốc trong Cục Tâm lý chiến (1963-1966) của Việt Nam Cộng hòa, sau chuyển làm quản thư Bộ Thông tin (1968-1971) rồi phó chủ tịch Hội đồng Văn hóa Giáo dục (1972-1973). Ông cũng từng làm giảng viên ở Viện Đại học Vạn Hạnh và Viện Đại học Huế (phân khoa Nhân văn) trước năm 1975. Ông còn là hội viên Hội Văn bút Việt Nam (Vietnam Pen Club).<span class="tooltip-word" onmouseover="hienThiChuThich(event, 'Trần Văn Ngô và ctv. Who is Who in Vietnam. Sài Gòn: Vietnam Press, 1974. tr 22')" onmouseout="anChuThich(this)">[2]</span></p> 
+                                <p>Trong lãnh vực chính trị ông là đảng viên Việt Nam Quốc dân Đảng.<span class="tooltip-word" onmouseover="hienThiChuThich(event, 'Trần Văn Ngô và ctv. tr 22')" onmouseout="anChuThich(this)">[3]</span></p> 
+                            </div>
+                            <div id="Contact" class="tabcontent">
+                                <h3>Tác phẩm</h3>
+                                <p>Toan Ánh bắt đầu viết văn từ năm 1934. Năm 1935, truyện ngắn đầu tay của ông: Chiếc nhẫn quý, được đăng trên báo Tiểu thuyết Thứ Bảy.</p>
+                                <p>Kể từ đó, ông gắn bó mật thiết với đề tài văn hóa truyền thống của Việt Nam từ nông thôn đến thành thị, từ Bắc vào Nam và để lại cho đời khoảng 124 tác phẩm có giá trị học thuật, như:</p>
+                                <ul>
+                                    <li>Nếp cũ (11 cuốn)</li>
+                                    <li>Việt Nam chí lược (5 cuốn gồm: Người Việt Đất Việt, Miền Bắc khai nguyên, Miền Trung kiên dũng, Miền Nam phú cường, và Cao nguyên miền Thượng)</li>
+                                    <li>Phong lưu đồng ruộng (1958), biên khảo</li>
+                                    <li>Bó hoa Bắc Việt (1958), biên khảo</li>
+                                    <li>Ký vãng (1958)</li>
+                                    <li>Nếp xưa (1962)</li>
+                                    <li>Tiết tháo một thời (1957), tiểu thuyết</li>
+                                    <li>Người đẹp thời chiến cuộc tiểu thuyết lịch sử</li>
+                                    <li>Thanh gươm Bắc Việt, tiểu thuyết lịch sử</li>
+                                    <li>Trong lũy tre xanh, (1957) tập truyện ngắn</li>
+                                    <li>Tinh thần trọng nghĩa Đông Phương</li>
+                                    <li>Phong tục Việt Nam, biên khảo</li>
+                                    <li>Tín ngưỡng Việt Nam, biên khảo</li>
+                                    <li>Hội hè đình đám biên khảo</li>
+                                    <li>Cầm ca</li>
+                                    <li>Hương nước hồn quê (1999)</li>
+                                </ul>
+                                <p>Tháng 5 năm 2004, Nhà xuất bản Trẻ đã ký hợp đồng mua tác quyền toàn bộ tác phẩm của nhà văn Toan Ánh trong thời hạn đến năm 2015. Từ đó đến nay (2009) đã có gần 20 tác phẩm của ông được in lại một cách có hệ thống theo hình thức Toan Ánh toàn tập.</p>
+                            </div>
+                            <div id="About" class="tabcontent">
+                                <h3>Nhận xét</h3>
+                                <p><u>Trích bài viết trên báo Tuổi Trẻ:</u></p>
+                                <p>[Toan Ánh]...hiền lành và khiêm tốn, chuyên cần tự học, làm việc âm thầm, nhẫn nại và theo đuổi chí hướng đến cùng trong việc tìm hiểu để ghi lại một cách có hệ thống tất cả những gì có liên quan đến phong tục, nếp sống của người Việt Nam từ gia đình đến ngoài xã hội.</p>
+                                <p>Nối tiếp một số tiền bối như Phan Kế Bính, Ngô Tất Tố, Chu Thiên..., nhà văn Toan Ánh bắt đầu khuynh hướng viết tiểu thuyết phong tục của mình từ năm 1957 với truyện ngắn Trong lũy tre xanh, và mấy bộ tiểu thuyết cùng loại đề tài sau đó như Ký vãng (1958), Nếp xưa (1962)... Nếp xưa là một tiểu thuyết tài hoa và đầy sức hấp dẫn mà vẫn đảm bảo được tính học thuật nghiêm túc, kết tinh từ năng khiếu quan sát, ghi nhận cuộc sống ở khía cạnh phong tục, nếp sống xưa và thủ pháp thể hiện sinh động của tác giả.<span class="tooltip-word" onmouseover="hienThiChuThich(event, '“Bản sao đã lưu trữ”. Bản gốc lưu trữ ngày 19 tháng 5 năm 2009. Truy cập ngày 16 tháng 5 năm 2009.')" onmouseout="anChuThich(this)">[4]</span></p>
+                                <p><u>Trên báo Thanh Niên:</u></p>
+                                <p>Toan Ánh là một trong rất ít các nhà văn Việt Nam thế hệ trước Cách mạng Tháng Tám còn lại ở thế kỷ 21 này. Ông có một kiến văn quảng bác và một bút lực dồi dào, đặc biệt về phong tục tập quán.</p>
+                                <p>Ông đã biên soạn hơn 120 bộ sách (mỗi bộ hàng chục tập). Trong đó có nhiều bộ sách rất giá trị như Nếp cũ (11 cuốn), nói về vòng đời của con người Việt Nam (từ lúc là bào thai, sinh ra, đi học, đi làm, lập gia đình, chết, cải táng...), Việt Nam chí lược (5 cuốn: Người Việt đất Việt, Miền Bắc khai nguyên, Miền Trung kiên dũng, Cao nguyên miền thượng, Miền Nam phú cường)... Nếu tập truyện Trong lũy tre xanh (1957) phê phán những hủ tục làng quê thì Phong lưu đồng ruộng (1958) là những bài viết ngắn ca tụng những nét đẹp của đời sống tinh thần nơi thôn xóm.</p>
+                                <p>Nếu Bó hoa Bắc Việt (1958) đề cao phẩm chất hiền thục đảm đang của phụ nữ Việt Nam thì Tiết tháo một thời (1957) lại nêu lên khí phách của sĩ phu Việt Nam. Cuốn Hương nước hồn quê (1999) dùng những chuyện tình để giải thích ca dao Việt Nam... Rồi Cầm ca Việt Nam, Hồn muôn năm cũ, Trong họ ngoài làng, Ta về ta tắm ao ta... Phải có một đam mê, tâm huyết lớn và sức lao động bền bỉ mới có được một gia tài đồ sộ như vậy...'' <span class="tooltip-word" onmouseover="hienThiChuThich(event, 'Trần Văn Ngô và ctv. Who is Who in Vietnam. Sài Gòn: Vietnam Press, 1974. tr 22')" onmouseout="anChuThich(this)">[5]</span></p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- Chú thích -->
+                    <div id="tooltip" class="tooltip"></div>                
+                </div>
+            </div>            
+        </div>
+    </section>
+    <article>
+        <div class="khobatchu_article">
+            <div class="sachcungtg">
+                <div class="demuc">
+                    <p>Sách cùng tác giả</p>
+                </div>
+                <div class="new_list">
+                    <div class="new_item" id="fix2">
+                        <a href=""><img src="imgs/sach1.jpg" alt=""></a>
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach2.jpg" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach3.jpg" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach4.jpg" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach5.png" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach6.png" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>    
+            </div>
+            <div class="sachcungtl">
+                <div class="demuc">
+                    <p>Sách cùng thể loại</p>
+                </div>
+                <div class="new_list">
+                    <div class="new_item" id="fix2">
+                        <a href=""><img src="imgs/sach1.jpg" alt=""></a>
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach2.jpg" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach3.jpg" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach4.jpg" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach5.png" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach6.png" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>    
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="khobatchu_footer">
+            <div class="khoiphai">
+                <div class="logo_cuoi_web"><img src="imgs/logo_cuoi_web.png"></div>
+                <div class="nhapemail_ud">
+                    <div class="nhapemail">
+                        <div class="form-field2">
+                            <input type="text" class="form_input2" placeholder="Nhập email của bạn để nhận thông báo.">
+                        </div>        
+                    </div>
+                    <div class="ud">
+                        <h1>Bạn có thể đọc sách qua các ứng dụng và thiết bị:</h1>
+                        <div class="ud_icon"><i class="fa-solid fa-desktop"></i> <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-android"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="khoitrai">
+                <img src="imgs/QR.png">
+            </div> <div style="clear: both;"></div>
+            <div class="banquyen">
+                <hr style="border: 1px solid #FFF;">
+                <p>Giấy phép thành lập Nhà xuất bản số 1160/GP-BTTTT ngày 01/08/2008 của Bộ Thông tin</p>
+                <p>Bản quyền ©2018 Nhà Xuất Bản Văn Hóa Việt Nam</p>
+            </div>
+        </div>
+    </footer>
+    <div onclick="scrollToTop()" class="scrollTop"><i class="fa-solid fa-chevron-up"></i></div>
+    <div onclick="scrollToBottom()" class="scroll-to-bottom"><i class="fa-solid fa-chevron-down"></i></div>
+    <script src="ck_JS_tacgia.js"></script>
+</body>
+</html>

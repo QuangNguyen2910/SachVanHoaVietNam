@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 1</title>
+  <link rel="stylesheet" href="ck_style_sachc1.css">
+  <link rel="stylesheet" href="fonticon/css/all.min.css">
+</head>
+<body>
+  <header>
+    <img src="imgs/dau_web.png" alt="Header Image" class="header-image">
+    <div class="khoangcachtren"></div>
+    <div class="header-content">
+      <div class="icons">
+        <i class="fa-solid fa-list" onclick="toggleMenu('homeMenu')"></i>
+        <i class="fa-solid fa-gear" onclick="toggleMenu('searchMenu')"></i>
+        <i class="fa-solid fa-headphones-simple" onclick="toggleMenu('profileMenu')"></i>
+        <i class="fa-solid fa-note-sticky" onclick="toggleMenu('settingMenu')"></i>
+        <i class="fa-solid fa-magnifying-glass" onclick="toggleMenu('searchKeywordMenu')"></i>
+        <i class="fa-solid fa-maximize" onclick="toggleFullScreen()" id="fullscreen-icon"></i>
+        <a href="ck_xinhe.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="ck_sachc2.html"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="chapter-title">Chương 1</div>
+      <div class="back">
+        <a href="index.html"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </header>
+  <div class="left-menu" id="homeMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('homeMenu')">&times;</a>
+    <div class="bangmucluc">
+      <div class="menu">
+        <a href="ck_biatrc.html" class="menu-link">Bìa trước</a>
+        <a href="ck_xinhe.html">Chịu trách nhiệm xuất bản</a>
+        <div class="menu-item" id="menu1">
+          <div class="menu-label">
+              <a href="ck_sachc1.html" class="menu-link">Chương 1</a>
+              <button class="dropdown-btn" onclick="toggleDropdown(event, this)"><i class="fa-solid fa-chevron-down"></i></button>
+          </div>
+          <div class="dropdown-content">
+            <div class="dropdown-item"><a href="#c1_I">I</a></div>
+            <div class="dropdown-item"><a href="#c1_II">II</a></div>
+            <div class="dropdown-item"><a href="#c1_III">III</a></div>
+            <div class="dropdown-item"><a href="#c1_VI">IV</a></div>
+            <div class="dropdown-item"><a href="#c1_V">V</a></div>
+            <div class="dropdown-item"><a href="#c1_VI">VI</a></div>
+            <div class="dropdown-item"><a href="#c1_VII">VII</a></div>
+            <div class="dropdown-item"><a href="#c1_VIII">VIII</a></div>
+            <div class="dropdown-item"><a href="#c1_IX">IX</a></div>
+            <div class="dropdown-item"><a href="#c1_X">X</a></div>
+            <div class="dropdown-item"><a href="#c1_XI">XI</a></div>
+            <div class="dropdown-item"><a href="#c1_XII">XII</a></div>
+          </div>
+        </div>
+        <div class="menu-item" id="menu1">
+          <div class="menu-label">
+              <a href="ck_sachc2.html" class="menu-link">Chương 2</a>
+              <button class="dropdown-btn" onclick="toggleDropdown(event, this)"><i class="fa-solid fa-chevron-down"></i></button>
+          </div>
+          <div class="dropdown-content">
+            <div class="dropdown-item"><a href="">I</a></div>
+            <div class="dropdown-item"><a href="">II</a></div>
+            <div class="dropdown-item"><a href="">III</a></div>
+            <div class="dropdown-item"><a href="">IV</a></div>
+            <div class="dropdown-item"><a href="">V</a></div>
+            <div class="dropdown-item"><a href="">VI</a></div>
+            <div class="dropdown-item"><a href="">VII</a></div>
+            <div class="dropdown-item"><a href="">VIII</a></div>
+            <div class="dropdown-item"><a href="">IX</a></div>
+            <div class="dropdown-item"><a href="">X</a></div>
+            <div class="dropdown-item"><a href="">XI</a></div>
+            <div class="dropdown-item"><a href="">XII</a></div>
+          </div>
+        </div>
+        <div class="menu-item" id="menu1">
+          <div class="menu-label">
+              <a href="ck_sachc3.html" class="menu-link">Chương 3</a>
+              <button class="dropdown-btn" onclick="toggleDropdown(event, this)"><i class="fa-solid fa-chevron-down"></i></button>
+          </div>
+          <div class="dropdown-content">
+            <div class="dropdown-item"><a href="ck_sachc3.html">I</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">II</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">III</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">IV</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">V</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">VI</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">VII</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">VIII</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">IX</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">X</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">XI</a></div>
+            <div class="dropdown-item"><a href="ck_sachc3.html">XII</a></div>
+          </div>
+        </div>
+        <div class="menu-item" id="menu1">
+          <div class="menu-label">
+            <a href="ck_sachdoanket.html" class="menu-link">Đoạn kết</a>
+          </div>
+        </div>
+        <div class="menu-item" id="menu1">
+          <div class="menu-label">
+            <a href="ck_sachtongket.html" class="menu-link">Tổng kết</a>
+          </div>
+        </div>
+        <div class="menu-item" id="menu1">
+          <div class="menu-label">
+            <a href="ck_biasau.html" class="menu-link">Bìa sau</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="left-menu" id="searchMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('searchMenu')">&times;</a>
+    <div class="tinhnang">
+      <p>Kích thước chữ</p>
+      <div id="slider">
+        <i id="minusIcon" class="fa-solid fa-a"></i>
+        <div id="knob"></div>
+        <i id="plusIcon" class="fa-solid fa-a"></i>
+      </div>
+      <p>Kiểu chữ</p>
+      <div id="fontList">
+        <button class="fontButton" onclick="changeFont('Courier New', this)"><div class="font1">Courier New</div></button>
+        <button class="fontButton" onclick="changeFont('Arial', this)"><div class="font2">Arial</div></button>
+        <button class="fontButton" onclick="changeFont('Times New Roman', this)"><div class="font3">Times New Roman</div></button>
+      </div>      
+      <p>Màu nền</p>
+      <div id="colorPickerBackground">
+        <div class="color-button color-white" onclick="changeBackgroundColor('white', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-red" onclick="changeBackgroundColor('red', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-gray" onclick="changeBackgroundColor('gray', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-black" onclick="changeBackgroundColor('black', this)">
+            <span class="checkmark">✔</span>
+        </div>
+      </div>
+      <p>Màu chữ</p>
+      <div id="colorPickerText">
+        <div class="color-button color-white" onclick="changeTextColor('white', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-red" onclick="changeTextColor('red', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-gray" onclick="changeTextColor('gray', this)">
+            <span class="checkmark">✔</span>
+        </div>
+        <div class="color-button color-black" onclick="changeTextColor('black', this)">
+            <span class="checkmark">✔</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="left-menu" id="profileMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('profileMenu')">&times;</a>
+    <div class="profile-content">
+      <div class="playlist">
+        <div class="playlist-item" data-src="battlefield-elegy-201530.mp3">
+            <div class="number">1</div>
+            <div class="details">
+                <div class="title">Battlefield Elegy</div>
+                <div class="artist">Neura-Flow</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="loneliness_outro-202380.mp3">
+            <div class="number">2</div>
+            <div class="details">
+                <div class="title">Loneliness_Outro</div>
+                <div class="artist">Grand_Project</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="lost-dreams-inspiring-cinematic-ambient-208164.mp3">
+            <div class="number">3</div>
+            <div class="details">
+                <div class="title">Lost Dreams - Inspiring Cinematic Ambient</div>
+                <div class="artist">CalvinClavier</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="perfect-beauty-191271.mp3">
+            <div class="number">4</div>
+            <div class="details">
+                <div class="title">Perfect Beauty</div>
+                <div class="artist">Good_B_Music</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="piano-moment-9835.mp3">
+            <div class="number">5</div>
+            <div class="details">
+                <div class="title">Piano Moment</div>
+                <div class="artist">Good_B_Music</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+        <div class="playlist-item" data-src="relaxing-145038.mp3">
+            <div class="number">6</div>
+            <div class="details">
+                <div class="title">Relaxing</div>
+                <div class="artist">Music_For_Videos</div>
+            </div>
+            <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+        </div>
+      </div>
+      <audio id="audio-player"></audio>
+    </div>
+  </div>
+  <div class="left-menu" id="settingMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('settingMenu')">&times;</a>
+    <div class="toggle-container">
+      <label class="switch">
+          <input type="checkbox" id="highlightToggle">
+          <span class="slider"></span>
+      </label>
+      <div class="create-note-text">Đánh dấu</div>
+    </div>
+    <div class="xoa_2light">
+      <div class="xoa_2light_icon"><i class="fa-solid fa-eraser eraser" style="font-size: 30px;color: #007bff;"></i></div>
+      <div class="xoa_2light_text" style="margin-left: 10px;line-height: 30px;">Xóa đánh dấu</div>
+    </div>
+    <div class="note_new">
+      <div class="create-note-container">
+        <div class="create-note-icon" id="createNoteBtn">
+            +
+        </div>
+        <div class="create-note-text">Tạo ghi chú</div>
+      </div>
+      <div id="notesContainer" class="ketqua"></div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Ghi chú</h2>
+          <label for="noteTitle">Tiêu đề:</label>
+          <br>
+          <input type="text" id="noteTitle">
+          <br><br>
+          <label for="noteContent">Nội dung:</label>
+          <br>
+          <textarea id="noteContent" rows="4"></textarea>
+          <br><br>
+          <button id="saveNoteBtn">Lưu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="left-menu" id="searchKeywordMenu">
+    <a href="#" class="close-btn" onclick="closeMenu('searchKeywordMenu')">&times;</a>
+    <div class="search-section">
+        <input type="text" id="searchInput" placeholder="Nhập từ khóa..." oninput="searchKeyword()">
+        <div id="searchResults"></div>
+    </div>
+  </div>
+  <main id="mainContent">
+    <div class="content">
+      <div class="noidungsach">
+        <h2 id="c1_I">I</h2>
+        <p>Khoan lững thững bước vào lớp học. Cũng như mọi ngày, ông đồ chưa tới, và lũ học trò lớn nhỏ còn đang túm năm tụm ba trò chuyện. Cũng có một vài cậu đang ôn lại bài hoặc viết nốt mấy trang phóng bữa trước các cậu lười chưa viết hết.</p>
+        <p>Ông đồ Ngư đông học trò lắm. Tuy không đỗ đạt gì nhưng ông có tiếng hay chữ Học trò ông đã có nhiều người làm nên, cử nhân có, phó bảng có, và những người này đều lĩnh những chức vụ quan trọng. Người đi tri huyện, kẻ đi tri phủ, người lĩnh huấn đạo và cũng có người được mời vào kinh nhận việc tại các Bộ.</p>
+        <p>Làng Kim Đôi, huyện Võ Giàng, tỉnh Bắc Ninh có tiếng là làng văn học. Làng này nhất là xã tam thôn, và có tên nôm là làng Rủi. Ba thôn là thôn Kim Đôi (tục gọi là Rủi Quan), Quỳnh Đôi (tục gọi là Rủi Quỳnh) và Ngọc Đôi (tục gọi là Rủi Nguộc). Thôn Kim Đôi được gọi là Rủi Quan vì đã sản sinh được nhiều chân khoa bảng tiếng tăm, từng đi làm quan nhiều địa phương trong nước. Thôn Kim Đôi nằm sát bên sông Nguyệt Đức, trên con đường đi từ huyện Võ Giàng đến làng Ngư Đại. Đình của thôn trông ngay ra sông, dưới bóng râm mát của mấy cây đa cổ thụ. Dân thôn ở mé bên kia đường, cách hai thôn Quỳnh Đôi và Ngọc Đôi mỗi thôn một cánh đồng.</p>
+        <p>Ông đồ Ngư người làng Kim Đôi, mở lớp dạy học ngay tại thôn nhà. Kể từ khi mở trường tới nay, đã mấy chục năm có lẻ, học trò ông lúc nào cũng đông đúc. Những trò lớn thành đạt, lại có lớp trẻ nhỏ khác kế tiếp ngay. Học trò của ông, người làng Kim Đôi có, kể cả ba thôn Rủi Quan, Rủi Nguộc, Rủi Quỳnh cũng có, nhưng người thiên hạ cũng nhiều. Ông hay chữ có tiếng, người trong làng đều biết, đám trẻ con từ khi còn nhỏ đã được bố mẹ chúng cho tới cửa ông “ăn mày” dăm ba chữ của Thánh hiền, may ra sau này chúng có đỗ đạt càng hay, bằng không chúng cũng đọc thông văn tự đỡ tiếng dốt nát ngu si. Còn người thiên hạ, chuộng tiếng tăm ông, kén thầy cho con học, lẽ tất nhiên họ phải cho con cái họ tới làng Kim Đôi để học ông. Không phải tại các làng chung quanh không có ông đồ, nhưng lẽ chính là vì học trò của ông thành đạt nhiều. Phần đông con trẻ mấy xã Ngư Đại, Bất Phí, Xuân Hòa, Thị Cầu, Đáp Cầu, Phương Cầu thuộc huyện Võ Giàng bên này sông Nguyệt Đức, và mấy xã Nam Ngạn, Đạo Ngạn, Nghi Thiết thuộc huyện Việt Yên, tỉnh Bắc Giang bên kia sông kéo nhau tới học lớp ông đông lắm. Có nhiều người ở tận tỉnh xa cũng gửi con tới học.</p>
+        <p>Đạo Thánh thì có hẹp gì, sân Trình cửa Khổng có lúc nào không sẵn sàng để đón môn sinh, ông đồ Ngư không từ chối một trẻ nào. Ai đã mến chuộng ông, tin cậy gửi con tới học, ông đều nhận hết. Càng đông học trò càng nhiều người thành đạt. Vả chăng ông cũng không vất vả hơn bao nhiêu. Đã có trò lớn bảo trò bé, và trông coi toàn thể học trò đã có trưởng tràng.</p>
+        <p>Mỗi buổi ông đồ dạy học đều có trưởng tràng. Trưởng tràng là người học trò cao niên, học hành xuất sắc nhất trong đám học trò đang theo học được ông đồ giao cho trách nhiệm trông nom trường học, theo dõi sự học hành của các học sinh khác. Trưởng tràng thay mặt thầy trong những buổi thầy đi vắng. Gặp những khi nhà thầy giỗ chạp, ma chay, trưởng tràng sắp xếp các anh em lo giúp đỡ mọi công việc nhà thầy và lo liệu lễ vật của toàn anh em với nhà thầy. Trong những dịp này, mọi học trò mới cũ đều cùng nhau đóng tiền đồng môn, nghĩa là tiền của các môn sinh cùng học một thầy đóng góp trong khi nhà thầy có công việc hiếu hỷ. Những tiền đồng môn của các môn sinh đã thành đạt thì tùy theo họ góp cho bạn đồng môn, do một vài người đại diện, hoặc họ gửi tới cho trưởng tràng.</p>
+        <p>Trưởng tràng phụ tá giúp thầy nhiều công việc. Nhờ có trưởng tràng, thầy dạy học đỡ vất vả hơn nhiều.</p>
+        <p>Khoan là trưởng tràng lớp học của ông đồ Ngư. Thay ông đồ, Khoan cắt đặt cho các học trò lớn dạy học trò nhỏ viết, chấm phóng, chấm tô cho các trò này. Ông đồ Ngư chỉ phải dạy những học trò lớn, nghĩa là đã học khá cao, đang học hoặc đã học qua Tứ Thư Ngũ Kinh. Những học trò nhỏ mới vỡ lòng với sách Tam tự kinh hoặc Minh Đạo Gia Huấn đều do Khoan cắt đặt anh em trông nom. Lớp học ông đồ Ngư, ngoài các học sinh con trai cũng có số ít học trò con gái. Mấy cô phần nhiều là con gái làng Kim Đôi con em gia đình sung túc. Thời xưa con gái ít được đi học, chỉ những nhà giàu có mới cho con gái đi học. Và con gái đi học chỉ để biết chữ chứ dù giỏi giang tới mấy cũng không được đi thi. Kỳ thi chỉ dành riêng cho nam phái. Thường thường các nữ sinh chỉ đi học đến một trình độ nào, ít ai đã theo đuổi sự học đến một bậc khá cao. Các nữ sinh theo học ông Đồ ngư cũng vậy. Các cô đi học để đọc thông văn tự, hoặc có học xa hơn nữa cũng chỉ để hiểu nỗi mấy câu văn sách. Khi trình độ học của các cô đã hơi kha khá, các cô lại nghỉ học. Có cô phải ở nhà giúp đỡ cha mẹ, có cô nghỉ để lấy chồng. Số nữ sinh tại lớp học của các ông đồ không bao nhiêu, chỉ độ dăm ba cô là nhiều. Trong lúc đi học các cô cũng ganh đua chăm chỉ không chịu thua kém bạn trai. Các cô cũng tập làm văn bài, cũng cố gắng về câu đối hay thơ phú khi các cô học đã cao cao. Hiện trong mấy cô đang theo học lớp ông đồ Ngư cũng có vài ba cô học khá giỏi và thường được ông đồ khen ngợi, khiến cho các nam sinh càng phải cố gắng. Nam sinh hay nữ sinh, đối với Khoan là trưởng tràng họ đều quý trọng kính mến. Họ hiểu Khoan có nhiệm vụ thay ông đồ để trông nom lớp học, đối với Khoan họ có bổn phận cư xử như đối với người anh cả.</p>
+        <p>Sáng hôm đó, cũng như mọi ngày. Khoan ở nhà ra đi từ lúc mặt trời vừa mọc, và khi tới lớp học thì mặt trời đã ngang ngang nửa con sào. Nhà Khoan ở thôn Quỳnh Đôi, cách nhà ông đồ cũng khá xa. Phải đi một đoạn đường dài, nhưng ngày ngày bao giờ Khoan cũng tới lớp rất sớm, vì đã là trưởng tràng không lẽ đến chậm để phụ lòng tin cậy của ông đồ và chúng bạn. Lũ học trò đang đùa nghịch hoặc đứng tụm năm tụm ba trò chuyện, thấy Khoan tới đều đứng chào và sau đó, ai nấy đều lo ngay tới công việc học hành của mình. Khoan giao cho bọn học trò nhỏ mỗi anh một nhiệm vụ. Anh này lo việc quét lớp học, anh kia lo việc mài son mài mực, anh khác lo việc thu sách để Khoan hoặc ông đồ chấm bài cho mọi trò học. Cũng có anh được Khoan cắt cho việc hàng ngày phải tới sớm đun nước pha trà để khi ông đồ thức dậy dùng. Trò nào được Khoan giao cho việc gì lo rất chu đáo việc của mình ít khi Khoan phải nhắc lại. Khoan rất sung sướng được các bạn bè tín nhiệm và tuân theo lời mình.Vả chăng Khoan cũng rất công bằng, trong việc cắt đặt các học trò vào mọi công việc, Khoan luân phiên cắt cử hết trò nầy sang trò khác. Tất cả lớp học trò bé đều lần lượt, được nhận lĩnh những công việc Khoan giao cho. Các cậu lấy làm hãnh diện với những công việc được giao phó. Phải, còn gì sung sướng hơn cho một trò ngoan là được mài son mài mực cho thầy, được hầu hạ thầy và được anh trưởng tràng sai bảo.</p>
+        <div class="anh"><img src="imgs/anh7.jpeg" alt="Ảnh minh họa"></div>
+        <div class="xg_dong"></div>
+        <h2 id="c1_II">II</h2>
+        <p>Lũ trò nhỏ mài son mài mực đã xong, và chúng đang cùng nhau ê a học theo sự chỉ dẫn của mấy trò lớn hơn. Đây một em đang đọc sách Tam Tự Kinh:</p>
+        <p style="text-align: center;">“Nhân bất học - Bất tri lý</p>
+        <p style="text-align: center;">Ngọc bất trác - Bất thành khí”</p>
+        <p>Vừa học chữ em vừa dịch nghĩa từng câu một với những tiếng đệm ư a ngây thơ:</p>
+        <p style="text-align: center;">“Nhân bất học là người chẳng học</p>
+        <p style="text-align: center;">Bất tri lý - chẳng biết lý</p>
+        <p style="text-align: center;">Ngọc bất trác - ngọc chẳng dũa</p>
+        <p style="text-align: center;">Bất thành khí - chẳng thành đồ”</p>
+        <p>Em nhai đi, nhai lại mấy câu, rồi khi đã thuộc hẳn, em mới hỏi anh học trò lớn có nhiệm vụ chỉ bảo em học sang câu khác. Thỉnh thoảng em lại quên một chữ, tuy em luôn mồm nhắc lại những chữ đó.</p>
+        <p>Đây một em khác lớn hơn đang chăm chú học một đoạn sách Minh Đạo Gia Huấn của Trình Tử:</p>
+        <p style="text-align: center;">“Thiên kim di tử - Bất như nhất kinh</p>
+        <p style="text-align: center;">Vạn khoảnh lương điền - Bất như bạc nghệ”</p>
+        <p style="text-align: center;">Em cũng vừa học chữ vừa học nghĩa:</p>
+        <p style="text-align: center;">“Nghìn vàng để cho con</p>
+        <p style="text-align: center;">Không bằng một kinh sách</p>
+        <p style="text-align: center;">Vạn miếng ruộng rót</p>
+        <p style="text-align: center;">Không bằng một nghề bạc”</p>
+        <p>Trong khi các anh lớn bảo các em trò nhỏ, Khoan ngồi chấm câu, ngắt bài cho các em học. Sách chữ nho khi in thuở trước không chấm câu sẵn. Học trò chép lại sách in cũng không chấm câu và cho rằng đã có chấm câu sẵn sàng trong sách in, các trò chép lại cũng không được tự tiện chấm câu lấy. Bài học phải do ông đồ hoặc trưởng tràng chấm câu cho. Đối với các trò nhỏ chưa tự viết được, bài học do ông đồ, trưởng tràng hoặc một trò lớn nào khác viết và chấm câu ngay để các trò đó học. Những trò đã tự chép được bài, cũng như những học trò lớn học theo sách in đều phải do trưởng tràng hoặc ông đồ chấm câu. Chấm câu bằng son. Chỗ nào nên phẩy, chỗ nào chấm đều là nét son hết. Phần nhiều bài học của học trò học sách in, bao giờ cũng do chính tay ông đồ chấm câu và lúc giảng cũng lại chính ông đồ giảng lấy. Khoan ngồi chấm câu sách của lũ trò nhỏ trên một chiếc ghế nhựa kê ở bên cạnh gian nhà học. Lớp học của ông đồ Ngư cũng giống như hàng trăm ngàn lớp học chữ Hán thời trước. Đấy là một căn nhà ba gian khá rộng, không có kê bàn ghế như tại các trường học ngày nay. Ở gian giữa về phía trong giáp tường là một chiếc sập có trải chiếu cạp điều. Trên chiếu có chiếc gối sơn dùng để ông đồ tỳ tay lúc giảng học, và những buổi trưa sau những buổi học ông đồ dùng để gối đầu ngả lưng xem sách. Trước chiếc sập gụ là một án thư nhỏ, có hai tràng kỷ hai bên. Trên án thư có để mấy chồng sách ông đồ thường dùng để dạy học trò. Bên mấy chồng sách là bộ đồ trà nước để ông đồ tiếp khách và chiếc điếu ống, xe điếu vắt vẻo cong cong. Hai gian bên cạnh có hai hàng ghế ngựa-chỗ cho học trò học và viết. Và ở mé ngoài có hai hàng dại bằng tre để che nắng gió. Gian giữa, ngang với hai hàng dại thẳng trước sập của ông đồ có chiếc mành cuốn lên hạ xuống tùy theo chiều trời quang đãng hay mưa nắng. Lũ học trò ngồi học hỗn độn không có chỗ nào nhất định, chỗ này một nhóm, chỗ kia một nhóm. Khi tập viết các cậu nằm bò ra ghế ngựa và cũng nằm không hàng lối gì; chỗ này mấy cậu mới học đang tô lại chữ son trên vở tập viết, chỗ kia vài cậu học đã hơi lâu đang tô trên tờ phóng, qua lần giấy bản của vở viết. Gần đấy, những cậu khác, học đã kha khá, đang chép lại bài học trong mấy cuốn sách in.</p>
+        <p>Học chữ Nho xưa, tập viết cũng như các em ngày nay học Việt ngữ. Bắt đầu tập viết là tô nét. Ông đồ hoặc trưởng tràng viết sẵn bằng bút son những trang chữ cho các em tô lại. Khi các em tô đã hơi thạo, các em tập viết phóng. Phóng là một tờ giấy có viết những chữ mẫu. Các trò nhỏ lồng tờ phóng này vào một tờ giấy của sách viết. Nét chữ phóng hằn lên, các em tô theo nét chữ hằn của tờ phóng. Sách vở chữ Nho xưa kia đóng bằng giấy bản và chỉ in, viết có một mặt. Tờ giấy gấp đôi đóng lại thành lề. Khi viết tập các em lồng tờ phóng vào trong tờ giấy tập vở của mình. Sau thời kỳ viết phóng đến thời kỳ phải tự coi sách chép lấy bài. Khi đã có thể tự coi sách chép lấy bài là đã tới trình độ đọc được nhiều chữ. Học trò tới trình độ nầy ít nhất cũng đã học qua sách “Tam Tự Kinh” hoặc sách “Ấu Học Tân Thư” rồi.</p>
+        <p>Buổi học rất nhộn nhịp vui vẻ. Tiếng ê a của các em, xen lẫn tiếng giảng bài của các anh lớn; em này hỏi, anh kia trả lời. Có một vài em đứng tựa vào những chiếc cột phân cách ba gian nhà, vừa học vừa như nghiền ngẫm nghĩa lý của sách vở. Vài cô nữ sinh ngồi riêng ở một góc ghế ngựa, cô lớn bảo cô bé. Lớp học ồn ào những tiếng ê a, những lời giảng nghĩa cùng những lời hỏi đáp lẫn nhau. Cũng như mọi ngày, một lát sau khoảng cuối giờ Mão, ông đồ Ngư tới lớp học. Học trò đang học bỗng ngưng bặt, rồi những tiếng “lạy thầy” vang lên tứ phía. Ông đồ ngồi vào chiếu cạp điều trên sập, trong tay vắt vẻo roi mây. Học trò lần lượt từ bé đến lớn lại đọc bài. Học chữ Nho xưa, buổi sáng mỗi khi vào học, học trò phải đọc bài hôm trước, sau đó học bài mới hôm nay rồi tập viết. Lớp học của ông đồ Ngư cũng ở trong thông lệ này, nhưng thường ông đồ hay xuống lớp chậm đôi chút, nên các trò nhỏ được Khoan trưởng tràng cùng các trò lớn khác giảng cho bài mới trong khi chờ đợi đọc bài cũ với ông đồ. Các trò nhỏ tới trước mặt ông đồ sợ sệt đọc bài, vừa đọc các em vừa nhìn vào ngọn roi mây đáng sợ trên tay thầy.</p>
+        <p>Tục ngữ có câu: “Thứ nhất hay chữ, thứ nhì dữ đòn”. Một ông đồ cần phải hay chữ, điều đó đã đành, nhưng muốn học trò học được tấn tới, lại cần phải dữ đòn. Ngọn roi mây là yếu tố thúc đẩy để các trò nhỏ chăm học. Ngọn roi mây của ông đồ Ngư hằng ngày luôn được làm việc. Mỗi trò nhỏ không thuộc bài là ông bắt nằm sấp xuống và cho hưởng một chập roi mây. Các trò biết lệ, không bao giờ dám cưỡng. Nếu trò nào vì sợ quá không muốn nằm, lập tức các trò khác được lệnh vật trò này xuống để ông đồ đánh. Theo những tiếng ngọn roi vun vút là những tiếng “Con lạy thầy! Ối! Con lạy thầy!”. Đánh một trò xong, thầy học bao giờ cũng nhắc lại: “Đã đi học thì phải chăm học, không chịu học phí công thầy dạy lại còn tốn tiền của cha mẹ, chẳng thà ở nhà đi chăn trâu còn hơn”. Lần lượt hết trò nhỏ tới trò lớn đọc bài. Khi học trò đã đọc bài xong ông đồ mới bắt đầu chấm câu rồi giảng bài cho các trò lớn. Lúc giảng bài, các trò nầy đặt sách trước mặt ông đồ vừa đọc vừa giảng nghĩa. Ông đồ lim dim cặp mắt ngồi nghe, chỉ khi nào học trò giảng sai ông mới sửa lại. Buổi học kéo dài cho tới giờ Ngọ. Các trò chăm chú học vui vẻ lắm. Lúc gần tan học, học trò xếp sách viết lại để ông đồ chấm. Ông lại dùng bút son để chấm bài cũng như khi ông chấm câu bài học. Những chữ viết đẹp được khuyên đỏ, còn những chữ viết xấu hoặc thiếu nét đều bị xổ toẹt. Sau khi khuyên xổ, ông đồ cho điểm từ nhất tới thập. Hơn nhau một điểm, một vòng khuyên, học trò đều sung sướng. Tinh thần ganh đua tràn ngập giữa mọi anh em, ganh đua trong thân thiện, ganh đua trong cố gắng. Những học trò giỏi được ông đồ khen ngợi, những trò kém được khuyến khích. Trò nào lười biếng bị đòn và còn bị khoanh mép bằng mực đen. Khoan sau khi nghe giảng bài của mình cũng học bài và đồng thời luôn luôn lưu ý trông nom các anh em giúp đỡ ông đồ. Giữa lúc Khoan đang mải với bài học của mình, một bóng hồng lướt qua sân. Khoan ngửng đầu nhìn ra, nhưng lại cúi ngay xuống để tiếp tục học. Cử chỉ mau lẹ đó của Khoan không lọt qua mắt Đáp, một học trò lớn cũng trạc tuổi Khoan. Đáp tới bên Khoan, khe khẽ ngâm câu thơ trong Kinh thi:</p>
+        <p style="text-align: center;">“Quan quan thư cưu</p>
+        <p style="text-align: center;">Tại hà chi châu</p>
+        <p style="text-align: center;">Yểu điệu thục nữ</p>
+        <p style="text-align: center;">Quân tử hảo cầu”<span class="tooltip-word" onmouseover="hienThiChuThich(event, 'Ríu rít chim thư cưu/ Ở bến sông kia/ Người thục nữ yểu điệu/ Sánh duyên cùng người quân tử.')" onmouseout="anChuThich(this)">[1]</span></p>
+        <p>Khoan đỏ mặt không nói gì, làm ra vẻ như không để ý tới lời ngâm của Đáp.</p>              
+        <div class="anh"><img src="imgs/anh3.jpg" alt="Ảnh minh họa"></div>
+        <div class="xg_dong"></div>
+        <h2 id="c1_III">III</h2>
+        <p>Bóng hồng lướt qua sân là Tiệp, con gái ông đồ Ngư, Tiệp tuổi vừa đôi tám trông người gọn ghẽ xinh đẹp. Tuy không mang vẻ đẹp chim sa cá lặn, hoa nhường nguyệt thẹn, nhưng cô Tiệp cũng có vẻ đẹp rất duyên dáng. Cô có khuôn mặt trái xoan trắng trẻo với đôi má ửng hồng trông thật dịu dàng dưới mái tóc óng mượt có đường ngôi rẽ giữa như e ấp cùng vành khăn vấn đầu tròn trặn trang điểm thêm bởi mớ tóc đuôi gà lả lướt.</p>
+        <p>Đôi mắt bồ câu đen lánh hạt huyền trong như nước hồ thu lồng giữa đôi hàng lông mi đều đặn và đôi cặp lông mày lá liễu; sống mũi dọc dừa càng tăng phần cân đối cho khuôn mặt thùy mị, đoan trang. Mỗi khi cô mủm mỉm cười để lộ đôi hàm răng đều như hạt lựu và đen nhức như hạt na già trông càng dịu dàng xinh đẹp. Cô bước đi nhẹ nhàng, cử chỉ khoan thai, nói năng từ tốn, và trong lời ăn tiếng nói cũng như trong hành động hàng ngày cô luôn luôn giữ gìn ý tứ. Cô cũng đã từng theo học lớp học của ông đồ Ngư đã học qua các sách vỡ lòng, và học hết sách Mạnh Tử của Tứ Thư. Trong ngày đi học, cô chăm chỉ nên sự học hành không kém chi các bạn trai. Cô cũng đã tập làm văn bài câu đối, đôi khi cô cũng tỏ ra rất xuất sắc, vượt hẳn các bạn gái khác và cả một số bạn trai nữa. Cứ kể nếu cô theo được sự học đến cùng và cô cũng được đi thi như các bạn trai, có lẽ chẳng cử nhân tiến sĩ thì ít nhất cô cũng phải đậu khóa sinh, tú tài, nhưng con gái đâu có cần học nhiều, nên từ mấy tháng nay, ông đồ Ngư cho cô nghỉ học để giúp đỡ bà đồ trong công việc nhà. Nói rằng nghỉ học để giúp đỡ mẹ, nhưng thật ra từ trước ngay trong khi đi học cô cũng luôn luôn trông nom công việc nhà cũng như việc đồng rất nhiều. Cô làm việc vui vẻ và ngăn nắp; việc nặng cũng như việc nhẹ, không bao giờ ngần ngại trước việc gì. Nặng như gánh nước, thổi cơm, xay lúa, giã gạo với người làm, nhẹ như quét sân, quét nhà, đun nước pha trà hoặc khâu vá. Đây là chưa nói đến những khi cô phụ giúp với thợ đồng trong ngày mùa hoặc đi chợ mua thức ăn đồ dùng, bán ngô khoai của ruộng vườn nhà. Từ ngày nghỉ học, cô giúp đỡ mẹ nhiều hơn. Bà đồ giao cho trông coi hết mọi việc trong nhà, ngoài đồng để có thêm thì giờ đi chùa lễ Phật tụng kinh. Với một nhan sắc mặn mà lại thêm sự đảm đang ngoan ngoãn, cô rất được nhiều bà mẹ có con trai trong làng để ý và chính các chàng trai cũng nhiều say đắm cô.</p>
+        <p>Trong những người để ý tới Tiệp có cả Khoan - trưởng tràng của lớp học ông đồ Ngư. Khoan và Tiệp học chung lớp, Khoan biết rõ tính nết thùy mị ngoan ngoãn của Tiệp. Đã nhiều lần Khoan muốn tìm cách tỏ bày cảm tình với Tiệp. Khoan giúp Tiệp một chữ trong bài văn, Khoan giải nghĩa cho Tiệp một đoạn trong kinh sách. Đối với cảm tình của Khoan, Tiệp không hề tỏ ra hờ hững. Những lời cảm ơn e lệ, những cái nhìn vội vàng kín đáo nhưng đầy ý nghĩa đã khiến cho Khoan trong lòng sung sướng. Khoan hơn Tiệp hai tuổi. Đối với các bạn học, Khoan coi Tiệp như cô em gái nhỏ của mình và Tiệp cũng coi Khoan như một người anh quý mến. Tình cảm của họ tuy thầm lặng nhưng thắm thiết vô cùng. Họ quyến luyến nhau và cầu mong cho nhau những điều tốt đẹp. Xa nhau họ nhớ nhung. Những hôm Khoan bận việc phải nghỉ học, Tiệp như thấy thiếu một cái gì và tự nhiên lòng nàng thấy bâng khuâng vơ vẩn. Khoan cũng vậy, chàng luôn luôn mong được gặp Tiệp, được giúp đỡ nàng, và nhất là được nhìn đôi mắt trìu mến của nàng. Chưa ai nói với ai điều gì yêu đương, nhưng họ đã hiểu tình cảm dành cho nhau qua ánh mắt đầy luyến ái, qua những cử chỉ để ý tới đối phương.</p>
+        <p>Mối tình thầm lặng của hai người tưởng chỉ hai người hiểu và các bạn học không ai để ý tới. Họ có ngờ đâu, sự trìu mến lẫn nhau của họ đã bị Đáp biết. Đáp cùng một tuổi với Khoan và cũng là một học trò giỏi của ông đồ. Qua mọi cử chỉ và hành động của Khoan và Tiệp, Đáp biết đôi bên luyến ái nhau và cũng thấy hai người họ rất xứng đôi. Đáp rất mong cho Khoan và Tiệp sớm thành đôi. Bản tâm Đáp rất tốt, Đáp chỉ mong cho bạn được sung sướng với yêu đương. Chính Đáp cũng đang yêu, Đáp yêu thương một cô hàng xén<span class="tooltip-word" onmouseover="hienThiChuThich(event, 'Người bán hàng tạp hóa')" onmouseout="anChuThich(this)">[2]</span> trong làng. Đáp biết yêu thương có sướng và có khổ. Đáp cầu mong cho Khoan và Tiệp được trọn vẹn chữ tình cũng như chính cầu mong cho mình một ngày kia được sánh duyên cầm sắt<span class="tooltip-word" onmouseover="hienThiChuThich(event, 'Ý chỉ tình cảm hòa thuận, bền chặt')" onmouseout="anChuThich(this)">[3]</span> với Hương. Chính vì mong mối tình của bạn được tốt đẹp nên đôi khi Đáp thường ngâm thơ để trêu cợt Khoan.</p>
+        <p>Cùng một tuổi với Đáp và Khoan tại lớp của ông đồ Ngư còn có Thúc. Thúc theo học ông đồ đã lâu và trình độ học cũng đã khá cao. Chàng đã học qua Tứ Thư, Ngũ Kinh và đã học sang các sách khác. Thúc là con ông đương kim Chánh Tổng, nhà giàu có và thế lực trong hàng tổng, hàng huyện rất mạnh. Tuy theo học ông đồ Ngư đã lâu và đã học nhiều nhưng sự học không được xuất sắc bằng Khoan và Đáp và cũng không hy vọng gì về khoa cửa. Ông đồ Ngư thường bảo Thúc: “Con cố học để sau này nối lấy nghiệp nhà, ra gánh vác công việc dân xã. Thi cử khó lắm, phải có đất con ạ!” Thúc cũng tự biết tài học của mình tuy có giỏi nhưng không xuất sắc, và Thúc cũng chỉ mong sau này có chút công danh như cha là mãn nguyện.</p>
+        <p>Học thì Thúc không bằng Khoan và Đáp, nhưng ăn mặc và chơi bời thì Thúc hơn hẳn các bạn. Nhà Thúc giàu, sẵn tiền bạc quần áo, lúc nào trông Thúc cũng chải chuốt bảnh bao. Thúc săn sóc tới áo quần rất kỹ lưỡng, áo the khăn xếp, quần lụa mỡ gà. Thúc ăn mặc chải chuốt để tỏ ra nhà mình giàu có, nhưng cũng để được mấy nữ sinh trong lớp học ông đồ để ý, nhất là Tiệp.</p>
+        <p>Thúc để ý tới Tiệp đã lâu. Thúc thấy nàng xinh đẹp duyên dáng và Thúc chỉ đợi ngày xin cùng bố mẹ nhờ người làm mai tới nói với ông bà đồ. Thúc luôn luôn quan tâm chăm sóc, hỏi han tới Tiệp. Sự hỏi han săn sóc của Thúc không làm cho Tiệp hài lòng, trái lại chỉ khiến nàng khó chịu. Mỗi lần Thúc muốn gần Tiệp, nàng đều tìm cách lẩn tránh. Một lần Thúc hỏi nàng: “Sao cô Tiệp thấy tôi lại cứ tránh mặt?”</p>
+        <p>Tiệp đã đáp: “Anh không thấy trong sách nói “nam nữ thọ thọ bất thân<span class="tooltip-word" onmouseover="hienThiChuThich(event, '“Nam nữ thọ thọ bất tương thân” nghĩa là trai gái không được cận kề nhau quá')" onmouseout="anChuThich(this)">[4]</span>” sao. Anh là con trai, tôi là con gái tôi phải giữ ý”.Thúc không nói gì, nhưng Thúc rất ghen với Khoan, Khoan thường được Tiệp nhờ giảng bài và giải nghĩa văn chương trong kinh sách. Giữa lúc Khoan và Tiệp đang gần gũi nhau, giữa lúc Thúc đang lưu ý tới Tiệp thì ông đồ Ngư cho Tiệp nghỉ học để giúp đỡ bà đồ trong việc nhà.</p>
+        <p>Tiệp nghỉ học để lại cho Khoan một nỗi bâng khuâng và cũng để lại cho Thúc một niềm luyến tiếc. Trước đây hằng ngày Khoan được gặp Tiệp, hàng ngày Thúc được nhìn thấy Tiệp, nhưng từ khi nàng nghỉ học, được thấy mặt nàng thật là một điều thưa thớt. Khoan luôn luôn nghĩ tới nàng, và trong buổi học, nếu bóng nàng đi qua, sống chết Khoan cũng đưa mắt nhìn qua sân để bắt gặp mắt Tiệp cũng đang ngó vào chàng.</p>
+        <p>Hôm đó, Tiệp ở nhà trên đi xuống bếp. Khi nàng đi ngang mé sân, nàng đã bắt gặp Khoan nhìn ra giữa lúc nàng đang đưa mắt nhìn vào lớp học. Trong lòng nàng tràn ngập một niềm sung sướng. Bỗng nhiên nàng thấy nóng bừng đôi má, và bước vội vã xuống nhà bếp.</p>
+        <p style="text-align: center;">“Chim Thư ríu rít bên sông,</p>
+        <p style="text-align: center;">Duyên người thục nữ sánh cùng trượng phu”.</p>
+        <p>Khoan lẩm nhẩm dịch bốn câu thơ trong Kinh Thi ra hai câu lục bát với nỗi hân hoan trong lòng. Chàng mơ màng nghĩ ngợi, nghĩ tới bóng dáng yêu kiều của Tiệp, nghĩ đến một ngày mai huy hoàng chàng sẽ sống bên nàng. Còn Tiệp đi vội xuống bếp. Nàng vừa bước chân vào cửa bếp bỗng nghe tiếng hỏi: “Kìa chị Tiệp!”</p>
+        <p>Nàng giật mình nhìn thì là Luân, một học trò nhỏ của ông đồ, đang lúi húi đun nước trong bếp. Nàng hỏi Luân: “Em đun nước?”</p>
+        <p>-Vâng, anh trưởng tràng hôm nay cắt đến lượt em.</p>
+        <p>-Em đã học bài chưa?</p>
+        <p>-Anh trưởng tràng đã giảng cho em rồi.</p>
+        <p>-Hôm nay em học đến đâu?</p>
+        <p>Luân ngẫm nghĩ như để nhớ lại bài học một lát, rồi đáp: “Anh trưởng tràng vừa giảng cho em bốn câu này:</p>
+        <p style="text-align: center;">“Tích Mạnh mẫu Trạch lân xử</p>
+        <p style="text-align: center;">Tử bất học Đoạn cơ trữ</p>
+        <p style="text-align: center;">Tích mẹ thầy Mạnh tử Trọn láng giềng</p>
+        <p style="text-align: center;">Thầy Mạnh không chịu học Bà cắt đứt khung cửi”</p>
+        <p style="text-align: center;">Tiệp khen Luân: “Em nhớ giỏi nhỉ! Anh trưởng tràng mới giảng mà đã thuộc”.</p>
+        <p>Luân sung sướng trước lời khen của Tiệp, Luân nhìn Tiệp rồi nói: “Anh trưởng tràng Khoan giỏi lắm chị ạ! Anh ấy rất tử tế”.</p>
+        <p>Tiệp mơ màng không đáp lại lời Luân.</p>
+        <div class="anh"><img src="imgs/anh2.jpg" alt="Ảnh minh họa"></div>  
+        <div class="xg_dong"></div>
+        <h2 id="c1_IV">IV</h2>
+        <p>Luân xách siêu nước ở nhà bếp lên pha vào bình tích trên bàn ông đồ. Sau đó cậu bé lại mang siêu nước xuống bếp. Tiệp vẫn đang lúi húi với công việc cơm nước.</p>
+        <p>Luân bảo Tiệp: “Em đun nước xong rồi, trả lại chị cái siêu nhé. Em phải lên học kẻo anh trưởng tràng quở chết”.</p>
+        <p>Tiệp cười nói: “Nếu anh trưởng tràng quở mắng, em cứ bảo chị, chị xin cho”.</p>
+        <p>Nói rồi Tiệp cười Luân cũng cười theo. Bỗng nhiên cậu bé nhìn Tiệp chăm chăm rồi thốt ra: “Chị Tiệp trông xinh quá!”</p>
+        <p>Tiệp sung sướng xoa đầu Luân: “Em nói dối, chị xấu chết đi chứ xinh gì mà xinh”.</p>
+        <p>Luân nói: “Chị xinh thật đấy, em không nói dối đâu. Chị xinh hơn chị Hoài, chị Thảo nhiều”.</p>
+        <p>Hoài và Thảo là hai nữ sinh lớp học ông đồ. Các cô cũng vào trạc tuổi với Tiệp, và trước đây cùng học với Tiệp. Trình độ học các cô hơi kém Tiệp. Tiệp nghỉ, các cô vẫn tiếp tục học. Hai cô trông cũng sạch nước cản<span class="tooltip-word" onmouseover="hienThiChuThich(event, 'nghĩa là cũng vào hạng tương đối duyên dáng dễ coi')" onmouseout="anChuThich(this)">[5]</span>. Về lời ăn tiếng nói các cô mặn mà sắc sảo, và trong cử chỉ của các cô có nhiều nếp dịu dàng khả ái. Trước đây, các cô rất quý mến Tiệp, và Tiệp đối với các cô cũng thân mật. Mối tình bạn gái giữa mấy người thiệt đằm thắm, nhưng ít ngày trước khi Tiệp nghỉ học, các cô hình như xa dần Tiệp. Tiệp đối cới các cô vẫn luôn luôn vồ vập niềm nở. Các cô không bàn bạc văn bài với Tiệp, một điều gì vô hình như chia rẽ các cô và Tiệp.</p>
+        <p>Tiệp rất lạ lùng trước thái độ của bạn mình. Nàng cố tìm hiểu vì đâu bỗng dưng giữa nàng và các bạn như có một sự thờ ơ ghẻ lạnh. Nàng thấy mình không làm điều gì đáng để cho các bạn giận. Nàng băn khoăn và cố tìm cách thân mật với các bạn hơn, nhưng sự cố gắng của nàng không thay đổi được thái độ hững hờ của Hoài và Thảo. Sự thật Hoài và Thảo không ghét Tiệp, nhưng các cô không ưa sự ân cần của Khoan đối với nàng. Sự ân cần ấy chứng tỏ một cảm tình, và cảm tình ấy, Hoài và Thảo đều muốn Khoan dành cho mình. Hai cô hằng tự phụ mình không kém gì Tiệp, về nhan sắc cũng như về gia thế, Hoài và Thảo đều là con nhà giàu. Các cô được đi học vì nhà các cô dư dả, và không như ở các gia đình khác, con gái không được học nhiều, phải ở nhà săn sóc công này việc khác giúp đỡ mẹ cha.</p>
+        <p>Cùng học với Tiệp và trình độ học suýt soát như Tiệp các cô tự coi mình cũng như Tiệp và Khoan không được có một cảm tình đối với Tiệp nặng hơn đối với các cô. Trong lòng cô nào cũng thầm mong Khoan để ý riêng tới mình, và sau này nếu duyên số run rủi sẽ được là người bạn trăm năm của Khoan. Các cô không được Khoan riêng để ý tới. Khoan lại chỉ chăm chú hỏi han tới Tiệp, các cô đâm ra ghét Tiệp và tỏ thái độ ghẻ lạnh với nàng. Khoan càng săn sóc tới Tiệp, các cô càng tìm cách để lôi kéo Khoan cho xa Tiệp và gần các cô hơn. Các cô luôn luôn bắt Khoan giảng bài, nhờ Khoan về văn sách. Khoan vẫn vui vẻ chỉ dẫn giúp các cô, nhưng chàng không khỏi bực mình về cử chỉ đôi khi quá thân mật của các cô, nhất là của Thảo. Đã có lần Thảo nắm áo chàng lôi kéo bắt chàng phải giúp đỡ mình trong một vế câu đối. Khoan đã nghiêm sắc mặt bảo Thảo: “Cô Thảo lạ quá! Cô kéo áo tôi thầy trông thấy thì sao. “Nam nữ thọ thọ bất thân”, xin cô giữ ý một chút”.</p>
+        <p>Thảo liền nói lại ngay: “Tôi có làm gì mà anh bảo giữ ý. Anh là trưởng tràng, tôi có điều gì không hiểu phải hỏi anh, nếu anh không muốn bảo, tôi sẽ hỏi thầy. Làm sao anh như ghét tôi vậy? Chị Tiệp chị ấy có hỏi, anh vội vàng bảo ngay đấy nhỉ?”</p>
+        <p>Khoan vẫn nghiêm sắc mặt nói: “Cô lôi thôi quá. Cô Tiệp hay cô, ai cần tôi chỉ dẫn điều gì tôi có từ chối đâu. Nhưng tôi muốn nói cô giữ ý vì cô lôi kéo áo tôi, sợ thầy trông thấy”.</p>
+        <p>Thảo giận dỗi trà lời: “Được anh không muốn thì thôi, từ nay tôi sẽ hỏi anh Đáp và anh Thúc vậy.”</p>
+        <p>Sợ mất lòng Thảo, Khoan phải dịu dàng bảo: “Cô giận tôi rồi sao? Nào cô muốn hỏi gì đưa đây tôi xem. Các cô con gái hay hờn mát quá”.</p>
+        <p>Thảo nhoẻn miệng cười, đưa bài bắt Khoan giảng cho nghe tuy chính Thảo đã hiểu rành rọt rồi. Giữa lúc trong các cô và Tiệp có sự ghẻ lạnh mà Tiệp coi là vô cớ thì ông đồ Ngư bảo Tiệp nghỉ học. Phải nghỉ học, Tiệp rất luyến tiếc các bạn hữu và sách vở. Còn đâu sự gặp gỡ thường xuyên với các bạn gái, cũng như với các bạn trai, nhất là anh trưởng tràng; còn đâu những lúc ganh đua bài vở cùng chúng bạn. Rồi đây những buổi tập làm văn hàng tháng Tiệp sẽ không được dự để tỏ tài của mình cũng như để chứng kiến tài ba của các bạn. Bao giờ lại còn được nghe các bạn bình thơ bình phú nữa! Và cũng thôi hết mọi sự làm nũng anh trưởng tràng để bắt anh gà cho mấy chữ trong bài phú bài thơ! Từ nay Tiệp sẽ bận với việc nhà nhiều, nàng có muốn đọc sách xem văn cũng chẳng còn bao nhiêu thì giờ. Công việc nhà quê thật bề bộn, việc ngoài đồng, việc bếp núc lại việc chợ búa.</p>
+        <p>Trước khi nghỉ học, Tiệp chào khắp các bạn. Các cô bé, các cậu trò nhỏ thi nhau líu tíu hỏi: “Chị nghỉ học thật à? Từ mai ai dạy chúng em học, ai cầm tay cho chúng em viết? Thỉnh thoảng anh trưởng tràng đánh đòn, ai xin cho chúng em?”</p>
+        <p>Các cô các cậu trò nhỏ này quyến luyến Tiệp lắm. Tiệp rất dịu dàng đối với các em. Lúc nào nàng cũng là một người chị hiền giúp đỡ các em. Tiệp bảo các em: “Các em chịu khó học hành ngoan ngoãn. Thày yêu, anh trưởng tràng cũng mến, sau này thi đỗ vẻ vang”.</p>
+        <p>Khi Tiệp chào các bạn gái, Hoài nói: “Tiếc quá chị nhỉ! Chị em mình đang cùng nhau học vui vẻ. Có lẽ rồi đây thày mẹ em cũng bắt em nghỉ học như chị. Hôm nọ thày em cũng đã bảo em là con gái không cần học nhiều”. Thảo cũng vồn vã với Tiệp.</p>
+        <p>Thấy các bạn đối với mình như hết thái độ ghẻ lạnh, Tiệp sung sướng. Nàng nói: “Các chị cố gắng học cho giỏi mãi thêm lên, văn hay chữ tốt. Nhà em neo người lại nhiều việc, em không theo đuổi sự học được ở đây nhưng em cũng sẽ xem sách trong những khi rảnh rỗi”. Rồi nàng nói tiếp: “Trong khi đi học, em có điều gì không phải xin các chị đừng để tâm và tha lỗi cho em nhé”.</p>
+        <p>Hoài và Thảo cùng đáp: “Chị em bạn gái chúng mình với nhau, làm gì có truyện gì”.</p>
+        <p>Thảo nói thêm: “Nghỉ học, nhưng lúc nào rảnh rỗi, chị nhớ đến đây nói truyện với chúng em cho vui nhé”.</p>
+        <p>Tiệp vui vẻ đáp: “Nghỉ học nhưng lúc nào em cũng nhớ tới các chị, nhớ tới những buổi cùng học với nhau, những phút vui chung sung sướng của chúng ta”.</p>
+        <p>Cuối cùng Tiệp chào Khoan, sau khi đã chào đủ mọi người khác: “Anh trưởng tràng ạ, mai em nghỉ học. Em chào anh trưởng tràng và chúc anh càng văn hay chữ tốt hơn”.</p>
+        <p>Vừa nói Tiệp vừa nhìn vào Khoan. Bốn mắt gặp nhau đã nói nhiều hơn những lời họ muốn nói. Khoan cũng nhìn Tiệp trìu mến. Chàng bảo: “Cô nghỉ học, anh em chúng tôi rất nhớ, nhưng lệnh thày đã muốn, mình làm con phải chiều ý cha mẹ”.</p>
+        <p>Tiệp mân mê tà áo, như muốn nói gì thêm, và Khoan cũng như nàng cũng muốn nói cùng nàng nhiều điều, nhưng đôi bên không biết nói gì hơn cùng nhau ngoài mấy câu trao đổi trên. Đáp cũng chứng kiến cuộc từ biệt của đôi người. Đáp thấy giữa hai người có một tình quyến luyến riêng vượt trên tình bạn đồng học. Đáp vốn là người tốt, vẫn thầm mong cho đôi bên sẽ được cùng nhau như chim liền cánh, như cây liền cành để cùng trọn nghĩa cầm sắt.</p>
+        <p>Sự bịn rịn của đôi bên cũng không lọt ra ngoài mắt Thúc. Thúc cau có bực mình khi thấy đôi người lưu luyến nhau một cách mặn mà, đằm thắm nhưng Thúc cũng mừng vì Tiệp nghỉ học, nàng sẽ không có dịp được gần Khoan nhiều, và rồi ra, nàng sẽ quên Khoan bởi thưa gặp gỡ. Tiệp đã nghỉ học, và từ lốt một nữ sinh, nàng đã trở nên một thôn nữ đảm đang đủ mọi công việc gia đình đồng áng. Mỗi lần có dịp đi ngang qua sân lớp học, nàng không bao giờ nàng quên ngó nhanh vào để được gặp mắt Khoan. Vừa qua, nhân lúc qua sân, nàng đã liếc vào và Khoan cũng đã nhìn ra. Phút giây bốn mắt gặp nhau chỉ thoáng ngắn, nhưng lòng đôi người đã rộn ràng một niềm vui sướng. Giờ đây đứng trong bếp nàng lại được nghe Luân nhắc đến Khoan lòng nàng càng tràn ngập một cảm giác êm dịu nhất là Luân lại lại khen Khoan giỏi và khen nàng xinh đẹp. Nàng bảo Luân: “Em khéo khen chị. Chị xinh sao được bằng các chị Hoài và Thảo”.</p>
+        <p>Luân nhắc lại: “Em không nói dối đâu. Nhưng thôi em phải lên học kẻo anh trưởng tràng lại giục”.</p>
+        <p>Luân chạy vụt đi. Tiệp nhìn theo yên lặng.</p>     
+        <div class="xg_dong"></div>
+        <h2 id="c1_V">V</h2>
+        <p>Lớp học của ông đồ Ngư ồn ào vang tiếng trẻ học, bé học bài của bé, lớn học bài của lớn. Ông đồ ngồi vắt vẻo trên chiếc sập, mắt đeo kính, đang chăm chú đọc sách, thỉnh thoảng lại với lấy chiếc ống điếu châm hút mồi thuốc. Trông ông nghiêm trang và đạo đức.</p>
+        <p>Cũng như mọi ngày, các trò lớn vẫn bảo các trò nhỏ trước khi học bài của mình, và các trò sau khi học thuộc bài thì mang sách ra chép bài hoặc viết tập. Tại lớp học của ông đồ Ngư cũng như tại tất cả các lớp học chữ nho thời xưa, học trò học bài hôm nào thì phải giảng và viết bài ngày hôm đó vào lúc cuối giờ học. Trò nào không thuộc bài hoặc không thuộc nghĩa bài phải ở lại học cho tới thuộc mới được thầy đồ cho về. Vì vậy trong giờ học, trò nào cũng chăm chỉ học mong cho mau thuộc cả chữ lẫn nghĩa để không phải ở lại.</p>
+        <p>Đưa mắt nhìn lũ học trò học bài ông đồ lấy làm tự mãn sung sướng. Tuy không làm quan cao chức trọng gì, nhưng một mình ông đã đào tạo không biết bao nhiêu người làm quan, hết lớp này đến lớp khác. Những trò nhỏ ngày nay đang ngồi học ngồi viết kia, biết đâu mai sau nếu không phải kẻ sẽ mũ cao áo dài, hiển vinh phú quý thì cũng sẽ là những bậc lương đống của quốc gia.</p>
+        <p>Học trò chữ nho rất biết ơn thày. Dù ai làm nên danh giá mức nào, quan cao chức trọng đến đâu, khi tới nhà thày, vẫn chỉ là một học trò của thày vẫn chấp tay dưng hầu thày như khi còn đang đi học.</p>
+        <p>Một lớp học của một ông đồ lại có ban đồng môn để lo mọi công việc nhà thày từ ma chay đến giỗ chạp. Tất cả các môn sinh mới cũ đều phải đóng góp tiền đồng môn mỗi khi nhà thầy có việc, như các con giúp đỡ cha mẹ. Các môn sinh cũ dù đã có tước lộc cao, nhiệm vụ lớn nhưng vẫn tham dự đồng môn. Chỉ những kẻ vô ơn bạc nghĩa mới quên ơn thầy. Cha mẹ có công sinh dưỡng nhưng thầy học có công dạy dỗ cho mình nên người, công dạy dỗ này theo quan niệm phương Đông còn đứng trên công sinh dưỡng.</p>
+        <p>Với số học trò đã thành đạt nhiều, ông đồ Ngư được tiếng tăm khắp nơi. Ngồi dạy lũ học trò nhỏ, ông trông ở tương lai chúng rất nhiều. Trong khi dạy học, ông đoán biết một phần lớn sự thành đạt của học trò. Đứa nào học hành có khiếu ông biết, nhà đứa nào nhiều phúc đức qua nét mặt sáng sủa hiền hậu của nó, ông cũng có thể hy vọng kết quả tốt đẹp ở nó. Còn những học trò con nhà giàu, con cường hào ác bá, dạy chúng học thì ông dạy nhưng thường ông vẫn nghĩ chúng có thể học để mà học, chứ không phải học để thi đậu hiển vinh</p>
+        <p>Hôm đó, giữa lúc ông đang rung đùi ngắm nhìn lũ học trò bỗng có khách tới. Bây giờ vào khoảng giữa giờ Thìn. Khách chẳng phải ai xa lạ, chính là một người làng, bác xã Phiệt. Bác xã Phiệt đến xin học cho con là thằng cu Kiệm lên bảy tuổi. Xã Phiệt ăn mặc trịnh trọng. Bác đội trên đầu chiếc khăn lượt đen, mặc áo the thâm và quần trắng, chân bác đi đôi giầy Gia định. Bác vái ông đồ từ ngoài sân. Cu Kiệm theo sau bác cũng ăn mặc như cha. Trên đầu cũng quấn chiếc khăn nhiễu tam giang, cũng áo the quần trắng, cũng đi đôi giầy. Có lẽ nó đi giầy không quen cho nên đôi giầy cứ muốn văng đi trước. Nó thấy bác xã vái ông đồ, nó cũng vái theo. Cùng đi với hai cha con bác xã, có tên người nhà cũng quần áo sạch sẽ, đầu đội mâm đồ lễ gồm có cỗ xôi con gà và trầu cau, chè rượu. Ông đồ Ngư mời bác xã Phiệt vào trong lớp học. Bác xã nói: “Hôm nay chúng tôi đưa cháu tới để ăn mày ông đồ ít chữ của thánh hiền”.</p>
+        <p>Ông đồ hỏi tên tuổi cu Kiệm biên vào mảnh giấy. Ông bảo ông xã: “Cửa thánh hiền có hẹp gì. Bác xã cố cho con đi học thế là phải”.</p>
+        <p>Bác xã Phiệt nói: “Thưa ông đồ, cháu nó thích đi học lắm. Thấy các trẻ rủ nhau đi học, nó luôn luôn đòi đi.”</p>
+        <p>Ông đồ cười nói: “Thế thì nhà bác khá. Con trẻ thích đi học tức là điềm nhà thịnh vượng”.</p>
+        <p>Ông đồ đưa hai cha con bác xã lên nhà trên. Tên người nhà cũng đội theo mâm đồ lễ. Trước hết ông đồ bảo tên người nhà bác xã đặt đồ lễ trên bàn thờ thánh sư, để ông làm lễ. Ông lấy miếng giấy có tên tuổi cu Kiệm ra xem lại, rồi ông đem đặt vào mâm đồ lễ. Ông thắp nến và ba nén hương cắm trên bàn thờ. Ông lâm râm khấn rồi lễ. Bác xã Phiệt lễ theo. Bác bảo cu Kiệm vào lễ. Cu Kiệm súng sính trong bộ quần áo dài lượt thượt cũng vào lễ trước bàn thờ. Cuộc lễ chỉ đơn giản như vậy nhưng rất trang nghiêm, qua vẻ mặt nghiêm nghị cùng cử chỉ thận trọng của ông đồ, cũng như qua điệu bộ cung kính của bác xã và của cu Kiệm. Lễ Thánh sư xong tới lễ bàn thờ tổ tiên nhà ông đồ. Ông đồ cũng khấn lễ, rồi bác xã Phiệt và cu Kiệm cũng vào lễ như trước. Vẫn cái không khí nghiêm trang ấy, mùi hương tỏa lên ngào ngạt. Ánh mấy ngọn nến rung rinh như soi tỏ lòng thành kính của những người làm lễ đối với tiền nhân. Hai cuộc lễ tại hai bàn thờ có hai ý nghĩa. Lễ Thánh sư là có ý trình bày sự nhập môn của một học sinh mới, còn lễ bàn thờ gia tiên là để ông đồ cáo cùng gia tiên việc mới thâu nhập một môn sinh.</p>
+        <p>Sau cuộc lễ ông đồ mời bác xã Phiệt ngồi chơi ở tràng kỷ trước bàn thờ. Ông sai Tiệp pha trà, đồng thời ông cũng cho gọi Khoan lên. Ông bảo bác xã: “Việc học là việc rộng, biển học mênh mông. Con trẻ chúng đi học, trước hết phải cho chúng học lễ, sau mới nói đến văn bài sách vở. Vì vậy phải có lễ trình Thánh sư”. Bác xã vâng vâng dạ dạ.</p>
+        <p>Ông đồ lại nói: “Tôi dữ đòn lắm. Ai thương con thì không thể cho con học tôi được. Các trẻ con chúng nó còn ham chơi phải lấy roi vọt thúc đẩy chúng nó mới chịu học. Có chịu học chúng mới tấn tới, mới có thể thấm nhuần đạo lý của thánh hiền”.</p>
+        <p>Bác xã thưa: “Trăm sự chúng tôi trông cậy cả ở ông đồ. Chúng tôi chỉ mong sao cháu nó ăn mày ông đồ được dăm ba chữ để sau này lớn lên đỡ bị người ta khinh cười là vô học”.</p>
+        <p>Tiệp đã pha nước bưng tới. Ông đồ mời bác xã: “Bác xã xơi nước. Đây là chè hảo hạng của thầy Huyện Thanh Oai<span class="tooltip-word" onmouseover="hienThiChuThich(event, ' Thầy Huyện Thanh Oai là một học trò cũ của ông đồ, đã đậu cử nhân và được bổ làm tri huyện Thanh Oai thuộc tỉnh Hà Đông.')" onmouseout="anChuThich(this)">[6]</span> gửi biếu”. Vừa lúc ấy Khoan cũng ở lớp học bước lên. Đang pha nước, thấy Khoan lên, Tiệp nhẹ đưa mắt nhìn Khoan như muốn nói điều gì. Và Khoan cũng nhìn lại Tiệp mỉm cười. Khoan thưa với ông đồ: “Thưa thầy gọi con”.</p>
+        <p>Ông đồ đáp: “Ừ, thầy gọi anh lên để giao cho anh thằng cu con bác xã đây, mới nhập học buổi nay. Con trông nom cho nó cũng như các em khác. Con cho nó vỡ lòng bằng sách Ấu học tân thư”.</p>
+        <p>Ông đồ quay lại bác xã nói: “Đây là anh Khoan, trưởng tràng của tôi. Anh cũng người làng ta. Anh chịu khó và học hành tấn tới lắm. Những học trò mới, tôi đều giao cho anh trông nom. Tôi chỉ tự dạy lấy những học trò lớn”.</p>
+        <p>Ông lại bảo thằng cu: “Thôi con đi xuống lớp học. Có anh trưởng tràng dạy học cho. Đi học thì phải ngoan ngoãn, nếu hư hỏng lười biếng thì phải đòn”.</p>
+        <p>Cu Kiệm khép nép vâng dạ, cặp mắt ngây thơ nhìn hết ông đồ lại nhìn đến anh trưởng tràng.</p>
+        <p>Bác xã bảo con: “Con chịu khó học, anh trưởng tràng sẽ dạy con giỏi như thằng Thọ con ông bá Thúy bên cạnh. Buổi trưa tan học, con theo thằng Thọ cùng về”.</p>
+        <p>Khoan dắt cu Kiệm xuống lớp học. Cu Kiệm đi theo nhưng vẫn quay lại nhìn bác xã và ông đồ.</p>
+        <p>Từ trong nhà bước ra ngoài sân, Khoan thấy Tiệp lúc đó đã pha nước xong đang đi chậm chậm có ý chờ đợi Khoan. Khoan nhìn Tiệp như say đắm, Tiệp cũng nhìn Khoan với đôi mắt đầy trìu mến. Khoan nói: “Cô Tiệp dạo này nghỉ học tha hồ nhàn”.</p>
+        <p>Tiệp đáp: “Nhàn sao được hở anh? Nhàn việc học nhưng bận việc nhà anh ơi. Vả lại tôi vẫn thích học lắm. Học với các anh vui lắm, làm công việc nhà vất vả nhiều”. Rồi Tiệp chỉ cu Kiệm nói tiếp: “Anh trưởng tràng lại có thêm một em mới nhập học”.</p>
+        <p>Cuộc đối đáp chỉ ngắn ngủi như thế thôi, Khoan dẫn cu Kiệm xuống lớp học còn Tiệp đi thẳng xuống bếp. Gần tới bếp nàng còn quay lại nhìn Khoan. Vừa lúc ấy Khoan cũng dừng chân ở trước cửa lớp học để nhìn theo nàng. Bốn mắt lại gặp nhau, Tiệp nở một nụ cười duyên dáng rồi vội cúi mặt. Nàng thấy nóng bừng đôi má. Lòng nàng rộn ràng một niềm vui. Khoan cũng cười theo nàng, lòng chàng thấy tràn ngập một nỗi yêu đương vô bờ bến đối với Tiệp. Chàng nghĩ đến tương lai, đến ngày chàng được cùng Tiệp sánh đôi. Bóng Tiệp đã khuất vào trong nhà bếp, Khoan và Kiệm vào lớp học.</p>          
+        <div class="xg_dong"></div>
+        <h2 id="c1_VI">VI</h2>
+        <p>Một buổi chiều mùa Thu. Trời Thu trong không gợn chút mây, gió thu hây hẩy thổi mấy lá vàng rơi. Dòng sông Nguyệt Đức lặng lẽ chảy, nước xanh xanh gợn sóng đều đều theo từng cơn gió nhẹ. Mấy cây cổ thụ làng Kim Đôi nghiêng mình soi bóng bên bờ sông, để hé xa xa nóc ngôi đình cổ kính cùng vài nóc nhà gạch bên hữu ngạn dòng sông. Vài thôn nữ đứng dưới bóng cây đang cùng nhau chuyện vãn. Ngay bờ sông, sát mặt nước, trên một hòn đá lớn, vài thôn nữ khác đang giặt vội một ít quần áo. Cùng ngay bến sông, vài cô khác lội ra xa xa bờ nước khỏa khoắng mấy đôi thùng để kín nước trong.</p>
+        <p>Bốn bề hầu như im lặng, không một tiếng động mạnh không một cơn gió to. Vài lá vàng từ trên ngọn cây rớt xuống là lượn trong không trung trước khi rơi xuống mặt nước, chiếc đảo nghiêng, chiếc đảo ngược. Dòng sông lạnh lùng chầm chậm chảy mang theo những chiếc lá rơi không tiếc bến. Vài con thuyền căng buồm chạy theo chiều gió, đè làn nước. Mấy con đò nhỏ sang ngang đang rập rờn trên sóng nhẹ theo đà của các cô lái đò đưa bơi chèo làm rung làn nước bạc. Một con đò, từ mé bên kia sông sắp cập bến Kim Đôi. Khách đi đò thưa lắm, chỉ có vài ba người nhà quê quần nâu áo vải với một ít thúng mủng quang gánh. Con đò không to - đây là loại thuyền nan thường được dùng để chở khách qua sông trên những bến vắng. Bến Kim Đôi chỉ là một bến nhỏ của sông Nguyệt Đức. Khách hàng ngày sang sông không bao nhiêu: chỉ những người ở một vài làng ngay bờ đê hai bên sông mới dùng bến này, còn ở làng trên xã dưới người ta thường dùng bến Đáp Cầu hoặc bến Ngư Đại là hai nơi có chợ búa đông đúc.</p>
+        <p>Con thuyền nan từ từ cập bến. Cô lái đò nhẹ đưa bơi chèo gạt nước lựa cho đầu mũi thuyền giáp vào bờ sông. Nước theo đà bơi chèo bắn trắng trên mặt sông. Cô lái đò cố giữ cho con thuyền đứng vững khỏi trôi theo nước chảy. Cô cắm sào xuống lòng sông. Chiếc sào đã giữ chắc con thuyền. Khách đi thuyền lần lượt bước lên bờ. Trong số khách qua sông có Tiệp với đôi quang gánh đã nhẹ không. Nếu ai tò mò nhìn vào đôi thúng của nàng thì chỉ thấy mấy mớ dưa, vài xâu bánh phòng cho con trẻ. Tiệp bước chân lên bờ. Nàng chưa kịp để ý tới những ai đứng quanh bờ sông, bỗng có tiếng gọi: “Chị Tiệp đi chợ về đấy à?”</p>
+        <p>Tiệp ngoảnh lại thì đấy là Niệm, một cô bạn cùng xóm với nàng và trước cũng đã có theo học ông đồ Ngư.</p>
+        <p>Tiếp đáp lời: “Vâng, em hôm nay đi chợ Nếnh<span class="tooltip-word" onmouseover="hienThiChuThich(event, 'Chợ Nếnh tức là một chợ nhỏ thuộc làng Nội Ninh, huyện Việt Yên, tỉnh Bắc Giang, bên kia sông, ở không cách xa làng Kim Đôi bao nhiêu.')" onmouseout="anChuThich(this)">[7]</span> bán gánh gạo lấy tiền mua rau.”</p>
+        <p>Tiệp lại hỏi Niệm: “Chị làm gì ở bên sông đấy?”</p>
+        <p>Niệm đáp: “Em giặt ít quần áo. Em cứ tưởng hôm nay ở nhà thầy có cuộc bình văn làm câu đối chị cũng ở nhà dự như mọi tháng”.</p>
+        <p>Tiệp đáp lại Niệm: “Mọi tháng thầy em vẫn bảo em đến nghe và thỉnh thoảng góp vài vế câu đối cho đỡ quên, nhưng hôm nay u bảo em đi bán gạo. Chính thầy em lần này cũng bảo em đi chợ. Con gái dự được buổi bình văn nào hay buổi ấy, không dự cũng không sao.”</p>
+        <p>Hàng tháng, vào kỳ đầu tháng, tại lớp học của ông đồ Ngư có cuộc bình văn và thi câu đối giữa các học trò. Những ngày này có nhiều học trò cũ xin được tới dự nghe để thưởng thức những bài văn, những thơ phú của học trò đang học. Và mọi kỳ, Tiệp vẫn dự nghe để thưởng thức những bài văn, những vế câu đối của các bạn học, nhất là của Khoan. Mỗi khi bài của Khoan được ngợi khen Tiệp thấy sung sướng như chính mình đã làm bài văn đó, chính mình đã đối về câu đối đó.</p>
+        <p>Tháng này Tiệp vẫn muốn dự cuộc bình văn, nhưng mẹ nàng bảo nàng đi chợ, và hình như ông đồ cũng không muốn nàng dự vào các cuộc bình văn thơ này nữa.</p>
+        <p>Phận làm con nên nàng chỉ biết tuân theo lời cha mẹ, dù nàng muốn hay không. Vâng lời cha mẹ là điều đầu tiên trong đạo tam tòng. Nàng cũng không hiểu tại sao cha mẹ nàng lại không muốn nàng tham dự buổi bình văn. Hay là… nàng không dám nghĩ tới.</p>
+        <p>Nàng chào Niệm rồi nhấc quang gánh đi lên bờ đê. Niệm nhìn theo rồi tấm tắc khen: “Trông chị dạo này đẹp quá!”</p>
+        <p>Tiệp quay lại nhìn Niệm rồi cười như cảm ơn.</p>
+        <p>Tiệp cũng biết mình đang tuổi xinh đẹp, nhan sắc đang lộng lẫy, và ngoài Khoan ra, rất nhiều chàng trai trong làng cũng như ngoài xã để ý tới nàng. Nàng không có cao vọng gì xa xôi, nàng chỉ mong nếu duyên trời đưa lại, được cùng Khoan chấp mối chỉ hồng. Mong là mong vậy, nhưng còn tùy số mệnh cũng như còn tùy song thân nàng. Con gái đâu có quyền kén cá chọn canh. Lời xưa có câu: cha mẹ đặt đâu con ngồi đấy. Nàng là con nhà lễ giáo, không thể làm sai lời xưa.</p>
+        <p>Tiệp đi lên đường đê, Niệm tiếp tục giặt quần áo trong khi con thuyền nan cũng đang rời bến với vài khách qua sông.</p>
+        <p>Một thôn nữ khác cũng đang giặt bên sông. Từ nãy giờ nàng không nói gì, bỗng hỏi Niệm: “Chị có biết tại sao chị Tiệp không ở nhà nghe bình văn như mọi tháng không?”</p>
+        <p>Nào chị biết được! Chắc chị ấy phải đi chợ như chị ấy vừa nói chứ gì.</p>
+        <p>Không phải đâu, em biết!</p>
+        <p>Em biết sao?</p>
+        <p>Hình như ông Chánh Tổng có ngỏ ý với ông đồ để xin chị Tiệp gả cho anh Thúc thì phải. Nghe đâu anh Thúc mê chị Tiệp lắm.</p>
+        <p>Thế à! Chị không biết. Nhà ông Chánh Tổng thông gia với nhà ông đồ thực là môn đăng hộ đối, nhưng chẳng biết ông đồ có chịu gả chị Tiệp cho anh Thúc không?</p>
+        <p>Làm gì mà không gả, ông Chánh Tổng vừa nhà giàu lại vừa có thế lực. Anh Thúc cũng học hành khá, sau này thế nào chẳng có chút công danh.</p>
+        <p>Chị Tiệp độ này trông đẹp hẳn lên. Anh Thúc mê là phải, chị là con trai, chị cũng mê chị Tiệp. Nhưng không hiểu chị Tiệp có chịu lấy anh Thúc không.</p>
+        <p>Cha mẹ đặt đâu con ngồi đấy. Chị Tiệp cũng như em với chị, đâu có quyền chịu hay không chịu.</p>
+        <p>Nhưng, cứ kể hai bên lấy nhau cũng đẹp đôi!</p>
+        <p>Câu chuyện của hai cô thôn nữ vẫn tiếp tục trong khi Tiệp đã lững thững đi xa trên bờ đê.</p>
+        <p>Xa xa đi ngược chiều về phía Tiệp, có hai thanh niên dắt tay nhau vừa đi vừa chuyện.</p>
+        <p>Khi tới gần, Tiệp nhận ra đó là Thúc và một người làng. Trông Thúc ăn mặc lịch sự. Khăn áo rất chỉnh tề, trông thật đúng con nhà giàu trong hàng tổng. Có lẽ hai người đi trên con đường đê đã lâu, và họ đang chờ đợi ai?</p>
+        <p>Gặp Tiệp, đôi mắt của Thúc ngời sáng long lanh. Chàng nhìn chầm chập vào Tiệp, nàng phải cúi mặt xuống.</p>
+        <p>Thúc chào: “Cô Tiệp đi đâu về đấy? Sao hôm nay cô không tới dự buổi bình văn?”</p>
+        <p>Tiệp vừa đi vừa thong thả đáp: “Tôi đi chợ Nếnh bán gạo về. Đã đi chợ còn dự sao được buổi bình văn”.</p>
+        <p>Tiệp vẫn đi. Thúc như cố muốn cho nàng ngừng lại, tìm cách kéo dài câu chuyện: “Buổi bình văn sáng nay vui lắm. Tiếc không có cô!”</p>
+        <p>Tiệp bước rảo hơn, nhưng vẫn lễ độ trả lời: “Tôi cũng rất tiếc không được dự”.</p>
+        <p>Thúc và người bạn quay gót đi theo Tiệp cố tìm cớ nói chuyện: “Cô đi chợ có mệt không? Chắc là đắt hàng nhỉ?”</p>
+        <p>Tiệp thấy Thúc quay gót đi theo mình, nàng càng bước nhanh hơn. Nàng không muốn nói chuyện với Thúc, và nhất là nàng không muốn ai bắt gặp nàng nói chuyện với Thúc. Nàng rất sợ tai tiếng, và nàng cũng e Khoan hiểu lầm tưởng nàng có tình ý gì với Thúc. Nàng ấm ứ trả lời, muốn cho Thúc không hỏi han mình nữa: “Cảm ơn anh”.</p>
+        <p>Câu trả lời không đầu đuôi này đáng lẽ chấm dứt câu chuyện nhưng Thúc vẫn cố gợi những truyện khác.</p>
+        <p>Tiệp rảo bước đi nhanh thì Thúc cũng bước theo nhanh, kéo theo người bạn đi bên cạnh. Sau cùng Tiệp phải bảo Thúc: “Xin anh đừng đi theo tôi nói chuyện nữa kẻo có ai bắt gặp rất không tiện cho tôi”.</p>
+        <p>Tiệp thắc mắc: “Sao mà không tiện. Tôi là học trò, cô là con thầy, gặp nhau nói chuyện có sao!”</p>
+        <p>Tiệp không mấy vui vẻ trả lời: “Nam nữ thụ thụ bất thân”, anh không nhớ chăng? Vả lại anh cứ đi theo tôi, sao khỏi điều này tiếng khác, nếu có ai nom thấy.”</p>
+        <p>Thúc vẫn gắng hỏi: “Cô cẩn thận quá. Cô ghét tôi hay sao?”</p>
+        <p>Tiệp bực mình với những câu hỏi vô duyên của Thúc.</p>
+        <p>Nàng vùng vằng đáp: “Sao anh ăn nói lạ vậy. Xin phép anh, tôi phải vội về kẻo thầy mẹ tôi quở, không thể đáp chuyện mãi anh được”.</p>
+        <p>Thấy Tiệp cáu kỉnh Thúc cười hà hà. Chàng lại nói: “Cô giận tôi chăng? Cô lạ lùng nhỉ”.</p>
+        <p>Tiệp không đáp, rảo bước đi mau hơn. Thúc nói thêm: “Chỉ sợ sau này cô không cáu kỉnh như vậy với tôi mãi mãi được thôi. Nói thật, cô Tiệp ạ, trông cô xinh đẹp quá!”</p>
+        <p>Thấy Thúc đi tới chỗ sỗ sàng. Tiệp phải nói: “Anh ăn nói hay nhỉ. Xin anh giữ mồm giữ miệng một chút”.</p>
+        <p>Rồi nàng đi mau hơn. Thúc lại cười hà hà. Và người bạn của Thúc cũng nói theo một câu: “Làm hoa cho người ta hái, làm gái cho người ta trêu! Làm chi cô vùng vằng vậy”.</p>
+        <p>Tiệp làm thinh đi thẳng, bỏ mặc hai chàng lẽo đẽo mỗi lúc một xa hơn. Vừa đi Tiệp vừa nghĩ. Có năm bảy hạng học trò thì cũng có năm bảy hạng gái…</p>      
+        <div class="xg_dong"></div>
+        <h2 id="c1_VII">VII</h2>
+        <p>Đáp đứng chờ Khoan ở cổng xóm, nơi đi vào nhà ông đồ. Đáp vốn xưa nay vẫn quý trọng Khoan vì sức học, lại mến Khoan vì nết. Khoan cũng thân mật với Đáp hơn với mọi người trong lớp. Có truyện gì Khoan đều nói với Đáp cũng như Đáp không bao giờ dấu Khoan điều gì dù là truyện riêng của mình.</p>
+        <p>Đáp nghe đâu được tin Thúc nhờ người mai mối tới nhà ông đồ Ngư để xin hỏi Tiệp, và ông đồ Ngư hình như chưa trả lời dứt khoát. Đáp hiểu Khoan đối với Tiệp có tình ý nhiều lắm, và đã đôi lần Khoan thú thật với Đáp mong sau này chàng được làm bạn trăm năm với Tiệp. Khoan chỉ buồn nhà mình hơi nghèo nên chưa dám ngỏ ý của mình với cha mẹ. Việc cưới xin tốn kém, hơn nữa tuy Tiệp không giàu nhưng cũng phong lưu, e Tiệp sẽ không chịu đựng nổi sự làm dâu nhà nghèo?</p>
+        <p>Đáp bảo Khoan: “Giá thú bất luận tài”, việc hôn nhân đâu có kể gì giàu nghèo. Chỉ cốt hai gia đình tương xứng là đủ. Gia đình anh cũng là gia đình đạo đức, anh lại học hành khá thì anh kết duyên với cô Tiệp là phải lắm rồi còn sao nữa?”</p>
+        <p>Khoan còn ngần ngại. Chàng cũng định bụng sẽ trình bày cùng cha mẹ ý muốn của mình. Đôi ba lần mẹ chàng có bàn đến việc hôn nhân chàng đều thưa mình còn ít tuổi lại đang đi học, xin cha mẹ đợi cho vài năm nữa. Chàng chưa dám nói tới Tiệp, sợ cha mẹ không ưng.</p>
+        <p>Hôm đó Đáp đi học sớm. Chàng có ý chờ Khoan để bảo cho Khoan biết tin gia đình Thúc muốn hỏi Tiệp cho Thúc, Đáp đợi không lâu thì Khoan tới.</p>
+        <p>Đáp nói: “Tôi mới nghe người nhà nói chuyện về việc anh Thúc nhờ người xin hỏi cô Tiệp, anh đã biết chưa?”</p>
+        <p>Khoan cũng đã được biết tin đó rồi, nên không lấy làm ngạc nhiên, khi được Đáp nói lại. Chàng bảo Đáp: “Tôi cũng nghe nói vậy, nhưng không biết thầy có gả cô Tiệp cho anh Thúc không”.</p>
+        <p>Đáp trả lời: “Tôi thấy nói thầy chưa trả lời dứt khoát.”</p>
+        <p>Rồi Đáp lại bảo Khoan: “Tại anh, anh không nhờ người mai mối trước”.</p>
+        <p>Khoan thẫn thờ không nói gì. Chàng nghĩ đến gia cảnh mình lúc nầy đang kém sung túc. Cưới vợ đâu có phải là việc không tốn tiền. Hơn nữa, giờ đây cũng đã muộn rồi, Thúc đã mau chân hơn chàng. Chàng chỉ hy vọng vì một lý do gì ông đồ sẽ từ chối không nhận gả Tiệp cho Thúc, lúc đó chàng sẽ không ngần ngại gì mà trình rõ với hai bên gia đình ý muốn của mình. Hi vọng của chàng mong manh lắm, biết vậy nhưng chàng vẫn hi vọng.</p>
+        <p>Chàng có biết đâu hi vọng của chàng không mong manh chút nào vì xưa nay ông đồ Ngư tuy dạy Thúc học, nhưng đối với Thúc không bao giờ ông có nghĩ tới truyện gả Tiệp cho chàng. Vả lại ông vốn là con người đạo đức, ông không ưa gì quyền thế, và ông không muốn vì một truyện gả con mà mang tiếng su phụ thế lực của ông Chánh Tổng. Hơn nữa, ông rõ sự học hành của Thúc ra sao và trong lúc dạy Thúc, ông đã hiểu tâm tính Thúc. Con nhà giàu, có thế lực trong hàng tổng, Thúc thường ỷ thế cha. Việc học hành tuy Thúc không trễ nải, nhưng Thúc cũng không phải là một người học trò chăm chỉ, và tương lai của Thúc không trông gì vào văn tự. Thúc chắc chắn lại sẽ như cha lấy tiền của vung ra để tranh một chân chức sắc trong hàng xã hàng tổng. Cứ kể, như thế ở thôn xã cũng danh giá rồi, nhưng ông vốn là người giàu tự trọng, không muốn ai hiểu nhầm mình, nhất là các bậc văn nho. Gả con cho Thúc ông có thể gả được, nhưng để bị tiếng chê bai là tham giàu, tham danh giá thì không được.</p>
+        <p>Giá Thúc là con người khá thì còn có thể nhưng qua ngày sinh tháng đẻ của Thúc ông đồ Ngư thấy Thúc không phải là người có nhân, vì cung Thìn có Phá Quân. Tử vi có câu: “Trai bất nhân Phá Quân Thìn Tuất”. Số mệnh đã chỉ rõ ràng, lẽ nào ông đồ lại chịu gả con cho Thúc để sau này Tiệp chịu đựng cả mọi sự bất nhân của Thúc sao.</p>
+        <p>Khi bà mối do ông Chánh Tổng - cha Thúc nhờ tới nói chuyện với bà đồ về việc Tiệp, bà đồ đã cho mời ngay ông đồ ra nhà khách để tiếp chuyện. Bà đồ bảo ông đồ: “Đây là người đằng nhà ông Chánh Tổng cho lại để nói về việc xin con Tiệp nhà ta cho cậu Thúc. Việc gả bán con cái là quyền ông. Tôi đàn bà không biết gì”.</p>
+        <p>Bà mối trình bày ý kiến của ông bà Chánh Tổng, và mong được ông bà đồ ưng thuận. Ông đồ nói: “Việc nhân duyên của con trẻ là việc trọng, không thể tính hồ đồ. Tôi xin cảm ơn ông bà Chánh Tổng có lòng thương đến cháu và có lòng yêu vợ chồng chúng tôi, nhưng việc này chúng tôi phải hỏi ý kiến cháu, và chúng tôi cũng phải cho so đôi tuổi xem đôi trẻ có hợp nhau không?”</p>
+        <p>Bà mối thưa: “Ông bà nghĩ thế rất phải, nhưng xưa nay “cha mẹ đặt đâu con ngồi đấy”, việc này tùy quyền ở nơi ông bà nhiều chứ cháu nó có biết đâu”.</p>
+        <p>Ông đồ nói tiếp: “Đành rằng vậy, nhưng việc hôn nhân của nó cũng phải hỏi qua nó. Vả lại thế nào chúng tôi cũng phải xem tuổi của đôi trẻ có hợp hay lại xung nhau.”</p>
+        <p>Bà mối nói: “Vâng xin ông bà cứ cho so đôi tuổi, nếu đôi trẻ xung nhau, cũng là một điều kỵ. Mong ông bà sẽ trả lời cho chúng tôi”.</p>
+        <p>Ông đồ đáp: “Vâng dù việc lứa đôi của các cháu có thành hay không, chúng tôi cũng sẽ xin trả lời rõ rệt. Xin bà cứ về nói chuyện với ông bà Chánh Tổng là được ông bà Chánh Tổng có lòng yêu, chúng tôi mừng lắm, nhưng xin để cho chúng tôi so đôi tuổi trước khi chúng tôi trả lời”.</p>
+        <p>Bà mối ra về nhắc lại cho bố mẹ Thúc những lời của ông bà đồ.</p>
+        <p>Thúc hy vọng và tin chắc rằng Tiệp sẽ không khỏi được tay mình, chính vì vậy nên khi biết Tiệp đi chợ phải về qua bến đò, Thúc đã ra đón nàng, trước là để nhìn thấy nàng, sau là để trao đổi vài ba câu chuyện với nàng cho thỏa lòng ao ước và đỡ nhớ. Thúc càng thấy Tiệp nghiêm trang từ chối không tiếp chuyện với mình một cách dễ dãi, càng kính yêu nàng.</p>
+        <p>Ngay hôm đi chợ về, buổi tối Tiệp được ông bà đồ gọi cho hay tin gia đình Thúc muốn xin nàng cho Thúc. Vừa được cha nói cho nghe, Tiệp đã giãy nẩy và từ chối: “Thưa thầy u con còn nhỏ chưa muốn lấy chồng. Thày u cho con đợi vài năm nữa”.</p>
+        <p>Ông đồ cười bảo con: “Các cô gái, cô nào nói đến chuyện lấy chồng cũng kêu mình còn nhỏ nhưng cô nào rồi cũng lấy chồng hết”.</p>
+        <p>Tiệp vội nói: :Nhưng thưa thày u, con không muốn lấy anh Thúc.”</p>
+        <p>Nghe con nói, ông đồ đưa mắt nhìn bà đồ. Rồi ông bảo con: “Thì người ta mai mối, thày u cũng phải cho con biết chứ thày u đã gả ngay con cho thằng Thúc đâu mà con lo. Người ta nhờ người đánh tiếng, thày cũng hãy cứ biết thế, rồi thày u sẽ liệu”.</p>
+        <p>Tiệp mừng lắm. Ông đồ đã nói vậy tức là nàng còn có quyền từ chối.</p>
+        <p>Bà đồ cũng bảo: “Có gả thày u cũng cần hỏi ý kiến con. Ép dầu, ép mỡ ai nỡ ép duyên. Con bằng lòng thì thày u gả, con không bằng lòng rồi thày u sẽ liệu”.</p>
+        <p>Tiệp đem việc gặp Thúc lúc ban chiều và thái độ cợt nhả của Thúc nói với thầy u. Nàng nói: “Anh ấy ghẹo con như vậy, con thấy anh ấy không đứng đắn”.</p>
+        <p>Ông đồ gật gù bảo vợ: “Bà xem, tôi nói có sai bao giờ. Tôi biết thằng Thúc là thằng bất nhân, số tử vi của nó rành rành ra đó. Nó đang nhờ mai mối xin con mình mà nó lại giở trò trêu hoa ghẹo nguyệt với con mình. Gả làm sao được. Để tôi trả lời dứt khoát cho người ta”.</p>
+        <p>Bà đồ nói vs chồng: “Cái đó tùy ông, tôi đàn bà chỉ biết theo ý ông. Hay nên thế nào ông cứ định liệu lấy, cốt sao cho con trẻ nó khỏi khổ sau này.”</p>
+        <p>Ông đồ với cái điếu hút điếu thuốc. Ông thở hơi khói bay thành một làn dài. Sau đó ông chiêu ngụm nước. Thấy câu chuyện của mình cũng đã xong, Tiệp đi xuống dưới nhà.</p>
+        <p>Còn lại hai ông bà đồ. Ông đồ bảo vợ: “Tôi dạy thằng Thúc học nên tôi hiểu nó lắm. Ngay từ lúc bà mai đánh tiếng, tôi đã có ý từ chối. Nay con Tiệp nó nói cho mình biết việc thằng Thúc ghẹo nó, tôi lại thấy rõ tư cách thằng Thúc hơn”.</p>
+        <p>Bà đồ nói: “Mình có con gái lớn, có người hỏi tới là tốt. Mình cũng chẳng nên khó khăn làm gì, nhưng ông tính như vậy là phải lắm. Gả chồng cho con, cũng nên tìm người rể có tư cách”.</p>
+        <p>Hai ông bà còn bàn nhiều về việc hôn nhân của Tiệp, trong khi ở dưới nhà bếp vừa bận lo công việc nhà, Tiệp vừa thấy lòng sung sướng. Cha mẹ nàng đã không ép nàng lấy Thúc, nàng sẽ còn có thời gian chờ đợi. Nàng mong Khoan sẽ nhờ người mai mối đánh tiếng với cha mẹ nàng. Nàng lẩm bẩm:</p>
+        <p style="text-align: center; ">“Lấy chồng cho đáng tấm chồng</p>
+        <p style="text-align: center; ">Bõ công chuốt lục tô hồng điểm trang”.</p>
+        <p>Bên ngoài trời trăng thu vằng vặc. Một vài dải mây kéo trên trời dăng hàng lững thững. Gió thu dịu dàng đuổi theo mây. Đàn vạc ăn đêm bay lưng trời buông mấy tiếng dài như muốn làm rung động sự yên tĩnh của trời khuya.</p>    
+        <div class="xg_dong"></div>
+        <h2 id="c1_VIII">VIII</h2>
+        <p>Đã đến nửa tháng rồi, Thúc nghỉ học. Không phải chàng đã học thành tài hay vì công việc nhà bận. Chàng nghỉ học vì ông đồ Ngư đã trả lời cho mai nhân của gia đình chàng là tuổi chàng và tuổi Tiệp không hợp nhau, nên ông rất tiếc không thể gả Tiệp cho chàng.</p>
+        <p>Và ông đồ cũng gọi Thúc bảo riêng trong một buổi học: “Thầy biết con có lòng thương em Tiệp, nhưng con đã học con phải hiểu nghĩa hợp sung của kinh Dịch. Thầy thương con lắm, nhưng nếu thầy gả em Tiệp cho con rồi sau này gia đình bất hòa hoặc có sự khắc nhau chết tróc, thầy sẽ ân hận. Âu cũng là thiên số khiến tuổi con không hợp với tuổi em Tiệp. Thầy rất tiếc, nhưng xưa nay có ai cưỡng nổi số trời. Con cũng đừng nên lấy thế làm buồn. Đã học đạo thánh hiền, con phải theo nghĩa khoáng đạt của kinh sách”.</p>
+        <p>Nghe lời ông đồ nói, Thúc không đáp lại, chàng thừ người buồn rầu.</p>
+        <p>Ông đồ lại khuyên: “Trong làng thiếu gì con gái, xứng đôi với con. Khoáng đạt lên con ạ! Con cũng nói với ông bà Chánh Tổng là thầy rất cảm ơn ông bà, nhưng trước số mệnh thầy làm sao dám cưỡng”.</p>
+        <p>Với bà mai ông đồ đã nói dứt khoát hơn: “Vợ chồng tôi cám ơn ông bà Chánh Tổng đã có lòng yêu tới vợ chồng tôi và thương tới cháu, nhưng chúng tôi rất tiếc phải từ chối không gả cháu cho con ông bà Chánh Tổng, tuổi chúng nó xung khắc nhau”.</p>
+        <p>Việc hôn nhân Thúc mong mỏi không thành. Thúc chán nản không đi học nữa, chàng cũng chẳng buồn tới xin nghỉ để chào thầy chào bạn.</p>
+        <p>Thúc buồn. Cả ngày chàng lang thang đi vơ vẩn trong làng. Ông bà Chánh Tổng thấy con buồn cũng ái ngại. Ông Chánh Tổng bảo con: “Làng ta thiếu gì gái đẹp, chẳng cưới đứa này thì cưới đứa khác! Không lấy gái làng thì lấy gái thiên hạ. Con gái đã chết hết đâu!”</p>
+        <p>Trưa hôm đó, Thúc vơ vẩn đến xóm ông đồ Ngư. Vừa vào cũng là lúc tan học, học trò ra dần dần. Thấy các bạn Thúc muốn tránh mặt. Bỗng chàng nghe có tiếng gọi: “Anh Thúc! Anh sao lâu nay không đi học?”</p>
+        <p>Thúc quay lại. Người gọi chàng là Thảo. Xưa nay Thảo đối với Thúc rất có cảm tình, Thảo cũng được tin Thúc xin cưới Tiệp, nhưng bị ông đồ khước từ, và sau đó Thúc nghỉ học, Thảo thương cho Thúc. Thúc là con nhà danh giá, trông mã người cũng không đến nỗi nào, và cũng là học trò giỏi của ông đồ. Thúc sánh với Tiệp đẹp đôi, trai tài gái sắc, hộ đối môn đăng. Phải chi Thúc là con nhà bình thường thì chẳng nói, đàng này cũng con ông cháu cha, cũng người làng người nước, lại là học trò của ông đồ. Thảo cũng mong manh nghe nói ông đồ bảo tuổi đôi bên xung khắc. Dù sao, Thúc cũng đáng thương hại.</p>
+        <p>Thúc đứng lại chờ Thảo. Thảo bảo Thúc: “Lớp học vắng anh, anh em nhất là chúng tôi nhắc tới luôn”.</p>
+        <p>Thúc thẩn thờ trả lời: “Tôi mặt mũi nào đi học nữa! Cô Tiệp chê tôi, thầy cũng không thương tôi”.</p>
+        <p>Thảo nói: “Anh cứ nghĩ vậy chứ, tôi thấy nói thầy so đôi tuổi, tuổi của anh không hợp tuổi chị Tiệp. Thầy vẫn thương anh như thầy thương chúng tôi. Có bao giờ thầy ghét học trò đâu”.</p>
+        <p>Thầy không ghét ai, nhưng thầy ghét tôi.</p>
+        <p>Thảo đỡ lời: “Anh đừng buộc oan cho thầy. Anh cứ đi học lại xem có phải thầy vẫn thương anh không.”</p>
+        <p>Thúc trầm ngâm không nói năng gì. Chàng nhìn Thảo, Thảo mỉm cười rồi nói: “Thôi mai anh lại đi học đi. Chúng tôi nhớ anh lắm! Cứ kể anh cũng đáng thương hại, nhưng ở đời này có phải chỉ có chị Tiệp xứng với anh thôi đâu”.</p>
+        <p>Thúc khách sáo trả lời: “Cảm ơn chị an ủi tôi.”</p>
+        <p>Câu chuyện tới đó, đôi người chia tay nhau. Thảo không dám dùng dằng nói nhiều với Thúc sợ có người trông thấy, họ đàm tiếu, còn Thúc thì muốn lang thang đi một mình để chìm đắm với nỗi buồn hơn.</p>
+        <p>Nỗi buồn mang mang xâm chiếm tâm hồn Thúc. Thúc muốn quên ngay Tiệp, nhưng hình ảnh duyên dáng ấy lại luôn luôn ám ảnh trí óc chàng. Thúc cố phân tách tại sao cuộc tình duyên của chàng với Tiệp lại trắc trở. Phải chăng tại ông đồ, hay chính là Tiệp đã không thuận lập gia đình với chàng. Nhưng tại sao Tiệp lại có điều không thuận ấy? Vạn sự chẳng qua chỉ do Khoan. Phải những cái nhìn đầu mày cuối mắt của đôi bên, những cái mỉm cười kín đáo xưa nay Thúc hằng bắt gặp. Thúc nghĩ mà giận Khoan! Thúc nghĩ mà oán Khoan! Thúc không thể nào tha thứ cho Khoan được! À ra xưa nay Khoan chỉ đạo đức giả để chiếm lấy lòng của Tiệp. Chính vì Khoan mà Thúc phải thất vọng! Mối hận tình này Thúc quyết không quên, và Khoan sẽ phải trả một giá xứng đáng bởi Khoan đã là đầu mối mọi sự bất thành cuộc nhân duyên của Thúc với Tiệp.</p>
+        <p>Lan man Thúc lại nghĩ đến Thảo, nghĩ đến sự ân cần của nàng. Phải chi Thúc được yêu Thảo, chàng sẽ không đau đớn thất vọng. Thảo cũng con nhà gia thế lại giàu có. Cha Thảo tuy không là tay văn tự nhưng có học và cũng là Cửu phẩm bá hộ.</p>
+        <p>Thảo cũng duyên dáng dịu dàng, lại nết na. Suốt trong thời gian cùng học với nàng. Thúc thấy nàng hiền hậu. Trông Thảo cái gì chàng cũng thấy tốt, vậy không hiểu tại sao lòng chàng không hướng về phía Thảo, lại đuổi theo hình bóng của Tiệp. Trong sự yêu đương thật có nhiều điều lắt léo! Người có thể yêu được, ta không yêu, ta cứ say mê người ta không yêu được.</p>
+        <p>Về phần Thảo, sau khi từ giã Thúc, nàng cũng thấy bần thần trong người. Nàng thương hại Thúc, và chính nàng cũng nghĩ giá Thúc nhờ người đánh tiếng với cha mẹ nàng có lẽ không bao giờ nàng từ chối. Nàng cũng đã lớn tuổi, sắp phải nghỉ học để ở nhà giúp đỡ cha mẹ như Tiệp. Nàng tự so sánh nàng với Tiệp, nàng thấy cũng không thua kém gì Tiệp về phương diện gia thế cũng như về phương diện tài sắc. Phải chi không có Tiệp, chắc là Thúc phải để ý tới nàng. Nàng ghen với Tiệp. Trong khi Tiệp còn đi học, nàng đã ghẻ lạnh với Tiệp vì Khoan săn sóc tới Tiệp nhiều, nay nàng lại thấy chỉ vì Tiệp mà Thúc không nhận thấy nhan sắc cũng như vẻ duyên dáng của nàng.</p>
+        <p>Vừa đi nàng vừa vẩn vơ nghĩ ngợi như vậy, chẳng mấy chốc đã tới nhà. Mấy đứa em chạy ra đón. Chúng nó reo lên: “Chị Thảo đi học về”.</p>
+        <p>Khác với mọi ngày, hôm nay nàng không trao sách cho các em cất, và nàng cũng không bế thằng em út lên như mọi khi. Nàng thẫn thờ nghĩ về Thúc. Thằng em chạy theo đòi bế, nàng khẽ bảo em: “Hôm nay chị mệt chị không bế được”.</p>
+        <p>Nàng vào trong nhà nằm cho tới bữa cơm. Mẹ hỏi, nàng đáp là hơi nhức đầu. Tuy vậy, buổi chiều nàng lại đi học như thường. Nàng tự thấy mình vô lý buồn không đâu. Truyện của Thúc với Tiệp có can dự gì tới nàng. Nếu Thúc đau khổ đó là việc của Thúc, trừ khi nào Thúc quên được Tiệp, điều nàng rất mong mỏi, vì một khi đã quên Tiệp, Thúc sẽ phải để ý tới một người khác, và người đó chắc phải là nàng.</p>
+        <p>Đến lớp học Thảo gặp Hoài. Nhìn sắc diện của Thảo, Hoài hỏi: “Chị Thảo làm sao trông người như thất sắc vậy?”</p>
+        <p>Thảo đáp: “Buổi trưa em hơi nhức đầu, nhưng bây giờ đã đỡ”.</p>
+        <p>Rồi nàng bảo Hoài: “Lúc tan học về em gặp anh Thúc. Trông anh ấy buồn rầu thiểu não quá”.</p>
+        <p>Hoài vô tư nói: “Thất vọng vì tình mà! Cho anh ấy đáng kiếp! Còn không biết chị Tiệp hay sao lại định bẻ quế cung hằng.”</p>
+        <p>Thảo thương hại Thúc mà nói: “Chị ác quá! Người ta đau khổ đã không thương lại còn nói giọng moi móc.”</p>
+        <p>Hoải nói ngay: “Đâu có phải tôi moi móc. Tôi nói thật đấy. Quế cung Hằng đã dành cho người khác rồi. Sao anh Thúc lại choi moi vào. Hàng ngày đi học ở đây, anh ấy không thấy sao?”</p>
+        <p>Thảo ngây ngô: “Chị định nói gì tôi không hiểu?”</p>
+        <p>Hoài trà lời: “Tôi xin chị đi, vờ vĩnh mãi. Chị không để ý đến những cái nhìn đầu mày cuối mắt của ai với ai sao.”</p>
+        <p>Thảo nói: “Tôi cũng thoáng thấy, nhưng chủ trương việc nhân duyên của chị Tiệp đâu phải là tự ý chị ấy. Quyền gả bán là ở thầy chứ.”</p>
+        <p>Hoài trả lời: “Đã đành vậy, nhưng nếu chị Tiệp nhất quyết không ưng, nỡ nào thầy ép buộc. Nhưng thôi, mặc chị Tiệp đấy, chúng ta bận tâm tới mà chi!”</p>
+        <p>Lúc ấy Khoan cũng đã tới, và các học trò khác cũng đã cùng nhau lục tục có mặt, Thảo và Hoài phải ngừng câu chuyện.</p>
+        <p>Trong lớp lại vang lên những tiếng chi, hồ, dã, giả. Hoài cũng như Thảo, cả hai đều giở sách chăm chú xem.</p>
+        <p>Tiếng học trò ồn ào. Thỉnh thoảng lại nghe tiếng roi mây của ông đồ Ngư vun vút quất xuống ghế ngựa hoặc vào mông đít một cậu trò nhỏ đã viết chữ xấu hoặc đã giảng nghĩa sai một chữ nào.</p>
+        <p>Thảo và Hoài vừa học vừa đưa mắt nhìn trộm Khoan, rồi hai người lại cùng nhau tủm tỉm cười. Khoan vẫn như thường lệ thay ông đồ để dạy lũ trẻ. Thỉnh thoảng chàng liếc mắt nhanh đưa nhìn ra sân, mong thoáng thấy bóng Tiệp đi qua.</p>  
+        <div class="xg_dong"></div>
+        <h2 id="c1_IX">IX</h2>
+        <p>Mấy hôm nay làng Kim Đôi vào đám.</p>
+        <p>Nhất niên nhất lệ, làng này cũng như nhiều làng khác tại vùng quê Bắc Việt, tháng tám nhân dịp Thu tế thường mở hội để dân làng mua vui.</p>
+        <p>Người dân quê quanh năm bận bịu với đồng ruộng, hàng năm chỉ được nhàn rỗi về vụ giêng hai và tháng tám. Tháng Giêng ngày rộng tháng dài, lúa chiêm đã cấy xong, việc làm mùa cũng vãn, người ta chỉ chờ ngày gặt hái. Tháng tám lúa mùa cũng đã cấy, vụ nước lớn đã qua, người dân cũng rỗi rãi chờ vụ gặt. Bởi vậy, các làng xã nhiều nơi mở hội vào đám trong những tháng giêng tháng hai và tháng tám, gọi Xuân tế và Thu tế. Trong ngày hội có tế lễ, rước xách và có nhiều trò vui để dân làng giải trí và dân các làng lân cận tới mua vui.</p>
+        <p>Làng Kim Đôi mở hội từ mồng Mười tới Mười Lăm tháng tám. Các bô lão, các vị chức sắc được làm chủ tế hoặc phụ tế đều phải lo sắm sửa quần áo cho chỉnh tề để dự tế. Đó là một vinh dự lớn tại nơi thôn xã, khi ra chốn đình trung.</p>
+        <p>Các trai làng từ 18 tuổi trở lên được cử vào chân đi rước, khiêng kiệu, cầm cờ hoặc chơi âm nhạc. Các chàng được cử đi rước cũng phải sắm y phục cho thật đẹp, thật mới, vì ngày hội có nhiều gái làng và gái thiên hạ tới xem rước, xem tế. Đám rước thường đi từ đình tới chùa, hoặc từ đình xã tới đình thôn. Ban ngày thì rước tế, ban tối thì có hát chèo ngay ở sân đình, có các cụ cầm trống thờ. Mỗi tiếng tung, cắc vào mặt trống hoặc vào thành trống đều có ý nghĩa thưởng, phạt, và khi chi tiền hát chèo, có thêm tiền thưởng, theo với số tung, cắc.</p>
+        <p>Ngày hội, trai gái làng nô nức đi xem, và trai gái thiên hạ cũng kéo tới. Đó là một thông lệ tại đồng quê, khi làng này kéo hội người làng khác rủ nhau tới xem, và đến khi làng khác vào đám người làng này cũng kéo nhau đến xem lại.</p>
+        <p>Đó là những dịp duy nhất để trai gái trong làng cũng như trai gái thiên hạ gặp nhau, đấy là những dịp duy nhất để các cô thôn nữ thoát khỏi sự kiềm tỏa của câu “nam nữ thụ thụ bất thân”.</p>
+        <p>Có lẽ người ta thấy sự quá khắt khe đến khô khan của đạo lý không cho trai gái được gần gũi truyện trò với nhau, cho nên trong những ngày hội hè đình đám người ta cố tình quên sự khe khắt đó đi, để cho bọn nam nữ mới lớn có dịp gặp gỡ nhau trao đổi đôi ba câu chuyện. Lẽ tất nhiên có cả chuyện yêu đương, nó đã làm đầu mối cho nhiều cuộc lương duyên tốt đẹp.</p>
+        <p>Nhân dịp làng mở hội, học trò lớp học ông đồ Ngư đều được nghỉ học. Các trò con trai lớn trên mười tám phải tham dự các cuộc tế rước còn các trò nhỏ cũng như các nữ sinh được dịp đi xem hội. Khoan và Đáp cũng có chân đi rước. Và cả Thúc nữa. Nhà Thúc sẵn tiền, bộ quần áo đi rước của chàng sang trọng lắm. Đầu chàng chít khăn lượt tàu đen lánh, áo the ba chỉ phủ ngoài áo dài trắng, quần lụa mỡ gà. Chiếc thắt lưng điều thắt ngoài áo the đỏ chói bằng nhiễu Kỳ Cầu, một thứ nhiễu rất tốt. Khoan và Đáp cũng ăn mặc chỉnh tề đúng lệ làng. Hai chàng phải cắt vào chân khiêng kiệu, còn Thúc nhờ thế lực của cha được làng cử vào ban âm nhạc.</p>
+        <p>Trong lúc đi rước, các chàng trai tuy khiêng kiệu, hoặc cầm cờ, hoặc phụ trách công việc khác, nhưng mắt vẫn không rời khỏi đám khán giả đi xem rước, trong đó có các cô gái làng má đào yếm thắm, yểu điệu thanh tân, dáng điệu dịu dàng khả ái, với những nụ cười kín đáo đáng yêu. Và chính các cô đi xem rước, không phải để xem cờ hoặc để nghe đàn nghe địch, nhưng cốt để cho các chàng trai đi rước ngắm mình, và mình cũng ngắm lại. Các cô thường đi một bọn đôi ba cô. Có đi như vậy, mới vui, mới khỏi ngượng ngùng e lệ. Các cô rúc rích cười cùng nhau khi một chàng trai trong đám rước nhìn mình bước hụt, rồi các cô cùng góp ý kiến về trai làng ở thôn trên xóm dưới.</p>
+        <p>Thảo và Hoài cũng ở trong đám các cô đi xem rước. Mắt Thảo không rời khỏi Thúc, tuy thỉnh thoảng nàng cũng có ngắm các chàng trai khác. Trông Thúc có vẻ sang trọng hơn những bạn cùng đi rước, với bộ quần áo đẹp và đắt tiền. Thúc cũng để ý nhìn ra bên đường. Chàng cốt ý tìm kiếm Tiệp trong đám các cô đi xem hội, nhưng chỉ thấy các cô gái khác, cô nào cũng trang điểm mỹ lễ quần áo mới, yếm đào, giải lụa. Mắt chàng gặp mắt Thảo. Chàng mỉm cười Thảo cũng mỉm cười theo.</p>
+        <p>Thảo chỉ cho Hoài: “Anh Thúc kia kìa! Anh ấy đánh đàn”.</p>
+        <p>Hoài ngó theo tay Thảo chỉ. Nàng bắt gặp Thúc đang nhìn về phía mình và Thảo. Trông Thúc sang trọng lịch sự lắm. Vậy mà sao, ông đồ lại từ chối không gả Tiệp cho Thúc. Hoài bảo Thảo: “Trông anh Thúc ăn mặc sang quá!”</p>
+        <p>Thảo tiếp lời Hoài: “Nhà ông Chánh Tổng thiếu gì tiền.”</p>
+        <p>Đám rước rầm rộ đi. Hôm nay rước từ đình thôn Kim Đôi đến chùa làng. Theo tín ngưỡng của dân làng, ngày hôm nay đức Thành Hoàng tới yết kiến đức Phật.</p>
+        <p>Đi đầu đám rước là trống làng, một chiếc trống cái to do hai người rước khiêng và một ông quan viên cầm dùi đánh từng tiếng một. Sau đó là mấy thanh niên thập bát vác cờ đuôi theo ngũ hành, màu sặc sỡ xanh, đỏ, trắng, tím, vàng. Những lá cờ phấp phới bay trước gió như mừng nền thái hòa thịnh trị của đất nước.</p>
+        <p>Hết đoàn cầm cờ, tới đoàn thanh niên mang những tự khí gồm đao kiếm, bát bảo, lộ bộ sơn son thếp vàng. Họ xếp thành hàng đôi, bước đi hùng dũng theo nhịp trống.</p>
+        <p>Một tiếng trống, hai tiếng trống! Họ bước đều!</p>
+        <p>Sau đoàn vác đao kiếm côn chùy là ban âm nhạc.</p>
+        <p>Có những chàng trai phồng mép thổi sáo, có những nhạc sĩ dẻo tay đánh đàn, và lại có những chàng chơi sinh tiền hoặc đánh trống bưng. Sinh tiền là một nhạc khí gồm những đồng tiền cổ, lồng vào một chiếc cán bằng sắt. Chơi sinh tiền phải biết cách rung chiếc cán để những đồng tiền chạm vào nhau gây nên những âm thanh hòa nhịp với tiếng đàn, tiếng nhị, tiếng trống bưng, tiếng sáo.</p>
+        <p>Rồi một cụ già áo thụng khăn lam cầm hương đi trước kiệu. Hai bên cụ già có hai quan viên hoặc chức sắc khác đi kèm, cũng khăn lam áo thụng. Ba người này được hai thanh niên đi sau vác lọng che nắng. Những chiếc lọng mặt ngoài màu đen, nhưng bên trong màu sặc sỡ với những ngù kim tuyến óng ánh bên những mảnh kính long lanh. Lọng xòe rộng đến hai sải tay. Cán lộng bằng tre được sơn đen bóng nhoáng. Vác lọng xem chừng nặng, chốc chốc lại có hai thanh niên khác tới thay phiên nhau.</p>
+        <p>Kế bên cụ già cầm hương là kiệu của đức Thành Hoàng. Chiếc kiệu sơn màu đỏ chói có dát những hoa bạc điểm vàng rực rỡ. Kiệu hình một ngôi đền nhỏ, bốn góc uốn cong. Trên đỉnh kiệu có vành nguyệt lấp lánh dưới ánh nắng thu theo đà khiêng của đám thanh niên khỏe mạnh. Trong kiệu, về mé sau có kê bài vị của Đức thần linh. Ngay trước bài vị là bát hương khói trầm nghi ngút. Mé trước và hai bên có rèm chỉ ngũ sắc. Những dây tua xanh đỏ treo mé trên tăng màu sặc sỡ cho những chiếc riềm lung lay trước gió.</p>
+        <p>Tám thanh niên khỏe mạnh khiêng chiếc kiệu. Hai thanh niên khác vác hai chiếc quạt lông thật lớn áp vào hai bên kiệu. Lại có thêm hai thanh niên vác hai chiếc tàn bằng nhiễu nhiều màu, hoa sặc sỡ đi theo che kiệu.</p>
+        <p>Chiếc kiệu tiến đủng đỉnh. Các quan viên trong làng và các bà các cô đi sau vừa đi vừa lâm râm cầu nguyện.</p>
+        <p>Có những chàng trai đội đồ lễ đi theo. Những đồ lễ này dùng để đức Thành Hoàng vào lễ Phật.</p>
+        <p>Đám rước kéo dài trong đường làng, người trong làng đi xem rước rất đông. Họ đi ở hai bên đường để nhìn ngắm người đi rước, nhưng cũng còn nhiều người đi sau kiệu, tiếp vào các vị quan viên thành một khối.</p>
+        <p>Những con trẻ chạy tung tăng sung sướng hớn hở. Các cô gái làng miệng tươi như hoa, mắt sáng ngời cười nói chỉ trỏ.</p>
+        <p>Hoài và Thảo vẫn đi bên cạnh đường nhìn theo ban âm nhạc trong đó có Thúc.</p>
+        <p>Chiếc kiệu thần lướt qua trước mặt các cô.</p>
+        <p>Một em nhỏ đứng cạnh nói với một em khác: “Kìa anh trưởng tràng đang khiêng kiệu. Cả anh Đáp nữa mày ơi!”</p>
+        <p>Hoài và Thảo nhìn vào quả nhiên thấy Khoan và Đáp, kẻ trước người sau đang bước đều chân theo nhịp bước của các bạn đồng hành. Hai cô không thấy hai người nhìn ra, nhưng chính ra cả hai người đã thấy rõ hai cô đang chỉ trỏ về phía họ.</p>
+        <p>Hoài bảo Thảo: “Hai anh ấy đi nghiêm chỉnh quá, không thèm nhìn ra bọn mình”.</p>
+        <p>Thảo chưa kịp trả lời thì bỗng có một người đi len vào giữa hai cô. Hai cô quay lại là Tiệp. Tiệp cũng cần đi xem rước để được thấy mặt Khoan, để được nhìn điệu bộ Khoan trong lúc làm bổn phận trai làng.</p>
+        <p>Tiệp bảo hai cô: “Hai chị cũng đi vui nhỉ. Em vừa ở nhà ra đây, may quá vừa kịp xem rước”.</p>
+        <p>Hai cô cùng cười. Hoài chỉ Khoan và Đáp nói: “Kia kìa, anh Khoan và anh Đáp đang khiêng kiệu, chị thấy chưa? Và cả anh Thúc ở ban âm nhạc, trông lịch sự lắm”.</p>
+        <p>Tiệp nhìn vào đám kiệu. Vừa lúc ấy Khoan cũng nhìn ra. Bốn mắt gặp nhau. Đôi lòng cùng rung động.</p>
+        <p>Ba cô dắt nhau đi theo đám rước tới tận chùa. Ở cổng chùa, sư cụ đã đứng đón kiệu thần.</p>
+        <div class="xg_dong"></div>
+        <h2 id="c1_X">X</h2>
+        <p>Tối hôm ấy ở đình Kim Đôi có hát chèo thờ thần. Mới chập tối, trống chưa rung, giữa sân đình, hai bên sàn đình đã đông nghẹt những người, lớn có, bé có, già có, trẻ có, trai có, gái có. Những hàng quà lâm thời bán trong những ngày hội cũng bày thêm nhiều quà bánh. Họ ngồi ở lối vào đình hoặc ở ngay các góc sân đình.</p>
+        <p>Hoài và Thảo cũng có mặt trong đám khán giả đang đợi chờ buổi hát khai diễn. Hai cô có hẹn gặp Tiệp để cùng đứng xem một nơi.</p>
+        <p>Từ ngày Tiệp nghỉ học, mối ghẻ lạnh giữa nàng và hai bạn như đã biến mất, chỉ còn lại tình bạn cũ. Vả lại Tiệp cũng ít có dịp gặp các cô lâu, có gặp chỉ đủ kịp trao đổi mấy câu chào hỏi, vì Tiệp còn bận việc của Tiệp, các cô bận việc học của các cô.</p>
+        <p>Lúc ở chùa từ biệt các bạn sau đám rước, Tiệp nói: “Có lẽ tối nay em cũng xin phép thầy em để ra đình xem chèo. Các chị có đi cho em gặp nhé”.</p>
+        <p>Hoài và Thảo cùng đáp: “Chúng em sẽ chờ chị ở sân đình. Tối hôm nay chắc vui lắm. Chắc các anh Đáp, Khoan và Thúc cũng đi xem”.</p>
+        <p>Nhắc đến Khoan, Tiệp thấy vui vui, nhưng khi các bạn nói đến Thúc, nàng hơi khó chịu. Nàng không muốn thấy mặt Thúc, nàng không muốn ai nhắc đến Thúc trước mặt nàng. Tiệp nói: “Đi xem chèo, mình cốt xem chèo, còn các anh ấy đi hay không có can hệ gì tới mình”.</p>
+        <p>Hai cô nhìn Tiệp, hóm hỉnh cười và đồng thanh nói: “Có can dự lắm chứ!”. Tiệp không đáp lại.</p>
+        <p>Tối hôm đó, lúc trống phường chèo bắt đầu rung để mời các cụ và các quan viên tới dự khán, thì Tiệp lên xin phép ông đồ để được đi xem. Ông đồ cũng khăn áo chỉnh tề để sắp sửa ra đình, nhìn con hơi suy nghĩ rồi bảo: “Ừ, con muốn xem, đi mà xem, nhưng con dắt thằng Mẫn cho nó cùng đi”.</p>
+        <p>Mẫn là em trai Tiệp, lên chín tuổi. Ông đồ muốn Tiệp dắt Mẫn đi để nàng bị bận em, không thể đua đàn cùng các bạn trong những chuyện có hại. Ông đồ hiểu lắm, đi xem hội, nhất là đi xem chèo buổi tối là những dịp trai gái hẹn hò để gặp gỡ nhau.</p>
+        <p>Ông lại nói: “Chèo tối nay diễn tích Nam Dương Thành Ngũ Vân Thiệu bị vây, hay và có nghĩa lý đó. Vợ họ Ngữ hy sinh cho chồng là một tấm gương sáng cho phụ nữ muôn đời. Con đi xem phải lắm”.</p>
+        <p>Tiệp dẫn Mẫn ra đình. Tiếng trống vẫn rung. Sân đình tấp nập những người, ồn ào tiếng cười tiếng nói. Trẻ con xô nhau chạy nhảy, chen lấn vào gần trước bàn thờ giữ chỗ tốt để xem cho rõ khi chèo khai diễn.</p>
+        <p>Ngay trước cửa đình, hai bên hai chiếc giá mỗi bên cắm năm lá cờ đuôi nheo ngũ sắc. Trời tối không ai thấy màu cờ chỉ nghe thấy tiếng cờ bay trước gió phấp phới.</p>
+        <p>Buổi hát chưa khai diễn, Tiệp dẫn Mẫn đi tìm Hoài và Thảo. Ở một góc sân đình, nàng thấy hai bạn đang đứng nói chuyện với một chàng trai, đó là Thúc. Tiệp ngập ngừng dừng bước, rồi nàng dắt em quay đi nơi khác.</p>
+        <p>Nàng tới trước cửa đình, nơi sắp diễn chèo: Chèo sẽ diễn ngay trước bàn thờ đức Thành Hoàng, nhưng ở ngoài sân.</p>
+        <p>Trừ phía bàn thờ, ba phía kia đều có chăng giây để ngăn khán giả khỏi xem tràn lấn vào làm cản trở các diễn viên. Với cái sân khấu tạm thời bé nhỏ đó, dân chúng làng Kim Đôi cùng nhiều khán giả từ các làng lân cận tới sẽ mua vui với ban chèo.</p>
+        <p>Giờ khai diễn đã gần tới nên các cụ và quan viên đã tề tựu hầu đủ mặt, tại sân đình, hai bên tả hữu trước bàn thờ. Một chiếc trống cái lớn đặt ngay dưới bục lễ dành để các cụ và các quan viên ban tư văn cầm chầu.</p>
+        <p>Trên bàn thờ khói hương nghi ngút, đèn nến sáng choang. Bức hoành phi thiếp vàng chói lói với bốn chữ Thượng Đẳng Phúc Thần, treo cao trước gần sát mái đình phản chiếu lại ánh đèn nến rung rinh. Mùi hương trầm ngào ngạt. Chiếc y môn sặc sỡ riềm kim tuyến nhẹ nhàng lay động. Hai cánh y môn được buộc cao lên để lộ những đỉnh trầm hương bằng đồng đỏ ối với khói trầm cuồn cuộn dâng lên. Những cây nến, những ống hương, những đài rượu bằng đồng bóng chói. Trên những chiếc mâm đồng, có hoa quả bày biện rất gọn ghẽ nhưng hào nhoáng.</p>
+        <p>Trên những hàng cột, những đôi câu đối sơn đen chữ vàng treo thõng từ cao xuống.</p>
+        <p>Đã tới giờ khai diễn. Một hồi trống cái nổi lên. Cụ tiên chỉ ra trước bàn thờ khấu đầu làm lễ rồi lâm râm khấn để trình cùng đức Thượng Đẳng buổi diễn chèo tối nay. Một cụ bô lão cao niên được mời cầm trống khai mạc.</p>
+        <p>Hồi trống dứt cụ tiên chỉ cũng làm lễ xong. Chèo hát giáo đầu. Mé ngoài sân người ta chen nhau ồn ào như muốn làm át cả tiếng hát của diễn viên cũng như tiếng đàn nhị của ban âm nhạc.</p>
+        <p>Diễn chèo ở đây không có hậu trường sân khấu. Ban chèo được dân làng dành cho một góc nhỏ, ngay gần sân đình để làm nơi hóa trang.</p>
+        <p>Tiệp đã tìm được nơi gần ngay sân diễn để hai chị em cùng đứng. Đứng xem chèo nhưng tâm trí Tiệp vẫn nghĩ đi nơi khác. Nàng đang nhìn quanh để tìm Khoan, thằng Mẫn đứng xem chèo, nhiều đoạn không hiểu, hỏi chị thì chị trả lời một cách rất mơ hồ. Bực mình, nhiều lúc nó kéo tay Tiệp đòi về. Nó bảo nó không thích xem chèo. Tiệp lúc ấy lại phải dỗ khéo, nó mới chịu đứng lại.</p>
+        <p>Chèo vẫn tiếp tục. Tiếng trống chầu vang trong đêm khuya. Các vai trò thay nhau ra lại vào, hết than đến hát, rồi lại than.</p>
+        <p>Vai đào nữ đóng vợ Ngũ Vân Thiệu rất khéo, tiếng than siết bi ai não nuột, khiến nhiều bà, nhiều cô thôn nữ đứng xem phải rấm rứt rơi lệ.</p>
+        <p>Đứng giữa đám đông người như muốn ngộp hơi, thằng Mẫn đòi ra ngoài cho mát. Thật đúng với ý Tiệp. Nàng cũng đang muốn ra ngoài để nhân dịp xem có gặp Khoan không.</p>
+        <p>Trên trời trăng thu vằng vặc. Gió đêm thu hơi lạnh lạnh. Một vài chiếc lá già trên cây cổ thụ trước đình, gặp gió rời khỏi cành chập chờn bay. Từ đám chèo vọng ra tiếng trống, tiếng đàn, tiếng ca và tiếng ồn ào của khán giả.</p>
+        <p>Ra khỏi đám hát chèo, Mẫn vươn vai thở mạnh như thấy người khoan khoái. Tiệp cũng thấy nhẹ người. Năm ba người khác dáng chừng cũng vì chen chúc quá nên cũng rời khỏi đám hát chèo ra đứng ở nơi sân đình rộng rãi.</p>
+        <p>Tiệp để ý nhìn, không thấy Khoan và cũng không thấy bọn Hoài Thảo đâu. Nàng chán nản không biết có nên lại vào xem chèo hay dắt Mẫn về.</p>
+        <p>Giữa lúc nàng phân vân thì Khoan ở đám hát chèo đi tới, Khoan chào Tiệp, Mẫn chào Khoan và hỏi: “Anh trưởng tràng cũng đi xem chèo à? Em xem không thấy hay”.</p>
+        <p>Mẫn nói đúng. Cái tuổi lên chín của Mẫn đã hiểu sao được cái hay của chèo cổ mà thưởng thức. Khoan bảo: “Không hay nhưng cũng vui”.</p>
+        <p>Mẫn cười. Mẫn xưa nay rất mến Khoan. Ở lớp chính Khoan vẫn viết tập cho Mẫn tô và giảng bài cho Mẫn học.</p>
+        <p>Tiệp hỏi Khoan: “Anh trưởng tràng ra đây từ bao giờ? Từ tối tôi không gặp?”</p>
+        <p>Tôi ra từ lúc ban chèo rung trống. Tôi cũng để ý nhưng không thấy cô, chỉ thấy cô Hoài, cô Thảo và anh Thúc. Tiệp mân mê tà áo. Nàng không biết nói gì với Khoan tuy nàng muốn nói với Khoan nhiều lắm. Khoan cũng vậy, chàng cũng muốn nói với Tiệp rất nhiều, nhưng cũng chẳng biết nói gì. Hai người nhìn nhau giây lâu rồi Tiệp bảo: “Trời về đêm lạnh anh trưởng tràng nhỉ”.</p>
+        <p>Khoan đáp lời nàng: “Vâng, trời hơi lạnh. Chúng ta xem chèo, có hơi người sẽ hết lạnh.”</p>
+        <p>Thấy nói lại vào xem chèo. Mẫn không chịu. Nó nói: “Em không vào đâu, chị Tiệp cho em về”.</p>
+        <p>Tiệp bảo: “Đi xem hội mà đòi về! Có ăn quýt chị mua cho”.</p>
+        <p>Tiệp chạy lại hàng quà mua cho em mấy quả quýt. Có quýt ăn, Mẫn không đòi về nữa. Tiệp và Khoan vẫn đứng bên nhau, nhưng không ai biết nói gì với đối phương. Tuy đôi người cũng một ý, nhưng họ chưa hề bao giờ dám thổ lộ với nhau. Mối tình câm thắm thiết trong lễ giáo khiến hai người càng kính ái nhau.</p>
+        <p>Khoan hỏi vẩn vơ: “Cô sắp về chưa hay còn xem chèo?”</p>
+        <p>Tiệp đáp lững lờ: “Xem chèo đông lắm, chen vào bây giờ sao được. Em cũng chưa muốn về”.</p>
+        <p>Họ lại im lặng. Giữa lúc ấy, Thúc ở trong đình đi ra. Thấy Khoan và Tiệp đứng nói chuyện với nhau, Thúc nổi ghen. Thúc giận Tiệp đã từ hôn mình, đã không tiếp chuyện mình khi gặp gỡ, nay lại đứng nói chuyện với Khoan. Thúc lại gần hai người, rồi nói rất lớn: “Hai bên tình tự ở đây với nhau hả? Làng mở hội để dân làng đi xem mua vui, hai người lại dám nhân dịp này tính truyện hoa nguyệt với nhau chăng?”</p>
+        <p>Lời nói buộc tội của Thúc làm Khoan nóng mặt. Khoan bảo: “Anh Thúc không được hồ đồ. Tôi đi xem hội, cô Tiệp cũng đi xem hội, cô lại dắt cả em Mẫn đi. Gặp cô tôi chào hỏi đó là lẽ tự nhiên của học trò đối với con thầy”.</p>
+        <p>Thúc giọng mỉa mai: “Phải học trò đối với con thầy. Rồi thì nguyệt hoa, hoa nguyệt chứ gì?”</p>
+        <p>Tức quá Khoan nói: “Anh đừng ăn nói láo. Ở đây còn người nọ người kia”.</p>
+        <p>Thấy Thúc kiếm cớ gây sự. Tiệp dẫn Mẫn đi về, nhưng Thúc gọi Tiệp lại bảo: “Kìa, sao cô Tiệp lại về. Hay cô sợ nam nữ thụ thụ bất thân”.</p>
+        <p>Tiệp không trả lời, cứ dẫn em đi. Thúc nói thêm: “Mồm nói thì hay lắm, nhưng sự thực vẫn cứ “nam nữ đồng thân” như thường”.</p>
+        <p>Tiệp đã đi xa. Một vài người làng thấy Thúc to tiếng chạy lại xem. Trước thái độ thiếu lịch sự, kém lễ độ của Thúc, Khoan không nói gì thêm. Chàng không muốn người làng chê cười, và nhất là không muốn Tiệp mang tiếng, nên trước mọi lời khiêu khích của Thúc, chàng chỉ cười không đáp. Thấy không gây sự được với Khoan, Thúc hậm hực bỏ đi, và Khoan cũng bước lẫn vào đám người xem hát.</p>
+        <p>Người ta thường nói sống lâu mà chết chóng quả đúng không sai! Thời gian thấm thoát trôi qua rất mau lẹ. Kể từ ngày ông đồ nhắm mắt, tang ma xong chẳng mấy chốc tới ngày rằm đầu tiên, rồi lần lần rằm này qua, mồng một đến thoi đưa vùn vụt đã tới tuần tứ cửu.</p>
+        <p>Ngày rằm đầu tiên, bà đồ cho sửa soạn lễ nghi trịnh trọng để cúng chồng, cúng ở nhà trước rồi ra cúng ở mộ. Bà đồ lại khóc lóc đau đớn, Tiệp cũng lại khóc than. Mới qua được mấy hôm đâu phải dễ khuây khoả được trước nghĩa vợ chồng, tình ruột thị. Rằm trước rồi đến rằm sau qua ngày mồng một. Mỗi lần mồng một hay rằm, nhà bà đồ đều có lễ cúng ông đồ, và có mời sư tới tụng kinh cầu nguyện cho vong hồn ông. Trong những buổi lễ này, ngoài người nhà còn có một số học trò chia nhau tới cúng thày, ra thăm mộ thày. Thỉnh thoảng, một người bạn quen ở xa, một người học trò cũ đang trọng nhậm tại một nơi sơn cùng thủy tận nào được tin tới viếng lại là một dịp để bà đồ kể lể nỗi thương đau. Trước nỗi buồn của bà đồ, khách viếng không khỏi mủi lòng. Những người bạn cũ nhắc lại sự thân mật, tình liên lạc giữa mình với ông đồ, và bao nhiêu kỷ niệm cũ được nói tới để khen ngợi người đã khuất và để an ủi người còn sống.</p>
+        <p>Còn các học trò cũ, nhờ ông đồ tác thành, mà lúc ông đồ trăm tuổi lại không được dự lễ tang tống chung, ai nấy đều ân hận. Họ lễ trước bàn thờ thầy, họ nhờ người nhà bà đồ đưa ra mộ để họ được lễ mộ thầy, đắp thêm một nắm đất, cắm một nén hương. “Nhất tự vi sư, bán tự vi sư” huống chi ông đồ đã dạy họ bao nhiêu năm tháng, rèn luyện họ nên người! Ngoài những buổi có khách hoặc học trò cũ của ông đồ tới viếng, cuộc sống ở nhà bà đồ luôn luôn đượm vẻ u buồn, và những buổi chiều tà, những đêm vắng lặng, bà đồ lại càng nhớ thương chồng, và rất nhiều lúc bà không sao cầm được giọt lệ. Cảnh nhà hiu quạnh càng hiu quạnh thêm, trong những lúc Tiệp về nhà Khoan, trong lúc người nhà phải ra đồng để trông nom ruộng mạ, săn sóc lúa ngô.</p>
+        <p>Cuộc sống bình thường sau đám tang rồi cũng phải đến. Bà đồ nhiều lúc như chán nản, không muốn trông nom lấy việc nhà, giao mọi quyền cho vợ chồng Vinh. Bà chỉ ngày ngày quanh quẩn trong nhà lo đèn dầu hương nến bàn thờ chồng. Có những lúc bà ngắm ảnh ông đồ rất lâu trên bàn thờ rồi òa lên khóc. Vinh cũng như Tiệp luôn luôn an ủi mẹ. Tuần tứ cửu của ông đồ đã tới. Những người theo đạo Phật thường nhân ngày này làm chay để cho hương hồn người chết được siêu độ. Trong buổi lễ, bài vị người chết được mang tới chùa làng. Ở đây, các vị sư tụng kinh sám hối để cầu xin Đức Phật tha thứ cho mọi tội lỗi của người qua. Lễ tứ cửu của ông đồ được cử hành long trọng. Bà đồ muốn vong hồn chồng được ăn mày nương cửa Phật, và các học trò đều muốn dự phần trong buổi lễ tứ cửu của thày. Ngoài lễ trên chùa, trong nhà cũng làm cỗ bàn để mời dân xã, nhất là những người đã giúp đỡ trong đám tang hoặc đã phụ trách một công việc gì trong buổi đưa đám. Tình đoàn kết trong dân xã bao giờ cũng có, và sự giúp đỡ của dân làng trong những lúc hoạn nạn tang ma thật là quý báu. Nhân ngày tứ cứu, nhà bà đồ làm cỗ để mời họ hàng làng nước như để tạ ơn mọi sự giúp đỡ trong buổi tang.</p>
+        <p>Ngay từ buổi sáng, bài vị ông đồ đã được đưa lên chùa. Người nhà chia nhau túc trực ở chùa để tiếp khách để sửa lễ cúng theo lời chỉ dẫn của các vị sư. Sau khi lễ vật đã bày đủ, các vị sư, đúng bảy vị cùng nhau đọc kinh sám hối. Người nhà luôn tay luôn chân thay phiên nhau vào lễ Kinh. Khách khứa, con cháu và học trò lần lượt vào lễ Phật lễ Kinh rồi lễ cả bài vị của ông đồ. Bọn học trò nam hôm đó có mặt cả Thúc, và trong bọn học trò nữ thì có Thảo và Hoài. Tiệp trông gầy hẳn đi, nhưng mảnh rẻ nên nàng càng có duyên hơn và vẻ đẹp càng như quyến rũ. Đôi mắt long lanh lệ, trông nàng càng xinh hơn với dáng điệu êm ái dịu dàng xưa nay. Tiệp đưa các cô bạn vào lễ. Hoài nói: “Trông chị gầy đi nhiều quá. Chắc chị lo nghĩ nhiều”.</p>
+        <p>Tiệp đáp: “Em thương thày em lắm. Lắm lúc em tưởng như thày em còn sống”.</p>
+        <p>Thảo hỏi: “Chị đã về đằng nhà anh Khoan chưa?”</p>
+        <p>“Em vẫn khi đi khi về. Đẻ em độ rày buồn, nếu em ở lại luôn đằng kia, nhà vắng vẻ, đẻ em càng buồn thêm.” Tiệp đáp</p>
+        <p>Lễ Phật, lễ Kinh xong hai cô vào lễ bài vị ông đồ. Đứng trước bài vị thày học, Hoài nhớ thày hơi rơm rớm lệ. Tiệp cũng thấy nước mắt tự trào ra. Từ lúc đến chùa, Thúc vẫn để ý đến Tiệp. Tuy chàng cũng lễ các bàn thờ như những người khác nhưng mắt chàng thường hướng về phía Tiệp. Chàng thấy Tiệp đủ mọi vẻ đẹp, người yểu điệu thanh thoát, điệu bộ duyên dáng dịu dàng, lời nói hiền từ khả ái. So sánh, chàng thấy Tiệp hơn Thảo nhiều quá. Chàng tự nghĩ nếu Tiệp là vợ chàng có phải cuộc đời chàng đầy đủ hạnh phúc biết bao nhiêu!</p>
+        <p>Tiệp biết Thúc vẫn thầm thương mình nên vẫn cố ý tránh tầm mắt của Thúc. Tự nhiên nàng thấy sợ Thúc vô cùng. Có Thảo đấy mà Thúc vẫn cứ nhìn theo nàng. Nàng tránh tầm mắt của Thúc, nhưng Thúc lại cố tìm cớ để tới gần nàng. Thật là khó xử. Lỡ Thảo hiểu lầm thì thật là phiền. Nàng bảo Thảo: “Anh chị sống với nhau sung sướng nhỉ!” Thảo cười nói: “Vợ chồng mới, ai chẳng vậy, cứ gì riêng em”.</p>
+        <p>Tiệp nói: “Ấy thế mà em khác, em chưa sống hẳn bên đằng nhà em. Đẻ em bảo hết tuần tứ cửu này của thầy em, em sẽ về ở hẳn bên đó”.</p>
+        <p>Khách khứa càng đến đông. Tiệp và mấy cô học trò chia nhau ra tiếp khách mời trầu nước. Trong lúc ấy, Vinh và Khoan vẫn đứng đáp lễ ở bên bài vị ông đồ, thỉnh thoảng mới chạy ra.</p>
+        <p>Tiệp đang mải tiếp chuyện với khách, bỗng Thúc tiến tới cạnh nàng. Thúc bảo nàng: “Chắc chị Tiệp ghét tôi lắm nhỉ?”</p>
+        <p>Tiệp không nhìn lên đáp: “Xin anh đừng nghĩ vậy. Tôi chẳng để ý gì cả”. Dứt lời, nàng bỏ đi chỗ khác.</p>
+        <p>Sau mấy tuần kinh, các khách khứa ở lại chùa dùng cơm chay, cho đến gần chiều ai nấy mới ra về. Ở lại chùa chỉ còn tang quyến lo dọn dẹp.</p>
+        <div class="xg_dong"></div>
+        <h2 id="c1_XI">XI</h2>
+        <p>Đêm rằm tháng Tám, hội làng Kim Đôi chỉ còn buổi nay nữa là rã đám. Ban chèo đã thôi hát từ bữa trước. Tối nay chỉ còn các bô lão, các quan viên và ban tư văn ra đình làm lễ, sau đó thừa lộc thánh thưởng trăng. Sân đình không còn đông những khách đi xem hội nữa. Ai nấy đều ở nhà để lo bày cỗ trông trăng, hoặc rủ nhau tới một vài đám hát trống quân lập nên ở một vài xóm.</p>
+        <p>Tháng Tám là mùa hát trống quân. Tại các làng vùng Kinh Bắc, đồng thời dân làng mở hội trong dịp thu tế, các trai gái thường tối tối lập trống quân đối đáp hát với nhau. Trống quân lập rất dễ. Chỉ cần một thùng gỗ rỗng, thường là những thùng đựng chè cũ của người Trung Hoa, một cuộn dây thừng và mấy chiếc cọc là đủ. Dây căng trên thùng gỗ, hai đầu buộc vào hai chiếc cọc tre đóng chặt xuống đất cách xa hai bên chiếc thùng đều nhau. Dây đó lại được chống lên trên mặt thùng bằng hai chiếc cọc nhỏ cho thật căng để khi dùi trống – một thanh tre vừa tay – đánh vào sẽ văng ra những tiếng “thình thùng thình” nhịp cho tiếng hát của đôi bên nam nữ. Trống quân lập nên, những chàng trai quê, những cô thôn nữ cùng nhau mua vui với tiếng hát, trai xóm này hát cùng gái thôn khác. Họ ganh nhau tiếng ca, họ thách nhau câu đố, họ vặn nhau trong những lời ứng khẩu.</p>
+        <p>Các cô thôn nữ có những câu hát để tròng ghẹo các chàng trai:</p>
+        <p style="text-align: center; ">“Trống quân, trống quýt, trống còi.</p>
+        <p style="text-align: center; ">Ta chẳng lấy nó, nó đòi lấy ta”.</p>
+        <p style="text-align: center; ">“Trống quân có đĩa thịt bò, Những anh chưa vợ đi mò cả đêm”.</p>
+        <p style="text-align: center; ">Và các chàng trai cũng có những câu để hát đùa các cô thôn nữ:</p>
+        <p style="text-align: center; ">“Trống quân có đĩa thịt bò,</p>
+        <p style="text-align: center; ">Chưa chồng em phải đi mò trống quân”.</p>
+        <p style="text-align: center; ">“Trống quân hai cọc một dây,</p>
+        <p style="text-align: center; ">Chưa chồng, em phải đến đây tìm chồng”.</p>
+        <p>Tối hôm đó, cũng như các thôn nữ và trai tráng khác trong làng Kim Đôi, Hoài và Thảo cũng rủ nhau tới những đám trống quân. Họ đã hẹn hò với Thúc từ trước. Tiệp cũng muốn đi nghe hát trống quân, vì tâm lý các cô gái mới lớn, cô nào chẳng muốn tới những nơi đông vui ấy, nhưng nhà ông đồ có khách, Tiệp phải ở nhà hầu hạ cha. Hơn nữa, tuy là tục lệ dân làng, nhưng ông đồ cũng không muốn Tiệp a dua đàn đúm quá với chúng bạn, e có thể xảy ra những điều đáng tiếc. Cho Tiệp đi xem chèo, ông đồ cũng đã ngần ngại rồi, nhưng vì chẳng lẽ hội làng, ông lại ngăn cấm con thì lại quákhắc nghiệt.</p>
+        <p>Khách của ông đồ là ông Khóa Hữu, bạn học thời còn để chỏm của ông đồ. Ông đỗ Khóa Sinh và làm ăn ở tỉnh xa, nay nhân quê nhà mở hội, ông Khóa Hữu về thăm nhà và nhân thể gặp các bạn cũ. Ông Khóa Hữu là bác họ của Khoan. Thấy Khoan hiện là trưởng tràng của ông đồ Ngư, ông Khóa cũng mừng. Như vậy chứng tỏ Khoan học hành khá và tính nết cũng dễ ưa nên mới được thầy yêu bạn mến, mới xứng đáng làm trưởng tràng. Nói chuyện với bố mẹ Khoan, ông Khóa có bàn tới việc lập gia đình của Khoan. Điều đó bố mẹ Khoan muốn lắm, nhưng vì gia cảnh không được sung túc, nên việc hôn nhân của con cũng chậm lại. Ông Khóa ngỏ ý là ông sẽ tính giúp. Gặp ông đồ Ngư ở đình, ông Khóa được ông đồ mời tới uống rượu thưởng trăng đêm hôm rằm tháng tám. Lâu ngày không gặp nhau, ông đồ cũng như ông Khóa đều muốn nhân tiệc rượu thưởng trăng ôn lại truyện cũ, ngâm lại những bài thơ xưa, bàn về văn chương kinh sách. Hai ông vẫn là đôi bạn tương đắc tự thuở nào.</p>
+        <p>Vì bận tiếp ông Khóa Hữu, nên ông đồ không dự bữa tiệc thưởng trăng của làng dành riêng cho các bô lão, chức sắc, quan viên và nhân viên trong ban tư văn. Dự bữa tiệc thưởng trăng của dân làng tại đình là một điều hãnh diện đối với thôn xã. Dự tiệc tại đình làng tuy vinh dự nhưng đâu có thú bằng được đối ẩm với một người tri kỷ, một bạn tâm giao từ ngày để chỏm.</p>
+        <p>Vì lâu ngày mới gặp nhau, nên câu chuyện giữa hai bạn già rất nồng nàn. Và ông đồ Ngư cũng thết bạn một bữa tiệc thật là đặc biệt không phải vì cao lương mỹ vị, nhưng vì tính cách cầu kỳ, và thích hợp với đêm trăng. Hai ông cùng nhau ăn ốc trông trăng. Ốc đây không phải là thứ ốc mua ở chợ đem về hay vớt ở ao ở đồng lên, mà là thứ ốc gác trên gác bếp. Ốc mua từ hơn một tháng trước, đựng trong rổ, gác lên bếp. Xin chớ ai tưởng rằng ốc gác lên bếp sẽ bị chết! Ốc không chết mà lại béo ra vì trong thời gian ở trên gác bếp, ốc ăn bồ hóng. Với thức ăn khác thường này, loài ốc không những béo mà khi ta ăn lại có vị, vừa thơm vừa bùi, vừa béo vừa ngậy. Muốn ăn ốc chỉ cần đem luộc với lá chanh, không cần phải nấu nướng khó khăn gì. Những nhà dư dật miền quê Bắc Việt thường mua ốc để dành đến rằm tháng tám thưởng trăng, bằng cách gác lên bếp.</p>
+        <p>Ông đồ Ngư mời ông Khóa Hữu uống rượu với ốc luộc thưởng trăng. Món ăn rẻ tiền nhưng thật ngon, và thật hợp với đêm rằm tháng tám. Rượu ngon, bạn hiền, đồ nhắm tốt, trăng trong gió mát. Hai ông bạn già chén tạc chén thù cho mãi tới khuya, các ông mới thưởng thức bánh trung thu trước khi tan tiệc. Hai ông cùng nhau hàn huyên truyện cũ, truyện mới, trong làng trong xóm, truyện gần, truyện xa, thật là tâm đầu ý hiệp. Rồi ông đồ Ngư nói tới truyện lớp học và truyện nhà: “Con cháu lớn nhà tôi có con ông Chánh Tổng hỏi xin, nhưng tôi đã từ chối. Thằng đó có học tôi, học không dốt nhưng cũng không giỏi, và có lẽ cũng sẽ chẳng đỗ đạt gì. Tôi xem nhà ấy không được vượng phúc đức, nên tôi không muốn cho cháu vào cửa đó. Không hỏi được con gái tôi nên thằng đó đã nghỉ học”.</p>
+        <p>Ông Khóa Hữu gật gù nói: “Con ông Chánh Tổng sau này lại theo nghiệp cha làm hương chức hoặc tổng lý để cầu công danh. Cứ kể ra như vậy cũng được, nhưng gả bán con cái ta cần xem phúc đức nhà chồng hơn”.</p>
+        <p>Rồi ông hỏi: “Cháu bác năm nay bao nhiêu tuổi?”</p>
+        <p>Ông đồ đáp: “Cháu hãy còn nhỏ lắm, năm nay vừa được đôi tám. Cháu hiện nghỉ học ở nhà giúp việc mẹ cháu”.</p>
+        <p>Ông Khóa Hữu ngẫm nghĩ, rồi bảo ông đồ: “Con gái 16 thì cũng đã lớn, cũng đến tuổi xuất giá rồi. Hay nếu bác không chê thì chúng tôi muốn xin cháu cho thằng Khoan, con chú nó, hiện đang là trưởng tràng của bác”.</p>
+        <p>Ông đồ đáp: “Bác cũng hiểu, tôi có kén chọn gì đâu. Gả chồng cho con tôi trông vào phúc đức nhà trai nhiều hơn. Ông Chánh Tổng làm việc quan, đôi khi vì nhiệm vụ phạm đôi điều thất đức. Tôi sợ những điều đó ảnh hưởng tới con cháu. Hơn nữa tôi trông tướng thằng Thúc con ông Chánh Tổng tôi cũng không ưng nên tôi đã lấy cớ so đôi tuổi không hợp mà từ chối. Còn thằng Khoan, tôi thấy nó học hành được, tư cách cũng khá. Nó sẽ biết thương vợ thương con”.</p>
+        <p>Ông Khóa Hữu cũng thưa thật: “Nếu bác thương tới cháu thì may mắn lắm, nhưng xin nói thật, bác cũng chẳng lạ gì, nhà chú nó không được sung túc.”</p>
+        <p>Ông đồ vuốt mấy sợi râu cằm, cười khà khà bảo: “Giá thú bất luận tài. Sung túc hay nghèo khó có làm sao. Đàn bà con gái làng ta xưa nay có ai chê chồng nghèo bao giờ. Bác về nói chuyện với ông em, tôi vui lòng, nếu ông em bác cũng thỏa ý”.</p>
+        <p>Ông Khóa Hữu vui vẻ đáp lời: “Tôi tin chắc chú nó sẽ sung sướng được thông gia với bác và thằng Khoan chắc cũng hài lòng.”</p>
+        <p>Câu chuyện còn tiếp. Ngày sinh tháng đẻ của Khoan ông đồ đã ghi từ ngày Khoan nhập học. Ông lấy so với tuổi của Tiệp thì thấy đôi bên rất hợp, không bị sung hoặc khắc. Trong lúc hai ông nhắm rượu xơi bánh thưởng trăng, Tiệp vẫn phải lui tới để chờ ông đồ sai khiến nên luôn luôn nghe rõ câu chuyện của hai người về mình. Lòng nàng hồi hộp sung sướng. Nàng thấy nóng bừng đôi má. Nàng lăng xăng chạy xuống bếp vẻ mặt hớn hở như người bắt được của. Tim nàng đập mạnh, nàng thấy đêm thu như tưng bừng tươi đẹp. Thằng Mẫn ở trên nhà loăng quăng chạy xuống. Lòng tràn ngập nỗi hân hoan, nàng không để ý đến em, nên trong lúc đi lại nàng đã giẫm lên chân Mẫn, Mẫn khóc, nàng vội vàng lấy miếng bánh trung thu dúi vào tay em. Nàng mang tiếp thêm bánh trái lên để ông đồ mời ông Khóa.</p>
+        <p>Hai ông vẫn còn đương rất tương đắc trong câu chuyện. Thoang thoáng nghe, nàng thấy ông Khóa Hữu khen nàng: “Trông cháu nhanh nhẹn đấy. Sánh với thằng Khoan nhà tôi thực là đẹp đôi lắm. Việc này thế nào cũng thành. Như vậy bác với tôi ta càng thêm thân”.</p>
+        <p>Trăng lên đã cao. Trời trong. Quầng trăng tỏa ngũ sắc qua làn sương thu mỏng như tăng vẻ thơ mộng cho đêm rằm. Xa xa tiếng thình thùng thình của một đám trống quân vọng lại đánh nhịp cho lời ca đầy yêu đương đằm thắm:</p>
+        <p style="text-align: center; ">“Đôi ta như chỉ mới xe.</p>
+        <p style="text-align: center; ">Như trăng mới mọc, như tre mới giồng,</p>
+        <p style="text-align: center; ">Đôi ta như lúa đòng đòng.</p>
+        <p style="text-align: center; ">Đẹp duyên mà lại đẹp lòng mẹ Cha”.</p>
+        <div class="xg_dong"></div>
+        <h2 id="c1_XII">XII</h2>
+        <p>Vụ gặt tháng Mười!</p>
+        <p>Ngoài cánh đồng, những ruộng lúa mùa nặng trĩu những bông vàng như tơ ánh, và mùi lúa chín bốc lên thơm dìu dịu. Những cơn gió tạt qua lung lay những bông lúa nhẹ cọ sát vào nhau như những tiếng rì rầm, và hương thơm của lúa chín tỏa rộng một mùi mát mát êm êm. Từ sáng sớm, thợ gặt đã kéo nhau khắp cánh đồng để gặt lúa. Những ruộng lúa vàng, trước những lưỡi liềm lưỡi hái cứ vơi dần. Các cô thôn nữ chít khăn mỏ quạ, váy xắn cao cùng những chàng trai quần nâu áo nâu gọn gàng cũng cắt lúa. Các cô tay cầm liềm, tay nắm mấy cây lúa, đưa lưỡi liềm cắt lúa kêu soèn soẹt. Những bông lúa cắt rồi, các cô xếp ngay trên mặt ruộng, khi được thành từng đống, các cô bó lại thành từng con, từng lượm bằng ngay những ngọn rơm ở ruộng lúa. Các chàng trai cũng cắt lúa, cũng bó thành con thành lượm, nhưng các chàng trai sức vóc khỏe mạnh hơn, các chàng phải bó những con lúa thành từng bó lớn.</p>
+        <p>Rồi người ta chia nhau gánh lúa về nhà. Những chiếc đòn sóc nhọn hai đầu, thọc sâu vào bó lúa và người thợ gặt ghé vai vào nhấc lên để quảy đi một cách nhẹ nhàng. Trong khi cùng gặt cùng hái, các cô các cậu trò truyện với nhau, tiếng nói vui vẻ, tiếng cười ròn rã khiến cho công việc đỡ mệt nhọc. Thỉnh thoảng một vài cô lại cất giọng hát một vài câu. Tiếng hát như thúc đẩy cho công việc, và khiến cho mọi sự mỏi mệt tiêu tan: “Bao giờ cho đến tháng Mười. Ta đem liềm hái ra ngoài ruộng ta”.</p>
+        <p>Cũng có khi các cô hát những câu yêu đương tình tứ để nhắn nhủ người yêu, lập tức có những chàng trai đáp lại bằng những câu thật là khả ái. Đã có nhiều cuộc nhân duyên bắt đầu bằng những câu hát trong buổi gặt. Cảnh mùa gặt ở ngoài đồng thật vui. Xen vào những đám thợ gặt có các cô con gái nhà chủ ruộng đi trông nom. Các cô cũng gặt, cũng nói cười và ca hát, thật là bình đẳng với các anh chị em thợ gặt. Lại còn có những người đi đổi đồng. Đây là mấy người trong làng nhân vụ gặt mang quà bánh, nước nôi ra đổi lấy lúa cho anh chị em thợ đồng. Đi làm từ sớm, công việc nặng nhọc, trời tháng Mười lại nắng hanh, anh chị em thợ đồng thường đói bụng khát nước. Mấy người đổi đồng đưa quà bánh cho họ ăn, đổi lấy vài con lúa. Việc đổi đồng được các chủ ruộng mặc nhiên ưng thuận, miễn là anh chị em thợ gặt không ăn uống quá đáng đến đỗi phí phạm mất nhiều lúa đổi.</p>
+        <p>Nhà Khoan cũng có ít ruộng mùa, nên vụ gặt tháng Mười, Khoan cũng thỉnh thoảng có mặt tại cánh đồng sau buổi học. Cả Tiệp cũng bận rộn ở ngoài đồng để trông nom thóc ruộng nhà. Nhờ vậy đôi lúc Khoan và Tiệp lại được cùng nhau trao đổi vài mẩu chuyện. &nbsp;Những mẩu truyện tuy ngắn nhưng khiến lòng đôi bên đều vui vui trong khi chờ đợi chính thức cùng nhau như chim liền cánh, như cây liền cành. Ruộng tốt, lúa nhiều, người dân làng Kim Đôi yên lòng với vụ gặt. Người thu hoạch được nhiều nhất về vụ lúa chín nầy là ông bà Chánh Tổng. Ông bà nhiều ruộng lắm, ruộng đồng nhà rồi lại ruộng ngoại canh.</p>
+        <p>Thảo được ông bà giao cho việc trông coi gặt hái tại cánh đồng nhà. Thúc cũng luôn có mặt tại cánh đồng với vợ. Chàng hãnh diện về sự thu hoạch của nhà mình, và có ý dè bỉu khi nói tới Khoan. Lẽ tất nhiên, cũng có mặt tại cánh đồng, Thúc vẫn gặp Khoan cũng như Thảo vẫn gặp Tiệp. Thúc thường tỏ ý coi thường Khoan, nhưng trái lại Khoan không hề có ý gì không tốt đối với Thúc. Thảo gặp Tiệp ở ngoài cánh đồng thì thường khéo khoe khoang chuyện giàu có của gia đình nhà chồng, và nàng kể lại cùng Tiệp cái cảnh sung túc đầy đủ nàng sống với Thúc. Nàng lấy làm tự mãn được lấy chồng giàu. Đôi khi nàng hỏi tới ngày cưới của Tiệp. Bao giờ Tiệp cũng trả lời một câu rất không đâu: “Bao giờ cưới thế nào em chẳng phải mời chị. Chị nhớ mừng em thật sang đấy nhé”.</p>
+        <p>Với lúa tháng Mười gặt xong là mùa xêu của các chàng rể đã dạm hỏi vợ nhưng chưa cưới. Và cũng là mùa để học trò mang biếu thày nhân dịp cơm mới. Gia đình Khoan cũng đã sắm sửa đủ đồ lễ để Khoan mang xêu đằng nhà Tiệp. Đồ lễ tuy đơn sơ, nhưng đủ chứng tỏ sự thành kính của Khoan đối với ông đồ, vừa là thầy học lại vừa là bố vợ chưa cưới. Chiều hôm đó, sau buổi học, Khoan cùng người nhà mang tới nhà ông đồ một thúng gạo nếp và hai chục con chim ngói cùng với trầu cau. Về mùa lúa chín này, chim ngói bay ra rất nhiều, và được người ta dùng làm đồ xêu vào dịp cơm mới.</p>
+        <p>Người nhà Khoan thưa cùng ông đồ: “Nhân dịp cơm mới, nhà chúng tôi gọi có chút đồ lễ tới xin ông bà Đồ nhận cho để chứng lòng thành của bên ông bà chúng tôi”.</p>
+        <p>Lẽ tất nhiên ông bà Đồ vui vẻ nhận, nhưng ông vẫn xã giao nói: “Bên đằng ông bà nhà bày vẽ quá. Chúng tôi xin thành thật cảm ơn”.</p>
+        <p>Rồi ông đồ nhắc tới việc cưới xin của Khoan và Tiệp: “Chỗ tôi với ông Khóa Hữu thân mật, việc trăm năm của các cháu chúng tôi dễ dàng. Nhờ ông về thưa lại với ông bà bên nhà rõ. Chúng tôi muốn cho đôi trẻ sớm phối hợp, kẻo chúng phải chờ đợi mãi tội nghiệp”.</p>
+        <p>“Ông bà đồ thật quý hóa quá. Bên ông bà chúng tôi cũng đang tính ngày.”</p>
+        <p>Khi Khoan và người nhà về, mấy bọn học trò của ông đồ tới. Họ cũng mang biếu ông đồ gạo nếp và chim ngói. Hằng năm, vào những dịp mồng năm tháng năm, rằm tháng tám, cơm mới tháng mười, bao giờ ông đồ cũng nhận được nhiều đồ lễ của học trò. Ngày xưa, học trò đối với thày ân tình rất trọng, không bao giờ họ quên ngày tư ngày Tết của thày. Giàu hay nghèo họ cũng cố lo có chút ít đồ lễ mang biếu thày vào những dịp tháng năm ngày Tết. Một mình lo không xong, họ chung nhau rủ bạn bè. Thày dạy học mở trường ngày xưa không lấy tiền học, hàng năm thường chỉ trông vào những đồ biếu sén. Khi còn đi học, học trò tết biếu thày đã đành, ngay khi thôi học rồi, các học trò cũng vẫn nhớ ơn thày.</p>
+        <p>Cha mẹ có công sinh dưỡng, còn tác thành cho mình nên người, ấy chính là công của thày. Vợ chồng Thúc cũng mang biếu ông đồ gạo nếp và chim ngói như khi còn đi học. Ông đồ nhận đồ lễ rồi bảo Thúc: “Thày cảm ơn anh. Thày mong anh không giận thày về việc em Tiệp. Chẳng qua cũng là duyên số. Bây giờ anh lấy con gái ông bà Phong, thày thấy thật là đẹp đôi. Thày mong anh chị loan phụng hòa minh, bách niên giai lão, con đàn cháu đông”.</p>
+        <p>Thúc chỉ biết vâng dạ. Sự thật, tuy cưới Thảo, nhưng lòng Thúc vẫn mong muốn Tiệp. Thúc vẫn oán ông đồ về chuyện không gả Tiệp cho chàng. Lẽ ra dịp cơm mới này, Thúc đã thôi học. Chàng không muốn trở lại nhà ông đồ nữa, phần vì ngượng ngùng sợ gặp Tiệp, phần vì nỗi oán hận của chàng chưa nguôi, nhưng chàng bị ông bà Chánh Tổng bó buộc phải mang biếu ông đồ gạo và chim. Ông Chánh Tổng, tuy hơi không bằng lòng ông đồ ở chỗ không hỏi được Tiệp cho Thúc, nhưng ông lại không muốn bị ai chê cười là không hiểu lễ nghĩa, nên trong dịp cơm mới ông bắt Thúc phải cư xử đúng đạo thầy trò. Thúng gạo nếp, vài chục chim ngói đối với nhà ông có nghĩa lý gì, nhưng tiếng tăm bề thế của ông, đó mới là quan trọng. Trước khi Thúc ra về, ông Đồ lại bảo: “Thày gửi lời về cám ơn ông bà Chánh Tổng nhé! Năm nay được mùa, chắc đằng nhà gặt hái được bội thóc lúa đấy nhỉ”.</p>
+        <p>Thúc ra về. Lại vài bọn học trò khác tới biếu thầy. Tiệp luôn luôn vất vả vì phải đun nước pha trà để ông đồ tiếp khách. Đối với bạn học, nàng cũng chạy lên chạy xuống chào hỏi, nhưng riêng khi Thúc tới, nàng đã ở lỳ ở dưới bếp cho tới lúc Thúc ra về.</p>
+        <!-- Chú thích -->
+        <div id="tooltip" class="tooltip"></div>                
+      </div>
+    </div>
+  </main>
+  <div onclick="scrollToTop()" class="scrollTop"><i class="fa-solid fa-chevron-up"></i></div>
+  <div onclick="scrollToBottom()" class="scroll-to-bottom"><i class="fa-solid fa-chevron-down"></i></div>
+  <script src="ck_JS_sachc1.js"></script>
+</body>
+</html>

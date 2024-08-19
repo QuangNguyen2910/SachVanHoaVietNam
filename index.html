@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ck_style_thongtinsach.css">
+    <link rel="stylesheet" href="fonticon/css/all.min.css">
+    <title>Thông tin sách</title>
+</head>
+<body>
+    <header>
+        <img src="imgs/dau_web.png">
+    </header>
+    <nav>
+        <div class="khobatchu_nav">
+            <div class="nav_search">
+                <div class="form-field">
+                    <input type="text" class="form_input" placeholder="Nhập tên sách, tác giả,....">
+                    <div class="nav_search_buttun">
+                        <p>Tìm kiếm</p>
+                    </div>
+                </div>        
+            </div>
+            <div class="nav_menu">
+                <div class="menu">
+                    <div class="topnav">
+                        <a class="active">Tác phẩm</a>
+                        <a href="ck_tacgia.html">Tác giả</a>
+                        <a href="ck_nxb.html">Nhà xuất bản</a>
+                    </div>                      
+                </div>
+            </div>
+            <div class="khoitimkiem_taikhoan">
+                <!-- Nút để mở khung cố định -->
+                <div class="dangnhap_icon" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa-regular fa-circle-user"></i></div>
+                <!-- Nội dung khung -->
+                <div id="id01" class="modal">
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="imgs/img_avatar2.png" alt="Avatar" class="avatar">
+                      </div>
+                      <div class="container">
+                        <label for="uname"><b>Tên tài khoản</b></label>
+                        <input type="text" placeholder="Nhập tên tài khoản..." name="uname" required>
+                        <label for="psw"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Mật khẩu..." name="psw" required>          
+                        <button type="submit" style="background-color: #630A10">Đăng nhập</button>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Lưu mật khẩu?
+                        </label>
+                      </div>
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Thoát</button>
+                        <span class="psw">Quên <a href="#">mật khẩu?</a></span>
+                      </div>
+                    </form>
+                </div>                
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="khobatchu_section">
+            <div class="cottrai">
+                <div class="biasach">
+                    <a href="ck_biatrc.html"><img src="imgs/bia_trc.png"></a>
+                </div>
+                <div class="nutdocsach">
+                    <a href="ck_sachc1.html"><div class="docsach"><i class="fa-solid fa-book-open-reader"></i> Đọc sách</div></a>
+                    <div class="nghesach"><i class="fa-solid fa-headphones"></i> Nghe sách</div>
+                </div>
+                <div class="danhgia">
+                    <div class="sao">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> (20)
+                    </div>
+                    <div class="chiase">
+                        <i class="fa-brands fa-facebook"></i>&nbsp Chia sẻ
+                    </div>
+                </div>
+            </div>
+            <div class="cotgiua">
+                <div class="tacpham"><p>Nếp xưa</p></div>
+                <div class="tacgia"><p>Nhà văn Toan Ánh</p><hr style="border: 1px solid black;"></div>
+                <div class="thongtinsach">
+                    <table class="thongtin">
+                        <tr height="25px">
+                            <th width="150px">Thể loại:</th>
+                            <td>Tiểu thuyết</td>
+                        </tr>
+                        <tr height="25px">
+                            <th>Nhà xuất bản:</th>
+                            <td>Nhà xuất bản Văn hóa Thông tin</td>
+                        </tr>
+                        <tr height="25px">
+                            <th>Ngày phát hành:</th>
+                            <td>01/01/2000</td>
+                        </tr>
+                        <tr height="25px">
+                            <th>Định dạng:</th>
+                            <td>Ebook</td>
+                        </tr>
+                    </table>
+                    <hr style="border: 1px solid black;">
+                </div>
+                <div class="gioithieu">
+                    <div id="content">
+                        <h1>Giới thiệu sách:</h1>
+                        <p>Ấn phẩm "nếp xưa" là tiểu thuyết phong tục của tác giả Toan Ánh, sách do nhà xuất bản Xây Dựng ấn hành năm 1960. Ấn bản đang lưu giữ tại Quán Sách Mùa Thu có tình trạng nguyên vẹn bìa gáy, ruột sách dày 183 trang, chữ in rõ, mực không nhèo, lõi sách chắc chắn.</p>
+                        <div id="hiddenContent" class="hidden">
+                            <p>Khoan lửng thừng bước vào lớp học. Cũng như mọi ngày ông đồ chưa tới, và lũ học trò nhỏ còn đang cùng nhau tụ năm tụ ba trò chuyện. Cũng có một vài cậu đang ôn lại bài hoặc viết nốt mấy trang phóng bữa trước các cậu lười chưa viết hết.</p>
+                            <p>Ông đồ Ngư đóng học trò lắm. Tuy ông không đỗ đạt gì nhưng ông có tiếng hay chữ, và học trò ông đã có nhiều người làm nên, cử nhân có, phó-bảng có, và những người này đều đã được lĩnh những chức vụ quan trọng. Người đi tri huyện, kẻ đi tri phú, người lĩnh huấn đạo và cũng có người được vời vào kinh nhận việc tại các Bộ.</p>
+                        </div>
+                        <a id="toggleButton" onclick="toggleContent()">...xem thêm</a>
+                        <hr style="border: 1px solid black;">
+                        <div class="thongtintp">
+                            <h1>Thông tin sách:</h1>
+                            <div class="sotr_sogio">
+                                <div class="sotr">
+                                    <div class="sotr_icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                                    <div class="sotr_text">
+                                        <h2>20000</h2>
+                                        <h3>tổng số từ</h3>
+                                    </div>
+                                </div>
+                                <div class="sogio">
+                                    <div class="sogio_icon"><i class="fa-solid fa-headphones"></i></div>
+                                    <div class="sogio_text">
+                                        <h2>4.3</h2>
+                                        <h3>giờ nghe</h3>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+            <div class="cotphai">
+                <div class="khungmuasach">
+                    <div class="khobatchu_khungmuasach">
+                        <div class="muasach">Mua sách</div>
+                        <div class="giasach">
+                            <div class="gia">Giá:</div>
+                            <div class="sotien">50.000 VNĐ</div>
+                        </div> <div style="clear: both;"></div>
+                        <div class="nutmua">Mua sách</div>
+                        <div class="nutgiohang">Thêm vào giỏ hàng</div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article>
+        <div class="khobatchu_article">
+            <div class="sachcungtg">
+                <div class="demuc">
+                    <p>Sách cùng tác giả</p>
+                </div>
+                <div class="new_list">
+                    <div class="new_item" id="fix2">
+                        <a href=""><img src="imgs/sach1.jpg" alt=""></a>
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach2.jpg" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach3.jpg" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach4.jpg" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach5.png" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach6.png" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>    
+            </div>
+            <div class="sachcungtl">
+                <div class="demuc">
+                    <p>Sách cùng thể loại</p>
+                </div>
+                <div class="new_list">
+                    <div class="new_item" id="fix2">
+                        <a href=""><img src="imgs/sach1.jpg" alt=""></a>
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach2.jpg" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach3.jpg" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach4.jpg" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach5.png" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div class="new_item">
+                        <img src="imgs/sach6.png" alt="">
+                        <div class="tensach">Nếp cũ</div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>    
+            </div>
+        </div>
+    </article>
+    <aside>
+        <div class="khobatchu_aside">
+            <h1>Bình chọn</h1>
+            <hr style="border: 1px solid black;">
+            <div class="aside_trai">
+                <p>Tổng bình chọn</p>
+                <p>Chưa có bình chọn</p>
+                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> (20)</p>
+            </div>
+            <div class="aside_giua">
+                <div class="vote">
+                    <div class="sosao">5 sao</div>
+                    <div class="thanhsao"></div>
+                    <div class="soluong">20</div>
+                </div>
+                <div class="vote">
+                    <div class="sosao">4 sao</div>
+                    <div class="thanhsao"></div>
+                    <div class="soluong">0</div>
+                </div>
+                <div class="vote">
+                    <div class="sosao">3 sao</div>
+                    <div class="thanhsao"></div>
+                    <div class="soluong">0</div>
+                </div>
+                <div class="vote">
+                    <div class="sosao">2 sao</div>
+                    <div class="thanhsao"></div>
+                    <div class="soluong">0</div>
+                </div>
+                <div class="vote">
+                    <div class="sosao">1 sao</div>
+                    <div class="thanhsao"></div>
+                    <div class="soluong">0</div>
+                </div>
+            </div>
+            <div class="aside_phai">
+                <h1>Chia sẻ suy nghĩa của bạn</h1>
+                <div class="vietbl">
+                    <p>Viết nhận xét của bạn</p>
+                </div>
+            </div> <div style="clear: both;"></div>
+            <hr style="border: 1px solid black;">
+        </div>
+    </aside>
+    <footer>
+        <div class="khobatchu_footer">
+            <div class="khoiphai">
+                <div class="logo_cuoi_web"><img src="imgs/logo_cuoi_web.png"></div>
+                <div class="nhapemail_ud">
+                    <div class="nhapemail">
+                        <div class="form-field2">
+                            <input type="text" class="form_input2" placeholder="Nhập email của bạn để nhận thông báo.">
+                        </div>        
+                    </div>
+                    <div class="ud">
+                        <h1>Bạn có thể đọc sách qua các ứng dụng và thiết bị:</h1>
+                        <div class="ud_icon"><i class="fa-solid fa-desktop"></i> <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-android"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="khoitrai">
+                <img src="imgs/QR.png">
+            </div> <div style="clear: both;"></div>
+            <div class="banquyen">
+                <hr style="border: 1px solid #FFF;">
+                <p>Giấy phép thành lập Nhà xuất bản số 1160/GP-BTTTT ngày 01/08/2008 của Bộ Thông tin</p>
+                <p>Bản quyền ©2018 Nhà Xuất Bản Văn Hóa Việt Nam</p>
+            </div>
+        </div>
+    </footer>
+    <div onclick="scrollToTop()" class="scrollTop"><i class="fa-solid fa-chevron-up"></i></div>
+    <div onclick="scrollToBottom()" class="scroll-to-bottom"><i class="fa-solid fa-chevron-down"></i></div>
+    <script src="ck_JS_thongtinsach.js"></script>
+</body>
+</html>
